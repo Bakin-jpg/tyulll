@@ -1,29 +1,32 @@
-name: Scrape and Update Stream API
+name: Scrape YeahScore
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'  # Runs every 30 minutes
-  workflow_dispatch:  # Allows manual run
+  workflow_dispatch: # Supaya bisa dijalankan manual lewat tombol
 
 jobs:
-  scrape:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout kode
+        uses: actions/checkout@v3
+
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
-      - name: Install System Dependencies
-        run: sudo apt-get update && sudo apt-get install -y chromium-chromedriver
-      - name: Install Python Packages
-        run: pip install selenium webdriver-manager requests
-      - name: Run Scraper Script
-        run: python yeahscore_to_m3u.py
-      - name: Commit and Push API Data
+          python-version: '3.9'
+
+      - name: Install Dependencies
         run: |
-          git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'github-actions@github.com'
-          git add yeahscore_streams_api.json
-          git commit -m "🤖 Auto-scrape: update stream API data" || echo "No changes to commit"
-          git push
+          pip install playwright
+          playwright install chromium
+
+      - name: Jalankan Scraper
+        run: python scrape.py
+
+      - name: Upload Hasil Inspect Element
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-code-html
+          path: hasil_inspect.html
+          retention-days: 1
