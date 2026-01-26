@@ -1,14 +1,19 @@
-name: Scrape YeahScore
+name: Auto Scrape API
 
 on:
-  workflow_dispatch: # Supaya bisa dijalankan manual lewat tombol
+  workflow_dispatch:      # Bisa diklik manual
+  schedule:
+    - cron: '0 */1 * * *' # Jalan otomatis setiap 1 jam
+
+permissions:
+  contents: write         # Izin untuk update file di repo
 
 jobs:
-  build:
+  scrape_and_update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout kode
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
       - name: Setup Python
@@ -18,15 +23,17 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install playwright
+          pip install playwright beautifulsoup4
           playwright install chromium
 
       - name: Jalankan Scraper
-        run: python scrape.py
+        run: python scraper.py
 
-      - name: Upload Hasil Inspect Element
-        uses: actions/upload-artifact@v4
-        with:
-          name: source-code-html
-          path: hasil_inspect.html
-          retention-days: 1
+      - name: Commit dan Push JSON
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "actions@github.com"
+          git add matches.json
+          # Cek jika ada perubahan, kalau tidak ada, jangan error
+          git commit -m "Update API matches.json [skip ci]" || exit 0
+          git push
