@@ -173,8 +173,8 @@ def main():
         # Prioritas: LIVE duluan, baru UPCOMING
         # Slice [:30] artinya hanya ambil 30 pertama. Naikkan jika perlu.
         processed_matches = []
-        for i, match in enumerate(all_matches[:30]): 
-            print(f"[{i+1}/{len(all_matches[:30])}] Checking: {match['teams']} ({match['league']})")
+        for i, match in enumerate(all_matches[:80]): 
+            print(f"[{i+1}/{len(all_matches[:80])}] Checking: {match['teams']} ({match['league']})")
             
             # Logic: Hanya ambil stream jika LIVE atau Main Hari Ini (cek string date)
             # Untuk demo ini kita ambil semua top 30
