@@ -1,515 +1,202 @@
 [
     {
         "status": "LIVE",
-        "time": "74'",
-        "home": "FC Porto",
-        "away": "GIL Vicente",
-        "match_title": "FC Porto vs GIL Vicente",
-        "url": "https://yeahscore1.com/match/fc-porto-vs-gil-vicente-1396405",
-        "league": "Sports Event"
+        "time_display": "LIVE 82'",
+        "teams": "FC Porto vs GIL Vicente",
+        "url_page": "https://yeahscore1.com/match/fc-porto-vs-gil-vicente-1396405",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F22%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769458500&token=f706607232d534d6e89abe21351735fd6e556672.false.1769461200-2iMKI6q%2FATyAqY%2B3QFC3nr5zmSPNl8jOBZbKSYSotto%3D",
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "LIVE",
-        "time": "90'",
-        "home": "Everton",
-        "away": "Leeds",
-        "match_title": "Everton vs Leeds",
-        "url": "https://yeahscore1.com/match/everton-vs-leeds-1379194",
-        "league": "Sports Event"
+        "time_display": "LIVE 90'",
+        "teams": "Girona vs Getafe",
+        "url_page": "https://yeahscore1.com/match/girona-vs-getafe-1391022",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F25%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769457600&token=f706607232d534d6e89abe21351735fd6e556672.false.1769461200-2iMKI6q%2FATyAqY%2B3QFC3nr5zmSPNl8jOBZbKSYSotto%3D",
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "LIVE",
-        "time": "88'",
-        "home": "Norwich",
-        "away": "Coventry",
-        "match_title": "Norwich vs Coventry",
-        "url": "https://yeahscore1.com/match/norwich-vs-coventry-1386897",
-        "league": "Sports Event"
+        "time_display": "LIVE 90'",
+        "teams": "Everton vs Leeds",
+        "url_page": "https://yeahscore1.com/match/everton-vs-leeds-1379194",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F15%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769457600&token=f706607232d534d6e89abe21351735fd6e556672.false.1769461200-2iMKI6q%2FATyAqY%2B3QFC3nr5zmSPNl8jOBZbKSYSotto%3D",
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "LIVE",
-        "time": "90'",
-        "home": "Girona",
-        "away": "Getafe",
-        "match_title": "Girona vs Getafe",
-        "url": "https://yeahscore1.com/match/girona-vs-getafe-1391022",
-        "league": "Sports Event"
+        "time_display": "LIVE 90'",
+        "teams": "Norwich vs Coventry",
+        "url_page": "https://yeahscore1.com/match/norwich-vs-coventry-1386897",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F20%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769457600&token=f706607232d534d6e89abe21351735fd6e556672.false.1769461200-2iMKI6q%2FATyAqY%2B3QFC3nr5zmSPNl8jOBZbKSYSotto%3D",
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "LIVE",
-        "time": "90'",
-        "home": "Verona",
-        "away": "Udinese",
-        "match_title": "Verona vs Udinese",
-        "url": "https://yeahscore1.com/match/verona-vs-udinese-1378083",
-        "league": "Sports Event"
+        "time_display": "LIVE 90'",
+        "teams": "Verona vs Udinese",
+        "url_page": "https://yeahscore1.com/match/verona-vs-udinese-1378083",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F24_fhd%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769456700&token=f706607232d534d6e89abe21351735fd6e556672.false.1769461200-2iMKI6q%2FATyAqY%2B3QFC3nr5zmSPNl8jOBZbKSYSotto%3D",
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "status": "LIVE",
+        "time_display": "LIVE 90'",
+        "teams": "AD Ceuta FC vs Cultural Leonesa",
+        "url_page": "https://yeahscore1.com/match/ad-ceuta-fc-vs-cultural-leonesa-1392012",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F18%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769455800&token=f706607232d534d6e89abe21351735fd6e556672.false.1769461200-2iMKI6q%2FATyAqY%2B3QFC3nr5zmSPNl8jOBZbKSYSotto%3D",
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "09:00",
-        "home": "Sri Lanka",
-        "away": "England",
-        "match_title": "Sri Lanka vs England",
-        "url": "https://yeahscore1.com/match/sri-lanka-vs-england-1629480152",
-        "league": "Sports Event"
+        "time_display": "20:00",
+        "teams": "Philadelphia 76ers vs Charlotte Hornets",
+        "url_page": "https://yeahscore1.com/match/philadelphia-76ers-vs-charlotte-hornets-1629480125",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "19:45",
-        "home": "Lincoln",
-        "away": "Bradford",
-        "match_title": "Lincoln vs Bradford",
-        "url": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
-        "league": "Sports Event"
+        "time_display": "09:00",
+        "teams": "Sri Lanka vs England",
+        "url_page": "https://yeahscore1.com/match/sri-lanka-vs-england-1629480152",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "20:00",
-        "home": "Paris Saint Germain",
-        "away": "Newcastle",
-        "match_title": "Paris Saint Germain vs Newcastle",
-        "url": "https://yeahscore1.com/match/paris-saint-germain-vs-newcastle-1451149",
-        "league": "Sports Event"
+        "time_display": "19:45",
+        "teams": "Lincoln vs Bradford",
+        "url_page": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "20:00",
-        "home": "Arsenal",
-        "away": "Kairat Almaty",
-        "match_title": "Arsenal vs Kairat Almaty",
-        "url": "https://yeahscore1.com/match/arsenal-vs-kairat-almaty-1451159",
-        "league": "Sports Event"
+        "time_display": "Jan 26, 20:00",
+        "teams": "Everton vs Leeds",
+        "url_page": "https://yeahscore1.com/match/everton-vs-leeds-1379194",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F15_fhd%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769457600&token=f706607232d534d6e89abe21351735fd6e556672.false.1769461200-2iMKI6q%2FATyAqY%2B3QFC3nr5zmSPNl8jOBZbKSYSotto%3D",
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "20:00",
-        "home": "Manchester City",
-        "away": "Galatasaray",
-        "match_title": "Manchester City vs Galatasaray",
-        "url": "https://yeahscore1.com/match/manchester-city-vs-galatasaray-1451153",
-        "league": "Sports Event"
+        "time_display": "Jan 26, 20:00",
+        "teams": "Norwich vs Coventry",
+        "url_page": "https://yeahscore1.com/match/norwich-vs-coventry-1386897",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F20%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769457600&token=f706607232d534d6e89abe21351735fd6e556672.false.1769461200-2iMKI6q%2FATyAqY%2B3QFC3nr5zmSPNl8jOBZbKSYSotto%3D",
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "20:00",
-        "home": "Monaco",
-        "away": "Juventus",
-        "match_title": "Monaco vs Juventus",
-        "url": "https://yeahscore1.com/match/monaco-vs-juventus-1451148",
-        "league": "Sports Event"
+        "time_display": "Jan 27, 19:45",
+        "teams": "Huddersfield vs Luton",
+        "url_page": "https://yeahscore1.com/match/huddersfield-vs-luton-1387442",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "20:00",
-        "home": "Napoli",
-        "away": "Chelsea",
-        "match_title": "Napoli vs Chelsea",
-        "url": "https://yeahscore1.com/match/napoli-vs-chelsea-1451146",
-        "league": "Sports Event"
+        "time_display": "Jan 27, 19:45",
+        "teams": "Lincoln vs Bradford",
+        "url_page": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "",
-        "home": "Everton",
-        "away": "Leeds",
-        "match_title": "Everton vs Leeds",
-        "url": "https://yeahscore1.com/match/everton-vs-leeds-1379194",
-        "league": "Sports Event"
+        "time_display": "Jan 27, 20:00",
+        "teams": "Doncaster vs Leyton Orient",
+        "url_page": "https://yeahscore1.com/match/doncaster-vs-leyton-orient-1387441",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "",
-        "home": "Norwich",
-        "away": "Coventry",
-        "match_title": "Norwich vs Coventry",
-        "url": "https://yeahscore1.com/match/norwich-vs-coventry-1386897",
-        "league": "Sports Event"
+        "time_display": "Jan 27, 19:45",
+        "teams": "Notts County vs Swindon Town",
+        "url_page": "https://yeahscore1.com/match/notts-county-vs-swindon-town-1386341",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "",
-        "home": "Huddersfield",
-        "away": "Luton",
-        "match_title": "Huddersfield vs Luton",
-        "url": "https://yeahscore1.com/match/huddersfield-vs-luton-1387442",
-        "league": "Sports Event"
+        "time_display": "Jan 27, 19:45",
+        "teams": "Colchester vs Grimsby",
+        "url_page": "https://yeahscore1.com/match/colchester-vs-grimsby-1386338",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "",
-        "home": "Lincoln",
-        "away": "Bradford",
-        "match_title": "Lincoln vs Bradford",
-        "url": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
-        "league": "Sports Event"
+        "time_display": "Jan 27, 19:45",
+        "teams": "Salford City vs Chesterfield",
+        "url_page": "https://yeahscore1.com/match/salford-city-vs-chesterfield-1386342",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "",
-        "home": "Doncaster",
-        "away": "Leyton Orient",
-        "match_title": "Doncaster vs Leyton Orient",
-        "url": "https://yeahscore1.com/match/doncaster-vs-leyton-orient-1387441",
-        "league": "Sports Event"
+        "time_display": "Jan 27, 19:30",
+        "teams": "Werder Bremen vs 1899 Hoffenheim",
+        "url_page": "https://yeahscore1.com/match/werder-bremen-vs-1899-hoffenheim-1388451",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "",
-        "home": "Salford City",
-        "away": "Chesterfield",
-        "match_title": "Salford City vs Chesterfield",
-        "url": "https://yeahscore1.com/match/salford-city-vs-chesterfield-1386342",
-        "league": "Sports Event"
+        "time_display": "Jan 27, 19:30",
+        "teams": "FC St. Pauli vs RB Leipzig",
+        "url_page": "https://yeahscore1.com/match/fc-st-pauli-vs-rb-leipzig-1388449",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "",
-        "home": "Notts County",
-        "away": "Swindon Town",
-        "match_title": "Notts County vs Swindon Town",
-        "url": "https://yeahscore1.com/match/notts-county-vs-swindon-town-1386341",
-        "league": "Sports Event"
+        "time_display": "Jan 26, 20:15",
+        "teams": "FC Porto vs GIL Vicente",
+        "url_page": "https://yeahscore1.com/match/fc-porto-vs-gil-vicente-1396405",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F22%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769458500&token=f706607232d534d6e89abe21351735fd6e556672.false.1769461200-2iMKI6q%2FATyAqY%2B3QFC3nr5zmSPNl8jOBZbKSYSotto%3D",
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "",
-        "home": "Colchester",
-        "away": "Grimsby",
-        "match_title": "Colchester vs Grimsby",
-        "url": "https://yeahscore1.com/match/colchester-vs-grimsby-1386338",
-        "league": "Sports Event"
+        "time_display": "Jan 26, 19:45",
+        "teams": "Verona vs Udinese",
+        "url_page": "https://yeahscore1.com/match/verona-vs-udinese-1378083",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F24_fhd%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769456700&token=f706607232d534d6e89abe21351735fd6e556672.false.1769461200-2iMKI6q%2FATyAqY%2B3QFC3nr5zmSPNl8jOBZbKSYSotto%3D",
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "",
-        "home": "FC St. Pauli",
-        "away": "RB Leipzig",
-        "match_title": "FC St. Pauli vs RB Leipzig",
-        "url": "https://yeahscore1.com/match/fc-st-pauli-vs-rb-leipzig-1388449",
-        "league": "Sports Event"
+        "time_display": "Jan 27, 20:00",
+        "teams": "Fiorentina vs Como",
+        "url_page": "https://yeahscore1.com/match/fiorentina-vs-como-1477050",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "",
-        "home": "Werder Bremen",
-        "away": "1899 Hoffenheim",
-        "match_title": "Werder Bremen vs 1899 Hoffenheim",
-        "url": "https://yeahscore1.com/match/werder-bremen-vs-1899-hoffenheim-1388451",
-        "league": "Sports Event"
+        "time_display": "Jan 26, 20:00",
+        "teams": "Girona vs Getafe",
+        "url_page": "https://yeahscore1.com/match/girona-vs-getafe-1391022",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F25_fhd%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769457600&token=f706607232d534d6e89abe21351735fd6e556672.false.1769461200-2iMKI6q%2FATyAqY%2B3QFC3nr5zmSPNl8jOBZbKSYSotto%3D",
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "",
-        "home": "FC Porto",
-        "away": "GIL Vicente",
-        "match_title": "FC Porto vs GIL Vicente",
-        "url": "https://yeahscore1.com/match/fc-porto-vs-gil-vicente-1396405",
-        "league": "Sports Event"
+        "time_display": "Jan 26, 19:30",
+        "teams": "AD Ceuta FC vs Cultural Leonesa",
+        "url_page": "https://yeahscore1.com/match/ad-ceuta-fc-vs-cultural-leonesa-1392012",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F18%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769455800&token=f706607232d534d6e89abe21351735fd6e556672.false.1769461200-2iMKI6q%2FATyAqY%2B3QFC3nr5zmSPNl8jOBZbKSYSotto%3D",
+        "referer": "https://yeahscore1.com"
     },
     {
         "status": "Upcoming",
-        "time": "",
-        "home": "Verona",
-        "away": "Udinese",
-        "match_title": "Verona vs Udinese",
-        "url": "https://yeahscore1.com/match/verona-vs-udinese-1378083",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Fiorentina",
-        "away": "Como",
-        "match_title": "Fiorentina vs Como",
-        "url": "https://yeahscore1.com/match/fiorentina-vs-como-1477050",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Girona",
-        "away": "Getafe",
-        "match_title": "Girona vs Getafe",
-        "url": "https://yeahscore1.com/match/girona-vs-getafe-1391022",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "AD Ceuta FC",
-        "away": "Cultural Leonesa",
-        "match_title": "AD Ceuta FC vs Cultural Leonesa",
-        "url": "https://yeahscore1.com/match/ad-ceuta-fc-vs-cultural-leonesa-1392012",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Unknown Home",
-        "away": "Unknown Away",
-        "match_title": "Unknown Home vs Unknown Away",
-        "url": "https://yeahscore1.com/match/margaret-court-arena-1629481831",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Unknown Home",
-        "away": "Unknown Away",
-        "match_title": "Unknown Home vs Unknown Away",
-        "url": "https://yeahscore1.com/match/rod-laver-arena-1629481830",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Unknown Home",
-        "away": "Unknown Away",
-        "match_title": "Unknown Home vs Unknown Away",
-        "url": "https://yeahscore1.com/match/court-8-1629480756",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Unknown Home",
-        "away": "Unknown Away",
-        "match_title": "Unknown Home vs Unknown Away",
-        "url": "https://yeahscore1.com/match/kia-arena-1629480755",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Utah Mammoth",
-        "away": "Tampa Bay Lightning",
-        "match_title": "Utah Mammoth vs Tampa Bay Lightning",
-        "url": "https://yeahscore1.com/match/utah-mammoth-vs-tampa-bay-lightning-1629480130",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "New York Islanders",
-        "away": "Philadelphia Flyers",
-        "match_title": "New York Islanders vs Philadelphia Flyers",
-        "url": "https://yeahscore1.com/match/new-york-islanders-vs-philadelphia-flyers-1629480129",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Los Angeles Kings",
-        "away": "Columbus Blue Jackets",
-        "match_title": "Los Angeles Kings vs Columbus Blue Jackets",
-        "url": "https://yeahscore1.com/match/los-angeles-kings-vs-columbus-blue-jackets-1629480127",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Anaheim Ducks",
-        "away": "Edmonton Oilers",
-        "match_title": "Anaheim Ducks vs Edmonton Oilers",
-        "url": "https://yeahscore1.com/match/anaheim-ducks-vs-edmonton-oilers-1629480148",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Winnipeg Jets",
-        "away": "New Jersey Devils",
-        "match_title": "Winnipeg Jets vs New Jersey Devils",
-        "url": "https://yeahscore1.com/match/winnipeg-jets-vs-new-jersey-devils-1629480744",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "AS Karditsas",
-        "away": "Tofa\u015f",
-        "match_title": "AS Karditsas vs Tofa\u015f",
-        "url": "https://yeahscore1.com/match/as-karditsas-vs-tofas-1629481713",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Hapoel Holon",
-        "away": "Le Mans",
-        "match_title": "Hapoel Holon vs Le Mans",
-        "url": "https://yeahscore1.com/match/hapoel-holon-vs-le-mans-1629481714",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "\u00c9lan Chalon",
-        "away": "W\u00fcrzburg Baskets",
-        "match_title": "\u00c9lan Chalon vs W\u00fcrzburg Baskets",
-        "url": "https://yeahscore1.com/match/elan-chalon-vs-wurzburg-baskets-1629481715",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Orlando Magic",
-        "away": "Cleveland Cavaliers",
-        "match_title": "Orlando Magic vs Cleveland Cavaliers",
-        "url": "https://yeahscore1.com/match/orlando-magic-vs-cleveland-cavaliers-1629480126",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Indiana Pacers",
-        "away": "Atlanta Hawks",
-        "match_title": "Indiana Pacers vs Atlanta Hawks",
-        "url": "https://yeahscore1.com/match/indiana-pacers-vs-atlanta-hawks-1629480144",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Los Angeles Lakers",
-        "away": "Chicago Bulls",
-        "match_title": "Los Angeles Lakers vs Chicago Bulls",
-        "url": "https://yeahscore1.com/match/los-angeles-lakers-vs-chicago-bulls-1629480145",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Portland Trail Blazers",
-        "away": "Boston Celtics",
-        "match_title": "Portland Trail Blazers vs Boston Celtics",
-        "url": "https://yeahscore1.com/match/portland-trail-blazers-vs-boston-celtics-1629480147",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Memphis Grizzlies",
-        "away": "Houston Rockets",
-        "match_title": "Memphis Grizzlies vs Houston Rockets",
-        "url": "https://yeahscore1.com/match/memphis-grizzlies-vs-houston-rockets-1629480146",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Golden State Warriors",
-        "away": "Minnesota Timberwolves",
-        "match_title": "Golden State Warriors vs Minnesota Timberwolves",
-        "url": "https://yeahscore1.com/match/golden-state-warriors-vs-minnesota-timberwolves-1629480149",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Portland Trail Blazers",
-        "away": "Washington Wizards",
-        "match_title": "Portland Trail Blazers vs Washington Wizards",
-        "url": "https://yeahscore1.com/match/portland-trail-blazers-vs-washington-wizards-1629480739",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Turk Telekom Ankara",
-        "away": "7Bet-Lietkabelis Panevezys",
-        "match_title": "Turk Telekom Ankara vs 7Bet-Lietkabelis Panevezys",
-        "url": "https://yeahscore1.com/match/turk-telekom-ankara-vs-7bet-lietkabelis-panevezys-1629480155",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Buducnost VOLI Podgorica",
-        "away": "NINERS Chemnitz",
-        "match_title": "Buducnost VOLI Podgorica vs NINERS Chemnitz",
-        "url": "https://yeahscore1.com/match/buducnost-voli-podgorica-vs-niners-chemnitz-1629480736",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Dolomiti Energia Trento",
-        "away": "Besiktas GAIN Istanbul",
-        "match_title": "Dolomiti Energia Trento vs Besiktas GAIN Istanbul",
-        "url": "https://yeahscore1.com/match/dolomiti-energia-trento-vs-besiktas-gain-istanbul-1629480737",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Paris Basketball",
-        "away": "Real Madrid Basketball",
-        "match_title": "Paris Basketball vs Real Madrid Basketball",
-        "url": "https://yeahscore1.com/match/paris-basketball-vs-real-madrid-basketball-1629480738",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Pakistan",
-        "away": "New Zealand",
-        "match_title": "Pakistan vs New Zealand",
-        "url": "https://yeahscore1.com/match/pakistan-vs-new-zealand-1629480151",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "TBA",
-        "away": "TBA",
-        "match_title": "TBA vs TBA",
-        "url": "https://yeahscore1.com/match/tba-vs-tba-1629480150",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Sri Lanka",
-        "away": "England",
-        "match_title": "Sri Lanka vs England",
-        "url": "https://yeahscore1.com/match/sri-lanka-vs-england-1629480152",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Gujarat Giants",
-        "away": "Delhi Capitals",
-        "match_title": "Gujarat Giants vs Delhi Capitals",
-        "url": "https://yeahscore1.com/match/gujarat-giants-vs-delhi-capitals-1629480153",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "South Africa",
-        "away": "West Indies",
-        "match_title": "South Africa vs West Indies",
-        "url": "https://yeahscore1.com/match/south-africa-vs-west-indies-1629480154",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Unknown Home",
-        "away": "Unknown Away",
-        "match_title": "Unknown Home vs Unknown Away",
-        "url": "https://yeahscore1.com/match/season-5-delhi-dangal-warriors-vs-tigers-of-mumbai-dangals-1629481712",
-        "league": "Sports Event"
-    },
-    {
-        "status": "Upcoming",
-        "time": "",
-        "home": "Unknown Home",
-        "away": "Unknown Away",
-        "match_title": "Unknown Home vs Unknown Away",
-        "url": "https://yeahscore1.com/match/es2-alula-tour-stage-1-1629480735",
-        "league": "Sports Event"
+        "time_display": "Jan 27, 00:00",
+        "teams": "Los Angeles Kings vs Columbus Blue Jackets",
+        "url_page": "https://yeahscore1.com/match/los-angeles-kings-vs-columbus-blue-jackets-1629480127",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     }
 ]
