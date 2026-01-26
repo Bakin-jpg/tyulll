@@ -4,32 +4,47 @@ import time
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
-def get_stream_url(page, match_url):
+def get_real_stream_url(page, match_url):
     """
-    Membuka halaman detail dan menangkap request .m3u8
+    Fungsi ini masuk ke dalam Iframe player dan mengekstrak variabel 'var m3u8'
     """
-    m3u8_url = None
-    
-    def handle_request(request):
-        nonlocal m3u8_url
-        if ".m3u8" in request.url and m3u8_url is None:
-            m3u8_url = request.url
-
     try:
-        page.on("request", handle_request)
-        # Timeout 20 detik per halaman match
-        page.goto(match_url, timeout=20000)
+        print(f"   -> Membuka halaman match: {match_url}")
+        page.goto(match_url, timeout=30000, wait_until="domcontentloaded")
         
-        # Coba tunggu iframe atau canvas player
+        # 1. Cari Iframe Player
+        # Player biasanya ada di dalam iframe yang src-nya mengandung 'xiaolin3' atau 'wowhaha'
         try:
-            page.wait_for_selector('iframe, canvas', timeout=5000)
+            iframe_element = page.wait_for_selector("iframe[src*='xiaolin3'], iframe[src*='wowhaha'], iframe[src*='m3u8=']", timeout=5000)
         except:
-            pass
+            print("   -> Iframe player tidak ditemukan via selector, mencoba sniffing...")
+            return None
+
+        if iframe_element:
+            player_url = iframe_element.get_attribute("src")
+            print(f"   -> Player Wrapper ditemukan: {player_url}")
             
-        page.wait_for_timeout(4000) # Tunggu network traffic
-        page.remove_listener("request", handle_request)
-        return m3u8_url
+            # 2. Buka URL Player tersebut secara langsung
+            # Kita buka di tab yang sama agar cepat
+            page.goto(player_url, timeout=30000, wait_until="domcontentloaded")
+            
+            # 3. Ambil Source Code HTML
+            player_html = page.content()
+            
+            # 4. Cari variabel var m3u8 = '...'; menggunakan Regex
+            # Pola: var m3u8 = 'LINK';
+            match = re.search(r"var\s+m3u8\s*=\s*'([^']+)'", player_html)
+            
+            if match:
+                real_url = match.group(1)
+                print(f"   -> BERHASIL! Link asli didapat.")
+                return real_url
+            else:
+                print("   -> Gagal mengekstrak var m3u8 dari HTML.")
+                return None
+                
     except Exception as e:
+        print(f"   -> Error extracting: {e}")
         return None
 
 def clean_text(text):
@@ -47,156 +62,102 @@ def main():
         )
         page = context.new_page()
 
-        print("1. Membuka Halaman Utama...")
-        page.goto(base_url + "/", timeout=60000)
-        page.wait_for_timeout(5000) # Tunggu render VUE JS
-        
-        html = page.content()
-        soup = BeautifulSoup(html, 'html.parser')
-
-        # ==========================================
-        # BAGIAN 1: SCRAPE LIVE MATCHES
-        # ==========================================
-        print("--- Memproses Live Matches ---")
-        live_container = soup.select_one('.b-live-matches')
-        if live_container:
-            # Di dalam live, biasanya dikelompokkan per Liga di dalam .collapse-group
-            league_groups = live_container.select('.collapse-group')
+        print("1. Mengambil Daftar Pertandingan...")
+        try:
+            page.goto(base_url + "/", timeout=60000)
+            page.wait_for_timeout(3000)
             
-            for group in league_groups:
-                # Ambil Nama Liga (Contoh: Portugal - Primeira Liga)
-                league_title_el = group.select_one('.collapse-nav-title-name')
-                full_league_name = clean_text(league_title_el.get_text()) if league_title_el else "Live League"
+            html = page.content()
+            soup = BeautifulSoup(html, 'html.parser')
+
+            # --- LOGIKA SCRAPE LIST MATCH (Sama seperti sebelumnya) ---
+            # Kita gabungkan Live & Upcoming jadi satu loop sederhana
+            
+            # 1. Cari Live Matches
+            live_items = soup.select('.b-live-matches .collapse-match')
+            for item in live_items:
+                try:
+                    link = item.select_one('a.link-wrapper')['href']
+                    home = clean_text(item.select_one('.left-column .name-club').get_text())
+                    away = clean_text(item.select_one('.right-column .name-club').get_text())
+                    
+                    # Cari nama liga (naik ke parent)
+                    league_el = item.find_parent(class_='collapse-group').select_one('.collapse-nav-title-name')
+                    league = clean_text(league_el.get_text()) if league_el else "Live League"
+
+                    all_matches.append({
+                        "teams": f"{home} vs {away}",
+                        "league": league,
+                        "time": "LIVE",
+                        "type": "LIVE",
+                        "url_page": base_url + link,
+                        "stream_url": None
+                    })
+                except: continue
+
+            # 2. Cari Upcoming (Batasi 15 teratas agar cepat)
+            upcoming_items = soup.select('.b-live-schedule .item')
+            for item in upcoming_items[:15]: 
+                try:
+                    link_tag = item.select_one('a.link-wrapper')
+                    if not link_tag: continue
+                    link = link_tag['href']
+                    
+                    # Logic nama tim
+                    home_el = item.select_one('.left-column .name-club')
+                    away_el = item.select_one('.right-column .name-club')
+                    if home_el and away_el:
+                        teams = f"{clean_text(home_el.get_text())} vs {clean_text(away_el.get_text())}"
+                    else:
+                        teams = clean_text(item.select_one('.item-title').get_text())
+
+                    time_val = clean_text(item.select_one('.time').get_text())
+                    
+                    # Cari nama liga
+                    league_el = item.find_parent(class_='collapse-group').select_one('.collapse-nav-title-name')
+                    league = clean_text(league_el.get_text()) if league_el else "Upcoming"
+
+                    all_matches.append({
+                        "teams": teams,
+                        "league": league,
+                        "time": time_val,
+                        "type": "UPCOMING",
+                        "url_page": base_url + link,
+                        "stream_url": None
+                    })
+                except: continue
+
+            print(f"Total Match ditemukan: {len(all_matches)}")
+
+            # --- PROCESS DEEP LINKING ---
+            print("2. Mengekstrak Link Stream (Deep Extraction)...")
+            
+            # Proses hanya 20 match pertama untuk menghindari Timeout GitHub Actions
+            for i, match in enumerate(all_matches[:50]):
+                print(f"[{i+1}] {match['teams']} ({match['type']})")
                 
-                # Tebak Sport dari ikon bendera atau default Football untuk Live (karena mayoritas bola)
-                # Atau kita set "Live Sports" biar aman
-                sport_name = "Football" # Default, bisa disesuaikan jika ada ikon bola/basket
+                # Hanya proses jika LIVE atau main hari ini (ada kata 'Today' atau jam tanpa tanggal)
+                # Sederhananya: kita proses yang LIVE dulu
+                if match['type'] == 'LIVE' or ':' in match['time']: 
+                    page_extractor = context.new_page()
+                    real_link = get_real_stream_url(page_extractor, match['url_page'])
+                    page_extractor.close()
+                    
+                    if real_link:
+                        match['stream_url'] = real_link
+                    else:
+                        match['stream_url'] = None
                 
-                # Cari match di dalam grup liga ini
-                matches = group.select('.collapse-match')
-                for match in matches:
-                    try:
-                        link_tag = match.select_one('a.link-wrapper')
-                        if not link_tag: continue
-                        match_url = base_url + link_tag['href']
+            browser.close()
 
-                        # Ambil nama tim
-                        home_el = match.select_one('.left-column .name-club')
-                        away_el = match.select_one('.right-column .name-club')
-                        home = clean_text(home_el.get_text()) if home_el else "Home"
-                        away = clean_text(away_el.get_text()) if away_el else "Away"
+        except Exception as e:
+            print(f"Critical Error: {e}")
+            browser.close()
 
-                        # Waktu (Menit main)
-                        inplay_el = match.select_one('.inplay')
-                        game_time = clean_text(inplay_el.get_text()) if inplay_el else "LIVE"
-
-                        all_matches.append({
-                            "type": "LIVE",
-                            "sport": sport_name,
-                            "league": full_league_name,
-                            "teams": f"{home} vs {away}",
-                            "time_display": f"LIVE {game_time}",
-                            "url_page": match_url,
-                            "stream_url": None # Nanti diisi
-                        })
-                    except: continue
-
-        # ==========================================
-        # BAGIAN 2: SCRAPE SCHEDULE / UPCOMING
-        # ==========================================
-        print("--- Memproses Upcoming Schedule ---")
-        schedule_container = soup.select_one('.b-live-schedule')
-        if schedule_container:
-            # Cari Header Sport (Football, Basketball, Cricket, dll)
-            # Struktur: h2 (Sport) -> div (Wrapper Liga)
-            sport_headers = schedule_container.select('h2.b-bg-secondary')
-            
-            for h2 in sport_headers:
-                # 1. Ambil Nama Sport (Misal: "Football (15)")
-                raw_sport = clean_text(h2.get_text())
-                # Hapus angka dalam kurung -> "Football"
-                sport_name = re.sub(r'\s*\(\d+\)', '', raw_sport)
-                
-                # 2. Cari Div konten setelah h2 (Sibling)
-                # Di HTML Vue kadang ada div pembungkus
-                content_wrapper = h2.find_next_sibling('div')
-                if not content_wrapper: continue
-
-                # 3. Loop Liga di dalam Sport tersebut
-                league_groups = content_wrapper.select('.collapse-group')
-                
-                for l_group in league_groups:
-                    l_title_el = l_group.select_one('.collapse-nav-title-name')
-                    league_name = clean_text(l_title_el.get_text()) if l_title_el else "Unknown League"
-
-                    # 4. Loop Match di dalam Liga tersebut
-                    items = l_group.select('.item')
-                    for item in items:
-                        try:
-                            link_tag = item.select_one('a.link-wrapper')
-                            if not link_tag: continue
-                            match_url = base_url + link_tag['href']
-
-                            # Nama Tim (Cek kiri kanan, kalau gak ada cek title tengah)
-                            home_el = item.select_one('.left-column .name-club')
-                            away_el = item.select_one('.right-column .name-club')
-                            
-                            if home_el and away_el:
-                                teams = f"{clean_text(home_el.get_text())} vs {clean_text(away_el.get_text())}"
-                            else:
-                                # Kasus Tennis/Single player
-                                title_el = item.select_one('.item-title')
-                                teams = clean_text(title_el.get_text()) if title_el else "Event"
-
-                            # Waktu
-                            time_el = item.select_one('.time')
-                            match_time = clean_text(time_el.get_text(" ")) if time_el else ""
-
-                            all_matches.append({
-                                "type": "UPCOMING",
-                                "sport": sport_name,
-                                "league": league_name,
-                                "teams": teams,
-                                "time_display": match_time,
-                                "url_page": match_url,
-                                "stream_url": None
-                            })
-                        except: continue
-
-        # ==========================================
-        # BAGIAN 3: AMBIL LINK STREAM (Deep Scraping)
-        # ==========================================
-        print(f"Total Match Terdeteksi: {len(all_matches)}")
-        print("Mulai mengambil link stream (Max 30 match prioritas)...")
-
-        # Batasi jumlah match agar github action tidak timeout
-        # Prioritas: LIVE duluan, baru UPCOMING
-        # Slice [:30] artinya hanya ambil 30 pertama. Naikkan jika perlu.
-        processed_matches = []
-        for i, match in enumerate(all_matches[:80]): 
-            print(f"[{i+1}/{len(all_matches[:80])}] Checking: {match['teams']} ({match['league']})")
-            
-            # Logic: Hanya ambil stream jika LIVE atau Main Hari Ini (cek string date)
-            # Untuk demo ini kita ambil semua top 30
-            detail_page = context.new_page()
-            stream = get_stream_url(detail_page, match['url_page'])
-            detail_page.close()
-            
-            match['stream_url'] = stream
-            match['referer'] = base_url
-            processed_matches.append(match)
-            
-            if stream:
-                print(f"   -> STREAM FOUND!")
-            else:
-                print(f"   -> No Stream / Belum mulai")
-
-        browser.close()
-
-    # Simpan JSON
+    # Simpan
     with open("matches.json", "w", encoding="utf-8") as f:
-        json.dump(processed_matches, f, indent=4)
-        print("Data tersimpan di matches.json")
+        json.dump(all_matches, f, indent=4)
+        print("Selesai. Data tersimpan.")
 
 if __name__ == "__main__":
     main()
