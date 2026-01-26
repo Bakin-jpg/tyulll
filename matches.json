@@ -1,1 +1,137 @@
-
+[
+    {
+        "teams": "Lincoln vs Bradford",
+        "league": "League One",
+        "time": "Jan 27, 19:45",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "Huddersfield vs Luton",
+        "league": "League One",
+        "time": "Jan 27, 19:45",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/huddersfield-vs-luton-1387442",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "Doncaster vs Leyton Orient",
+        "league": "League One",
+        "time": "Jan 27, 20:00",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/doncaster-vs-leyton-orient-1387441",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "Salford City vs Chesterfield",
+        "league": "League Two",
+        "time": "Jan 27, 19:45",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/salford-city-vs-chesterfield-1386342",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "Notts County vs Swindon Town",
+        "league": "League Two",
+        "time": "Jan 27, 19:45",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/notts-county-vs-swindon-town-1386341",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "Colchester vs Grimsby",
+        "league": "League Two",
+        "time": "Jan 27, 19:45",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/colchester-vs-grimsby-1386338",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "FC St. Pauli vs RB Leipzig",
+        "league": "Bundesliga",
+        "time": "Jan 27, 19:30",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/fc-st-pauli-vs-rb-leipzig-1388449",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "Werder Bremen vs 1899 Hoffenheim",
+        "league": "Bundesliga",
+        "time": "Jan 27, 19:30",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/werder-bremen-vs-1899-hoffenheim-1388451",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "Fiorentina vs Como",
+        "league": "Coppa Italia",
+        "time": "Jan 27, 20:00",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/fiorentina-vs-como-1477050",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "Margaret Court Arena",
+        "league": "Australian Open",
+        "time": "Jan 27, 00:00",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481831",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "Rod Laver Arena",
+        "league": "Australian Open",
+        "time": "Jan 27, 00:30",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481830",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "Court 8",
+        "league": "Australian Open",
+        "time": "Jan 28, 00:00",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/court-8-1629480756",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "Kia Arena",
+        "league": "Australian Open",
+        "time": "Jan 28, 00:00",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/kia-arena-1629480755",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "Court 5",
+        "league": "Australian Open",
+        "time": "Jan 28, 00:00",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/court-5-1629480750",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "Court 14",
+        "league": "Australian Open",
+        "time": "Jan 28, 00:00",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/court-14-1629480749",
+        "stream_url": null,
+        "referer": null
+    }
+]
