@@ -1,19 +1,20 @@
-name: Auto Scrape API
+name: Scrape YeahScore Full Stream
 
 on:
-  workflow_dispatch:      # Bisa diklik manual
+  workflow_dispatch:
   schedule:
-    - cron: '0 */1 * * *' # Jalan otomatis setiap 1 jam
+    - cron: '*/30 * * * *' # Jalan tiap 30 menit (jangan terlalu sering karena berat)
 
 permissions:
-  contents: write         # Izin untuk update file di repo
+  contents: write
 
 jobs:
-  scrape_and_update:
+  scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 15 # Tambah waktu timeout
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Setup Python
@@ -21,19 +22,18 @@ jobs:
         with:
           python-version: '3.9'
 
-      - name: Install Dependencies
+      - name: Install Libraries
         run: |
           pip install playwright beautifulsoup4
           playwright install chromium
 
-      - name: Jalankan Scraper
-        run: python scraper.py
+      - name: Run Scraper
+        run: python scrape.py
 
-      - name: Commit dan Push JSON
+      - name: Commit Results
         run: |
-          git config --global user.name "GitHub Action Bot"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "Bot Scraper"
+          git config --global user.email "bot@github.com"
           git add matches.json
-          # Cek jika ada perubahan, kalau tidak ada, jangan error
-          git commit -m "Update API matches.json [skip ci]" || exit 0
+          git commit -m "Update matches with stream links" || exit 0
           git push
