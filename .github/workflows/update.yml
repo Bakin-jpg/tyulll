@@ -1,37 +1,29 @@
-name: Update YeahScore M3U
+name: Scrape and Update Stream API
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
-  workflow_dispatch:
-  push:
-    branches: [ main ]
+    - cron: '*/30 * * * *'  # Runs every 30 minutes
+  workflow_dispatch:  # Allows manual run
 
 jobs:
-  update:
+  scrape:
     runs-on: ubuntu-latest
-    
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-    
-    - name: Setup Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
-    
-    - name: Install dependencies
-      run: pip install requests
-    
-    - name: Run script
-      run: python yeahscore_to_m3u.py
-    
-    - name: Commit and push
-      run: |
-        git config --local user.email "github-actions@github.com"
-        git config --local user.name "GitHub Actions"
-        git add yeahscore.m3u debug_info.json
-        git commit -m "Update playlist $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes"
-        git push
+      - uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install System Dependencies
+        run: sudo apt-get update && sudo apt-get install -y chromium-chromedriver
+      - name: Install Python Packages
+        run: pip install selenium webdriver-manager requests
+      - name: Run Scraper Script
+        run: python yeahscore_to_m3u.py
+      - name: Commit and Push API Data
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'github-actions@github.com'
+          git add yeahscore_streams_api.json
+          git commit -m "🤖 Auto-scrape: update stream API data" || echo "No changes to commit"
+          git push
