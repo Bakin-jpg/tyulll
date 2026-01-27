@@ -3,7 +3,13 @@ name: Scrape YeahScore Full Stream
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *' # Tetap 30 menit agar akun GitHub aman (tidak kena limit usage)
+    - cron: '*/5 * * * *' # Jalan tiap 5 menit
+
+# FITUR ANTI BENTROK
+# Jika bot baru jalan, bot lama yang lelet akan dibatalkan otomatis
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -11,7 +17,7 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 25 # DIUBAH: Naikkan ke 25 menit (deep scrape butuh waktu lebih lama)
+    timeout-minutes: 10 # 5 menit terlalu mepet, kasih 10 menit
 
     steps:
       - name: Checkout
@@ -20,13 +26,13 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10' # Disarankan pakai 3.10 untuk kompatibilitas Playwright terbaru
+          python-version: '3.10'
 
       - name: Install Libraries
         run: |
           pip install playwright beautifulsoup4
           playwright install chromium
-          playwright install-deps # DITAMBAH: Wajib ada! Menginstall dependency sistem Ubuntu agar browser tidak crash
+          playwright install-deps
 
       - name: Run Scraper
         run: python scrape.py
@@ -37,4 +43,8 @@ jobs:
           git config --global user.email "bot@github.com"
           git add matches.json
           git commit -m "Update matches with stream links" || exit 0
+          
+          # Tarik dulu update terbaru dari server sebelum push
+          git pull --rebase origin main
+          
           git push
