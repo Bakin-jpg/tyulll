@@ -6,17 +6,7 @@
         "teams": "Home vs Away",
         "time_display": "LIVE LIVE",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481831",
-        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F43%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769472000&token=340a6fb83ea103cb7b7067e5c9a3efc7d3585fb4.false.1769493600-tmOxnNhUfgJuTgXvqRSj3rTXkSdCpGu3AV79l%2BHiYgw%3D",
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "sport": "Football",
-        "league": "League One",
-        "teams": "Lincoln vs Bradford",
-        "time_display": "Jan 27,  \n                19:45",
-        "url_page": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
-        "stream_url": null,
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F43%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769472000&token=a1c62cc2a5b439d8c4b82772a2869518588fe1fc.false.1769493600-E6OqbEbpLmEDf5Tezf2Y2uVRqtkeDDI4jx7C2ZLtx3Y%3D",
         "referer": "https://yeahscore1.com"
     },
     {
@@ -26,6 +16,16 @@
         "teams": "Huddersfield vs Luton",
         "time_display": "Jan 27,  \n                19:45",
         "url_page": "https://yeahscore1.com/match/huddersfield-vs-luton-1387442",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "League One",
+        "teams": "Lincoln vs Bradford",
+        "time_display": "Jan 27,  \n                19:45",
+        "url_page": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
         "stream_url": null,
         "referer": "https://yeahscore1.com"
     },
