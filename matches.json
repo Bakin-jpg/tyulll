@@ -1,1 +1,302 @@
-
+[
+    {
+        "type": "LIVE",
+        "sport": "Football",
+        "league": "International - NBA",
+        "teams": "Golden State Warriors vs Minnesota Timberwolves",
+        "time_display": "LIVE LIVE",
+        "url_page": "https://yeahscore1.com/match/golden-state-warriors-vs-minnesota-timberwolves-1629480149",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F17%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769481000&token=1f2bfee720db8c9553110cd06263e45485ad4c01.false.1769482800-ZjQiOCUv5M%2BEZEuuOpyLZhOzvDjOni2PPwnc0fHOEQA%3D",
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "LIVE",
+        "sport": "Football",
+        "league": "Australia - Australian Open",
+        "teams": "Home vs Away",
+        "time_display": "LIVE LIVE",
+        "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481830",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn-bp-livestream.rumsport.com%2Fstream%2F15%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769473800&token=1f2bfee720db8c9553110cd06263e45485ad4c01.false.1769482800-ZjQiOCUv5M%2BEZEuuOpyLZhOzvDjOni2PPwnc0fHOEQA%3D",
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "LIVE",
+        "sport": "Football",
+        "league": "Australia - Australian Open",
+        "teams": "Home vs Away",
+        "time_display": "LIVE LIVE",
+        "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481831",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F43%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769472000&token=1f2bfee720db8c9553110cd06263e45485ad4c01.false.1769482800-ZjQiOCUv5M%2BEZEuuOpyLZhOzvDjOni2PPwnc0fHOEQA%3D",
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "League One",
+        "teams": "Huddersfield vs Luton",
+        "time_display": "Jan 27,  \n                19:45",
+        "url_page": "https://yeahscore1.com/match/huddersfield-vs-luton-1387442",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "League One",
+        "teams": "Lincoln vs Bradford",
+        "time_display": "Jan 27,  \n                19:45",
+        "url_page": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "League One",
+        "teams": "Doncaster vs Leyton Orient",
+        "time_display": "Jan 27,  \n                20:00",
+        "url_page": "https://yeahscore1.com/match/doncaster-vs-leyton-orient-1387441",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "League Two",
+        "teams": "Salford City vs Chesterfield",
+        "time_display": "Jan 27,  \n                19:45",
+        "url_page": "https://yeahscore1.com/match/salford-city-vs-chesterfield-1386342",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "League Two",
+        "teams": "Notts County vs Swindon Town",
+        "time_display": "Jan 27,  \n                19:45",
+        "url_page": "https://yeahscore1.com/match/notts-county-vs-swindon-town-1386341",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "League Two",
+        "teams": "Colchester vs Grimsby",
+        "time_display": "Jan 27,  \n                19:45",
+        "url_page": "https://yeahscore1.com/match/colchester-vs-grimsby-1386338",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "Bundesliga",
+        "teams": "FC St. Pauli vs RB Leipzig",
+        "time_display": "Jan 27,  \n                19:30",
+        "url_page": "https://yeahscore1.com/match/fc-st-pauli-vs-rb-leipzig-1388449",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "Bundesliga",
+        "teams": "Werder Bremen vs 1899 Hoffenheim",
+        "time_display": "Jan 27,  \n                19:30",
+        "url_page": "https://yeahscore1.com/match/werder-bremen-vs-1899-hoffenheim-1388451",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "Coppa Italia",
+        "teams": "Fiorentina vs Como",
+        "time_display": "Jan 27,  \n                20:00",
+        "url_page": "https://yeahscore1.com/match/fiorentina-vs-como-1477050",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Tennis",
+        "league": "Australian Open",
+        "teams": "Court 7",
+        "time_display": "Jan 28,  \n                00:00",
+        "url_page": "https://yeahscore1.com/match/court-7-1629480753",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Tennis",
+        "league": "Australian Open",
+        "teams": "Court 6",
+        "time_display": "Jan 28,  \n                00:00",
+        "url_page": "https://yeahscore1.com/match/court-6-1629480751",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Tennis",
+        "league": "Australian Open",
+        "teams": "Court 12",
+        "time_display": "Jan 28,  \n                00:00",
+        "url_page": "https://yeahscore1.com/match/court-12-1629480754",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Tennis",
+        "league": "Australian Open",
+        "teams": "ANZ Arena",
+        "time_display": "Jan 28,  \n                00:00",
+        "url_page": "https://yeahscore1.com/match/anz-arena-1629480747",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Tennis",
+        "league": "Australian Open",
+        "teams": "Court 5",
+        "time_display": "Jan 28,  \n                00:00",
+        "url_page": "https://yeahscore1.com/match/court-5-1629480750",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Tennis",
+        "league": "Australian Open",
+        "teams": "Kia Arena",
+        "time_display": "Jan 28,  \n                00:00",
+        "url_page": "https://yeahscore1.com/match/kia-arena-1629480755",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Tennis",
+        "league": "Australian Open",
+        "teams": "Court 8",
+        "time_display": "Jan 28,  \n                00:00",
+        "url_page": "https://yeahscore1.com/match/court-8-1629480756",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Hockey",
+        "league": "NHL",
+        "teams": "Winnipeg Jets vs New Jersey Devils",
+        "time_display": "Jan 28,  \n                00:00",
+        "url_page": "https://yeahscore1.com/match/winnipeg-jets-vs-new-jersey-devils-1629480744",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Hockey",
+        "league": "NHL",
+        "teams": "Nashville Predators vs Boston Bruins",
+        "time_display": "Jan 28,  \n                00:00",
+        "url_page": "https://yeahscore1.com/match/nashville-predators-vs-boston-bruins-1629480745",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Hockey",
+        "league": "NHL",
+        "teams": "Buffalo Sabres vs Toronto Maple Leafs",
+        "time_display": "Jan 28,  \n                00:00",
+        "url_page": "https://yeahscore1.com/match/buffalo-sabres-vs-toronto-maple-leafs-1629480740",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Hockey",
+        "league": "NHL",
+        "teams": "Vegas Golden Knights vs Montr\u00e9al Canadiens",
+        "time_display": "Jan 28,  \n                00:00",
+        "url_page": "https://yeahscore1.com/match/vegas-golden-knights-vs-montreal-canadiens-1629480741",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Basketball",
+        "league": "Basketball Champions League",
+        "teams": "AS Karditsas vs Tofa\u015f",
+        "time_display": "Jan 27,  \n                17:30",
+        "url_page": "https://yeahscore1.com/match/as-karditsas-vs-tofas-1629481713",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Basketball",
+        "league": "Basketball Champions League",
+        "teams": "Hapoel Holon vs Le Mans",
+        "time_display": "Jan 27,  \n                18:30",
+        "url_page": "https://yeahscore1.com/match/hapoel-holon-vs-le-mans-1629481714",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Basketball",
+        "league": "Basketball Champions League",
+        "teams": "\u00c9lan Chalon vs W\u00fcrzburg Baskets",
+        "time_display": "Jan 27,  \n                19:00",
+        "url_page": "https://yeahscore1.com/match/elan-chalon-vs-wurzburg-baskets-1629481715",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Basketball",
+        "league": "NBA",
+        "teams": "Golden State Warriors vs Minnesota Timberwolves",
+        "time_display": "Jan 27,  \n                02:30",
+        "url_page": "https://yeahscore1.com/match/golden-state-warriors-vs-minnesota-timberwolves-1629480149",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F17%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769481000&token=1f2bfee720db8c9553110cd06263e45485ad4c01.false.1769482800-ZjQiOCUv5M%2BEZEuuOpyLZhOzvDjOni2PPwnc0fHOEQA%3D",
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Basketball",
+        "league": "EuroCup",
+        "teams": "Turk Telekom Ankara vs 7Bet-Lietkabelis Panevezys",
+        "time_display": "Jan 27,  \n                16:00",
+        "url_page": "https://yeahscore1.com/match/turk-telekom-ankara-vs-7bet-lietkabelis-panevezys-1629480155",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Basketball",
+        "league": "EuroCup",
+        "teams": "Buducnost VOLI Podgorica vs NINERS Chemnitz",
+        "time_display": "Jan 27,  \n                18:00",
+        "url_page": "https://yeahscore1.com/match/buducnost-voli-podgorica-vs-niners-chemnitz-1629480736",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Basketball",
+        "league": "EuroCup",
+        "teams": "Dolomiti Energia Trento vs Besiktas GAIN Istanbul",
+        "time_display": "Jan 27,  \n                19:00",
+        "url_page": "https://yeahscore1.com/match/dolomiti-energia-trento-vs-besiktas-gain-istanbul-1629480737",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    }
+]
