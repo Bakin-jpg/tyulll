@@ -1,1 +1,152 @@
-[]
+[
+    {
+        "type": "LIVE",
+        "sport": "Football",
+        "league": "International - England tour of Sri Lanka",
+        "teams": "Sri Lanka vs England",
+        "time_display": "LIVE LIVE",
+        "url_page": "https://yeahscore1.com/match/sri-lanka-vs-england-1629480152",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "LIVE",
+        "sport": "Football",
+        "league": "Australia - Australian Open",
+        "teams": "Home vs Away",
+        "time_display": "LIVE LIVE",
+        "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481847",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "LIVE",
+        "sport": "Football",
+        "league": "Australia - Australian Open",
+        "teams": "Home vs Away",
+        "time_display": "LIVE LIVE",
+        "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481831",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "LIVE",
+        "sport": "Football",
+        "league": "International - ICC Under-19 Cricket World Cup",
+        "teams": "Pakistan vs New Zealand",
+        "time_display": "LIVE LIVE",
+        "url_page": "https://yeahscore1.com/match/pakistan-vs-new-zealand-1629480151",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "LIVE",
+        "sport": "Football",
+        "league": "International - ICC Under-19 Cricket World Cup",
+        "teams": "Zimbabwe vs India",
+        "time_display": "LIVE LIVE",
+        "url_page": "https://yeahscore1.com/match/zimbabwe-vs-india-1629480150",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "League One",
+        "teams": "Huddersfield vs Luton",
+        "time_display": "Jan 27,  \n                19:45",
+        "url_page": "https://yeahscore1.com/match/huddersfield-vs-luton-1387442",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "League One",
+        "teams": "Lincoln vs Bradford",
+        "time_display": "Jan 27,  \n                19:45",
+        "url_page": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "League One",
+        "teams": "Doncaster vs Leyton Orient",
+        "time_display": "Jan 27,  \n                20:00",
+        "url_page": "https://yeahscore1.com/match/doncaster-vs-leyton-orient-1387441",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "League Two",
+        "teams": "Salford City vs Chesterfield",
+        "time_display": "Jan 27,  \n                19:45",
+        "url_page": "https://yeahscore1.com/match/salford-city-vs-chesterfield-1386342",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "League Two",
+        "teams": "Notts County vs Swindon Town",
+        "time_display": "Jan 27,  \n                19:45",
+        "url_page": "https://yeahscore1.com/match/notts-county-vs-swindon-town-1386341",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "League Two",
+        "teams": "Colchester vs Grimsby",
+        "time_display": "Jan 27,  \n                19:45",
+        "url_page": "https://yeahscore1.com/match/colchester-vs-grimsby-1386338",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "Bundesliga",
+        "teams": "FC St. Pauli vs RB Leipzig",
+        "time_display": "Jan 27,  \n                19:30",
+        "url_page": "https://yeahscore1.com/match/fc-st-pauli-vs-rb-leipzig-1388449",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "Bundesliga",
+        "teams": "Werder Bremen vs 1899 Hoffenheim",
+        "time_display": "Jan 27,  \n                19:30",
+        "url_page": "https://yeahscore1.com/match/werder-bremen-vs-1899-hoffenheim-1388451",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Football",
+        "league": "Coppa Italia",
+        "teams": "Fiorentina vs Como",
+        "time_display": "Jan 27,  \n                20:00",
+        "url_page": "https://yeahscore1.com/match/fiorentina-vs-como-1477050",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Basketball",
+        "league": "NBA G League",
+        "teams": "Mexico City Capitanes vs Iowa Wolves",
+        "time_display": "Jan 28,  \n                00:30",
+        "url_page": "https://yeahscore1.com/match/mexico-city-capitanes-vs-iowa-wolves-1629480758",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    }
+]
