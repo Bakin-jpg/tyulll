@@ -1,21 +1,12 @@
 [
     {
-        "teams": "Utah Mammoth vs Tampa Bay Lightning",
+        "teams": "Anaheim Ducks vs Edmonton Oilers",
         "league": "International - NHL",
         "time": "LIVE LIVE",
         "type": "LIVE",
-        "url_page": "https://yeahscore1.com/match/utah-mammoth-vs-tampa-bay-lightning-1629480130",
+        "url_page": "https://yeahscore1.com/match/anaheim-ducks-vs-edmonton-oilers-1629480148",
         "stream_url": null,
-        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F46%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769472000&token=fb2e29d795b4ee8f513ce3da682301535b7809d8.false.1769461200-%2FTzAL2XJJ7tgb74lYNXY%2BSIXaKP8DbEUlaGTi92UAWo%3D"
-    },
-    {
-        "teams": "Los Angeles Kings vs Columbus Blue Jackets",
-        "league": "International - NHL",
-        "time": "LIVE LIVE",
-        "type": "LIVE",
-        "url_page": "https://yeahscore1.com/match/los-angeles-kings-vs-columbus-blue-jackets-1629480127",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F33%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769472000&token=fb2e29d795b4ee8f513ce3da682301535b7809d8.false.1769461200-%2FTzAL2XJJ7tgb74lYNXY%2BSIXaKP8DbEUlaGTi92UAWo%3D"
+        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F44%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769477400&token=2751c5726303a680c076bdcd02ea91314013ada6.false.1769472000-VZI37fb55Pp1S%2FVXa4D%2BNPico3ILTd2j935R6ylH%2FGg%3D"
     },
     {
         "teams": "New York Islanders vs Philadelphia Flyers",
@@ -24,7 +15,43 @@
         "type": "LIVE",
         "url_page": "https://yeahscore1.com/match/new-york-islanders-vs-philadelphia-flyers-1629480129",
         "stream_url": null,
-        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F35%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769472000&token=fb2e29d795b4ee8f513ce3da682301535b7809d8.false.1769461200-%2FTzAL2XJJ7tgb74lYNXY%2BSIXaKP8DbEUlaGTi92UAWo%3D"
+        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F33%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769472000&token=2751c5726303a680c076bdcd02ea91314013ada6.false.1769472000-VZI37fb55Pp1S%2FVXa4D%2BNPico3ILTd2j935R6ylH%2FGg%3D"
+    },
+    {
+        "teams": "Utah Mammoth vs Tampa Bay Lightning",
+        "league": "International - NHL",
+        "time": "LIVE LIVE",
+        "type": "LIVE",
+        "url_page": "https://yeahscore1.com/match/utah-mammoth-vs-tampa-bay-lightning-1629480130",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F46%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769472000&token=2751c5726303a680c076bdcd02ea91314013ada6.false.1769472000-VZI37fb55Pp1S%2FVXa4D%2BNPico3ILTd2j935R6ylH%2FGg%3D"
+    },
+    {
+        "teams": "Portland Trail Blazers vs Boston Celtics",
+        "league": "International - NBA",
+        "time": "LIVE LIVE",
+        "type": "LIVE",
+        "url_page": "https://yeahscore1.com/match/portland-trail-blazers-vs-boston-celtics-1629480147",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F3%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769475600&token=2751c5726303a680c076bdcd02ea91314013ada6.false.1769472000-VZI37fb55Pp1S%2FVXa4D%2BNPico3ILTd2j935R6ylH%2FGg%3D"
+    },
+    {
+        "teams": "Los Angeles Lakers vs Chicago Bulls",
+        "league": "International - NBA",
+        "time": "LIVE LIVE",
+        "type": "LIVE",
+        "url_page": "https://yeahscore1.com/match/los-angeles-lakers-vs-chicago-bulls-1629480145",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F39%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769475600&token=2751c5726303a680c076bdcd02ea91314013ada6.false.1769472000-VZI37fb55Pp1S%2FVXa4D%2BNPico3ILTd2j935R6ylH%2FGg%3D"
+    },
+    {
+        "teams": "Memphis Grizzlies vs Houston Rockets",
+        "league": "International - NBA",
+        "time": "LIVE LIVE",
+        "type": "LIVE",
+        "url_page": "https://yeahscore1.com/match/memphis-grizzlies-vs-houston-rockets-1629480146",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F25%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769475600&token=2751c5726303a680c076bdcd02ea91314013ada6.false.1769472000-VZI37fb55Pp1S%2FVXa4D%2BNPico3ILTd2j935R6ylH%2FGg%3D"
     },
     {
         "teams": "Orlando Magic vs Cleveland Cavaliers",
@@ -33,7 +60,7 @@
         "type": "LIVE",
         "url_page": "https://yeahscore1.com/match/orlando-magic-vs-cleveland-cavaliers-1629480126",
         "stream_url": null,
-        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F17%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769472000&token=fb2e29d795b4ee8f513ce3da682301535b7809d8.false.1769461200-%2FTzAL2XJJ7tgb74lYNXY%2BSIXaKP8DbEUlaGTi92UAWo%3D"
+        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F17%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769472000&token=2751c5726303a680c076bdcd02ea91314013ada6.false.1769472000-VZI37fb55Pp1S%2FVXa4D%2BNPico3ILTd2j935R6ylH%2FGg%3D"
     },
     {
         "teams": "Lincoln vs Bradford",
@@ -63,15 +90,6 @@
         "referer": null
     },
     {
-        "teams": "Salford City vs Chesterfield",
-        "league": "League Two",
-        "time": "Jan 27, 19:45",
-        "type": "UPCOMING",
-        "url_page": "https://yeahscore1.com/match/salford-city-vs-chesterfield-1386342",
-        "stream_url": null,
-        "referer": null
-    },
-    {
         "teams": "Notts County vs Swindon Town",
         "league": "League Two",
         "time": "Jan 27, 19:45",
@@ -86,6 +104,15 @@
         "time": "Jan 27, 19:45",
         "type": "UPCOMING",
         "url_page": "https://yeahscore1.com/match/colchester-vs-grimsby-1386338",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "Salford City vs Chesterfield",
+        "league": "League Two",
+        "time": "Jan 27, 19:45",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/salford-city-vs-chesterfield-1386342",
         "stream_url": null,
         "referer": null
     },
@@ -117,29 +144,38 @@
         "referer": null
     },
     {
-        "teams": "Rod Laver Arena",
+        "teams": "Court 7",
         "league": "Australian Open",
-        "time": "Jan 27, 00:30",
+        "time": "Jan 28, 00:00",
         "type": "UPCOMING",
-        "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481830",
+        "url_page": "https://yeahscore1.com/match/court-7-1629480753",
         "stream_url": null,
         "referer": null
     },
     {
-        "teams": "Court 8",
+        "teams": "Court 6",
         "league": "Australian Open",
         "time": "Jan 28, 00:00",
         "type": "UPCOMING",
-        "url_page": "https://yeahscore1.com/match/court-8-1629480756",
+        "url_page": "https://yeahscore1.com/match/court-6-1629480751",
         "stream_url": null,
         "referer": null
     },
     {
-        "teams": "Kia Arena",
+        "teams": "Court 12",
         "league": "Australian Open",
         "time": "Jan 28, 00:00",
         "type": "UPCOMING",
-        "url_page": "https://yeahscore1.com/match/kia-arena-1629480755",
+        "url_page": "https://yeahscore1.com/match/court-12-1629480754",
+        "stream_url": null,
+        "referer": null
+    },
+    {
+        "teams": "ANZ Arena",
+        "league": "Australian Open",
+        "time": "Jan 28, 00:00",
+        "type": "UPCOMING",
+        "url_page": "https://yeahscore1.com/match/anz-arena-1629480747",
         "stream_url": null,
         "referer": null
     },
@@ -153,20 +189,11 @@
         "referer": null
     },
     {
-        "teams": "Court 14",
+        "teams": "Kia Arena",
         "league": "Australian Open",
         "time": "Jan 28, 00:00",
         "type": "UPCOMING",
-        "url_page": "https://yeahscore1.com/match/court-14-1629480749",
-        "stream_url": null,
-        "referer": null
-    },
-    {
-        "teams": "AS Karditsas vs Tofa\u015f",
-        "league": "Basketball Champions League",
-        "time": "Jan 27, 17:30",
-        "type": "UPCOMING",
-        "url_page": "https://yeahscore1.com/match/as-karditsas-vs-tofas-1629481713",
+        "url_page": "https://yeahscore1.com/match/kia-arena-1629480755",
         "stream_url": null,
         "referer": null
     }
