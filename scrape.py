@@ -1,72 +1,43 @@
 import json
 import re
+import time
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
-def clean_text(text):
-    """Membersihkan text dari newlines dan spasi berlebih"""
-    if not text: return ""
-    return " ".join(text.split())
+def get_stream_url(page, match_url):
+    """
+    Membuka halaman detail dan menangkap request .m3u8
+    """
+    m3u8_url = None
+    
+    def handle_request(request):
+        nonlocal m3u8_url
+        if ".m3u8" in request.url and m3u8_url is None:
+            m3u8_url = request.url
 
-def get_real_stream_url(page, match_url):
-    """Mencari Link M3U8 dan Referer Player"""
     try:
-        print(f"   -> Membuka: {match_url}")
-        page.goto(match_url, timeout=40000, wait_until="domcontentloaded")
+        page.on("request", handle_request)
+        # Timeout 20 detik per halaman match
+        page.goto(match_url, timeout=20000)
         
-        # 1. Cari Iframe Player
-        # Kita perluas pencariannya, jangan cuma xiaolin, tapi semua iframe yang mencurigakan
-        iframe_element = None
+        # Coba tunggu iframe atau canvas player
         try:
-            # Cari iframe yang punya src mengandung m3u8, token, xiaolin, atau wowhaha
-            iframe_element = page.wait_for_selector(
-                "iframe[src*='xiaolin3'], iframe[src*='wowhaha'], iframe[src*='m3u8'], iframe[src*='token']", 
-                timeout=8000
-            )
+            page.wait_for_selector('iframe, canvas', timeout=5000)
         except:
-            print("   -> Iframe player spesifik tidak ketemu.")
-            return None, None
-
-        if iframe_element:
-            player_referer_url = iframe_element.get_attribute("src")
-            print(f"   -> Player Wrapper ditemukan: {player_referer_url}")
+            pass
             
-            # 2. Buka URL Player
-            page.goto(player_referer_url, timeout=30000, wait_until="networkidle") 
-            
-            # 3. Ambil Konten HTML
-            player_html = page.content()
-            
-            # 4. Regex Mencari Token M3U8
-            # Pola 1: var m3u8 = '...'
-            match = re.search(r"var\s+m3u8\s*=\s*['\"]([^'\"]+)['\"]", player_html)
-            
-            # Pola 2: file: "..." 
-            if not match:
-                match = re.search(r"file\s*:\s*['\"]([^'\"]+\.m3u8[^'\"]*)['\"]", player_html)
-
-            # Pola 3: Link mentah https://...m3u8...
-            if not match:
-                match = re.search(r"(https?://[^'\"]+\.m3u8[^'\"]*)", player_html)
-
-            if match:
-                real_m3u8 = match.group(1)
-                print(f"   -> SUKSES: {real_m3u8[:40]}...")
-                return real_m3u8, player_referer_url
-            else:
-                print("   -> Gagal extract regex m3u8 dari source player.")
-                return None, player_referer_url
-        else:
-            return None, None
-                
+        page.wait_for_timeout(4000) # Tunggu network traffic
+        page.remove_listener("request", handle_request)
+        return m3u8_url
     except Exception as e:
-        print(f"   -> Error Deep Scrape: {e}")
-        return None, None
+        return None
+
+def clean_text(text):
+    if not text: return ""
+    return text.strip()
 
 def main():
-    live_matches = []
-    upcoming_matches = []
-    seen_urls = set()
+    all_matches = []
     base_url = "https://yeahscore1.com"
 
     with sync_playwright() as p:
@@ -76,136 +47,156 @@ def main():
         )
         page = context.new_page()
 
-        print("=== 1. SCRAPE DAFTAR PERTANDINGAN ===")
-        try:
-            page.goto(base_url + "/", timeout=60000)
-            page.wait_for_timeout(4000)
+        print("1. Membuka Halaman Utama...")
+        page.goto(base_url + "/", timeout=60000)
+        page.wait_for_timeout(5000) # Tunggu render VUE JS
+        
+        html = page.content()
+        soup = BeautifulSoup(html, 'html.parser')
+
+        # ==========================================
+        # BAGIAN 1: SCRAPE LIVE MATCHES
+        # ==========================================
+        print("--- Memproses Live Matches ---")
+        live_container = soup.select_one('.b-live-matches')
+        if live_container:
+            # Di dalam live, biasanya dikelompokkan per Liga di dalam .collapse-group
+            league_groups = live_container.select('.collapse-group')
             
-            html = page.content()
-            soup = BeautifulSoup(html, 'html.parser')
+            for group in league_groups:
+                # Ambil Nama Liga (Contoh: Portugal - Primeira Liga)
+                league_title_el = group.select_one('.collapse-nav-title-name')
+                full_league_name = clean_text(league_title_el.get_text()) if league_title_el else "Live League"
+                
+                # Tebak Sport dari ikon bendera atau default Football untuk Live (karena mayoritas bola)
+                # Atau kita set "Live Sports" biar aman
+                sport_name = "Football" # Default, bisa disesuaikan jika ada ikon bola/basket
+                
+                # Cari match di dalam grup liga ini
+                matches = group.select('.collapse-match')
+                for match in matches:
+                    try:
+                        link_tag = match.select_one('a.link-wrapper')
+                        if not link_tag: continue
+                        match_url = base_url + link_tag['href']
 
-            # --- A. AMBIL LIVE MATCHES (SEMUANYA) ---
-            print("Processing Live Section...")
-            live_items = soup.select('.b-live-matches .collapse-match')
-            for item in live_items:
-                try:
-                    link_tag = item.select_one('a.link-wrapper')
-                    if not link_tag: continue
-                    
-                    full_link = base_url + link_tag['href']
-                    if full_link in seen_urls: continue
-                    seen_urls.add(full_link)
+                        # Ambil nama tim
+                        home_el = match.select_one('.left-column .name-club')
+                        away_el = match.select_one('.right-column .name-club')
+                        home = clean_text(home_el.get_text()) if home_el else "Home"
+                        away = clean_text(away_el.get_text()) if away_el else "Away"
 
-                    # Info Tim
-                    home = clean_text(item.select_one('.left-column .name-club').get_text())
-                    away = clean_text(item.select_one('.right-column .name-club').get_text())
-                    
-                    # Info Liga
-                    group = item.find_parent(class_='collapse-group')
-                    league = clean_text(group.select_one('.collapse-nav-title-name').get_text()) if group else "Live League"
+                        # Waktu (Menit main)
+                        inplay_el = match.select_one('.inplay')
+                        game_time = clean_text(inplay_el.get_text()) if inplay_el else "LIVE"
 
-                    # Info Waktu
-                    inplay = item.select_one('.inplay')
-                    time_display = clean_text(inplay.get_text()) if inplay else "LIVE"
+                        all_matches.append({
+                            "type": "LIVE",
+                            "sport": sport_name,
+                            "league": full_league_name,
+                            "teams": f"{home} vs {away}",
+                            "time_display": f"LIVE {game_time}",
+                            "url_page": match_url,
+                            "stream_url": None # Nanti diisi
+                        })
+                    except: continue
 
-                    live_matches.append({
-                        "teams": f"{home} vs {away}",
-                        "league": league,
-                        "time": f"LIVE {time_display}",
-                        "type": "LIVE",
-                        "url_page": full_link
-                    })
-                except Exception as e: 
-                    print(f"Error parse live item: {e}")
-                    continue
-
-            # --- B. AMBIL UPCOMING MATCHES ---
-            print("Processing Upcoming Section...")
-            upcoming_items = soup.select('.b-live-schedule .item')
-            for item in upcoming_items: 
-                try:
-                    link_tag = item.select_one('a.link-wrapper')
-                    if not link_tag: continue
-                    full_link = base_url + link_tag['href']
-                    
-                    if full_link in seen_urls: continue
-                    seen_urls.add(full_link)
-
-                    # Info Tim (Handle nama tim atau nama event)
-                    home_el = item.select_one('.left-column .name-club')
-                    away_el = item.select_one('.right-column .name-club')
-                    if home_el and away_el:
-                        teams = f"{clean_text(home_el.get_text())} vs {clean_text(away_el.get_text())}"
-                    else:
-                        title_el = item.select_one('.item-title')
-                        teams = clean_text(title_el.get_text()) if title_el else "Match"
-
-                    time_val = clean_text(item.select_one('.time').get_text())
-                    
-                    group = item.find_parent(class_='collapse-group')
-                    league = clean_text(group.select_one('.collapse-nav-title-name').get_text()) if group else "Upcoming"
-
-                    upcoming_matches.append({
-                        "teams": teams,
-                        "league": league,
-                        "time": time_val,
-                        "type": "UPCOMING",
-                        "url_page": full_link
-                    })
-                except: continue
-
-            print(f"Total LIVE ditemukan: {len(live_matches)}")
-            print(f"Total UPCOMING ditemukan: {len(upcoming_matches)}")
-
-            # === 2. DEEP SCRAPING (AMBIL LINK STREAM) ===
-            print("\n=== 2. MENCARI LINK STREAM ===")
+        # ==========================================
+        # BAGIAN 2: SCRAPE SCHEDULE / UPCOMING
+        # ==========================================
+        print("--- Memproses Upcoming Schedule ---")
+        schedule_container = soup.select_one('.b-live-schedule')
+        if schedule_container:
+            # Cari Header Sport (Football, Basketball, Cricket, dll)
+            # Struktur: h2 (Sport) -> div (Wrapper Liga)
+            sport_headers = schedule_container.select('h2.b-bg-secondary')
             
-            final_data = []
+            for h2 in sport_headers:
+                # 1. Ambil Nama Sport (Misal: "Football (15)")
+                raw_sport = clean_text(h2.get_text())
+                # Hapus angka dalam kurung -> "Football"
+                sport_name = re.sub(r'\s*\(\d+\)', '', raw_sport)
+                
+                # 2. Cari Div konten setelah h2 (Sibling)
+                # Di HTML Vue kadang ada div pembungkus
+                content_wrapper = h2.find_next_sibling('div')
+                if not content_wrapper: continue
 
-            # A. PROSES SEMUA LIVE MATCHES (TANPA LIMIT)
-            print("--- Mengambil Stream LIVE Matches ---")
-            for i, match in enumerate(live_matches):
-                print(f"[LIVE {i+1}/{len(live_matches)}] {match['teams']}")
+                # 3. Loop Liga di dalam Sport tersebut
+                league_groups = content_wrapper.select('.collapse-group')
                 
-                page_extractor = context.new_page()
-                real_m3u8, player_referer = get_real_stream_url(page_extractor, match['url_page'])
-                
-                match['stream_url'] = real_m3u8
-                match['referer'] = player_referer
-                final_data.append(match)
-                
-                page_extractor.close()
+                for l_group in league_groups:
+                    l_title_el = l_group.select_one('.collapse-nav-title-name')
+                    league_name = clean_text(l_title_el.get_text()) if l_title_el else "Unknown League"
 
-            # B. PROSES UPCOMING (LIMIT 15 AGAR TIDAK TIMEOUT)
-            # Kamu bisa ubah angka 15 jadi lebih besar kalau mau ambil lebih banyak upcoming
-            limit_upcoming = 15 
-            print(f"\n--- Mengambil Stream UPCOMING Matches (Limit {limit_upcoming}) ---")
+                    # 4. Loop Match di dalam Liga tersebut
+                    items = l_group.select('.item')
+                    for item in items:
+                        try:
+                            link_tag = item.select_one('a.link-wrapper')
+                            if not link_tag: continue
+                            match_url = base_url + link_tag['href']
+
+                            # Nama Tim (Cek kiri kanan, kalau gak ada cek title tengah)
+                            home_el = item.select_one('.left-column .name-club')
+                            away_el = item.select_one('.right-column .name-club')
+                            
+                            if home_el and away_el:
+                                teams = f"{clean_text(home_el.get_text())} vs {clean_text(away_el.get_text())}"
+                            else:
+                                # Kasus Tennis/Single player
+                                title_el = item.select_one('.item-title')
+                                teams = clean_text(title_el.get_text()) if title_el else "Event"
+
+                            # Waktu
+                            time_el = item.select_one('.time')
+                            match_time = clean_text(time_el.get_text(" ")) if time_el else ""
+
+                            all_matches.append({
+                                "type": "UPCOMING",
+                                "sport": sport_name,
+                                "league": league_name,
+                                "teams": teams,
+                                "time_display": match_time,
+                                "url_page": match_url,
+                                "stream_url": None
+                            })
+                        except: continue
+
+        # ==========================================
+        # BAGIAN 3: AMBIL LINK STREAM (Deep Scraping)
+        # ==========================================
+        print(f"Total Match Terdeteksi: {len(all_matches)}")
+        print("Mulai mengambil link stream (Max 30 match prioritas)...")
+
+        # Batasi jumlah match agar github action tidak timeout
+        # Prioritas: LIVE duluan, baru UPCOMING
+        # Slice [:30] artinya hanya ambil 30 pertama. Naikkan jika perlu.
+        processed_matches = []
+        for i, match in enumerate(all_matches[:30]): 
+            print(f"[{i+1}/{len(all_matches[:30])}] Checking: {match['teams']} ({match['league']})")
             
-            for i, match in enumerate(upcoming_matches[:limit_upcoming]):
-                print(f"[UPCOMING {i+1}/{limit_upcoming}] {match['teams']}")
-                
-                # Cek sekilas, kalau masih lama mainnya (misal besok), gak usah cek stream biar cepet
-                # Tapi kalau mau cek semua, biarkan saja baris ini:
-                
-                page_extractor = context.new_page()
-                real_m3u8, player_referer = get_real_stream_url(page_extractor, match['url_page'])
-                
-                match['stream_url'] = real_m3u8
-                match['referer'] = player_referer
-                final_data.append(match)
-                
-                page_extractor.close()
+            # Logic: Hanya ambil stream jika LIVE atau Main Hari Ini (cek string date)
+            # Untuk demo ini kita ambil semua top 30
+            detail_page = context.new_page()
+            stream = get_stream_url(detail_page, match['url_page'])
+            detail_page.close()
+            
+            match['stream_url'] = stream
+            match['referer'] = base_url
+            processed_matches.append(match)
+            
+            if stream:
+                print(f"   -> STREAM FOUND!")
+            else:
+                print(f"   -> No Stream / Belum mulai")
 
-            browser.close()
+        browser.close()
 
-        except Exception as e:
-            print(f"Critical Error: {e}")
-            browser.close()
-
-    # Simpan Hasil Akhir
+    # Simpan JSON
     with open("matches.json", "w", encoding="utf-8") as f:
-        json.dump(final_data, f, indent=4)
-        print("\nSelesai! Data tersimpan di matches.json")
+        json.dump(processed_matches, f, indent=4)
+        print("Data tersimpan di matches.json")
 
 if __name__ == "__main__":
     main()
