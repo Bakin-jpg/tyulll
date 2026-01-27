@@ -1,14 +1,5 @@
 [
     {
-        "type": "LIVE",
-        "league": "International - EuroCup",
-        "teams": "Turk Telekom Ankara vs 7Bet-Lietkabelis Panevezys",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/turk-telekom-ankara-vs-7bet-lietkabelis-panevezys-1629480155",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F34%2Findex.m3u8&token=d663b6062f6a51a51d992e3aeb6ddb9e45b7ea94&is_vip=false&verify=1769526000-427cMBDXPTBQxPT%2Be7GUSsGeJdgc1wQe9mP9gBs9BC8%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "type": "UPCOMING",
         "league": "Today",
         "teams": "Lincoln vs Bradford",
@@ -19,10 +10,55 @@
     },
     {
         "type": "UPCOMING",
-        "league": "League One",
-        "teams": "Lincoln vs Bradford",
-        "time_display": "Jan 27, 19:45",
-        "url_page": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
+        "league": "Tomorrow",
+        "teams": "Paris Saint Germain vs Newcastle",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/paris-saint-germain-vs-newcastle-1451149",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Tomorrow",
+        "teams": "Arsenal vs Kairat Almaty",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/arsenal-vs-kairat-almaty-1451159",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Tomorrow",
+        "teams": "Liverpool vs Qarabag",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/liverpool-vs-qarabag-1451160",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Tomorrow",
+        "teams": "Barcelona vs FC Copenhagen",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/barcelona-vs-fc-copenhagen-1451161",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Tomorrow",
+        "teams": "Napoli vs Chelsea",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/napoli-vs-chelsea-1451146",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Tomorrow",
+        "teams": "Benfica vs Real Madrid",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/benfica-vs-real-madrid-1451162",
         "stream_url": null,
         "referer": "https://yeahscore1.com"
     },
@@ -38,9 +74,27 @@
     {
         "type": "UPCOMING",
         "league": "League One",
+        "teams": "Lincoln vs Bradford",
+        "time_display": "Jan 27, 19:45",
+        "url_page": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "League One",
         "teams": "Doncaster vs Leyton Orient",
         "time_display": "Jan 27, 20:00",
         "url_page": "https://yeahscore1.com/match/doncaster-vs-leyton-orient-1387441",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "League Two",
+        "teams": "Notts County vs Swindon Town",
+        "time_display": "Jan 27, 19:45",
+        "url_page": "https://yeahscore1.com/match/notts-county-vs-swindon-town-1386341",
         "stream_url": null,
         "referer": "https://yeahscore1.com"
     },
@@ -64,15 +118,6 @@
     },
     {
         "type": "UPCOMING",
-        "league": "League Two",
-        "teams": "Notts County vs Swindon Town",
-        "time_display": "Jan 27, 19:45",
-        "url_page": "https://yeahscore1.com/match/notts-county-vs-swindon-town-1386341",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
         "league": "Bundesliga",
         "teams": "FC St. Pauli vs RB Leipzig",
         "time_display": "Jan 27, 19:30",
@@ -86,60 +131,6 @@
         "teams": "Werder Bremen vs 1899 Hoffenheim",
         "time_display": "Jan 27, 19:30",
         "url_page": "https://yeahscore1.com/match/werder-bremen-vs-1899-hoffenheim-1388451",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "league": "Coppa Italia",
-        "teams": "Fiorentina vs Como",
-        "time_display": "Jan 27, 20:00",
-        "url_page": "https://yeahscore1.com/match/fiorentina-vs-como-1477050",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "league": "A-League Women",
-        "teams": "Perth Glory FC W vs Sydney FC W",
-        "time_display": "Jan 28, 11:00",
-        "url_page": "https://yeahscore1.com/match/perth-glory-fc-w-vs-sydney-fc-w-1484541",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "league": "Friendlies Women",
-        "teams": "USA W vs Chile W",
-        "time_display": "Jan 28, 03:00",
-        "url_page": "https://yeahscore1.com/match/usa-w-vs-chile-w-1503002",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "league": "",
-        "teams": "NJ/NY Gotham FC W vs Corinthians W",
-        "time_display": "Jan 28, 12:30",
-        "url_page": "https://yeahscore1.com/match/njny-gotham-fc-w-vs-corinthians-w-1629480773",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "league": "",
-        "teams": "Season 5: Tigers of Mumbai Dangals vs Haryana Thunders",
-        "time_display": "Jan 28, 14:30",
-        "url_page": "https://yeahscore1.com/match/season-5-tigers-of-mumbai-dangals-vs-haryana-thunders-1629481719",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "league": "UCI Pro Series",
-        "teams": "ES2, Alula Tour, Stage 2",
-        "time_display": "Jan 28, 11:30",
-        "url_page": "https://yeahscore1.com/match/es2-alula-tour-stage-2-1629480771",
         "stream_url": null,
         "referer": "https://yeahscore1.com"
     }
