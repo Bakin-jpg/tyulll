@@ -1,24 +1,15 @@
-name: Scrape YeahScore Full Stream
+name: Debug Scraper
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '*/5 * * * *' # Jalan tiap 5 menit
-
-# FITUR ANTI BENTROK
-# Jika bot baru jalan, bot lama yang lelet akan dibatalkan otomatis
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  workflow_dispatch: # Jalankan manual dulu biar cepet
 
 permissions:
   contents: write
 
 jobs:
-  scrape:
+  debug-scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 10 # 5 menit terlalu mepet, kasih 10 menit
-
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -30,21 +21,20 @@ jobs:
 
       - name: Install Libraries
         run: |
-          pip install playwright beautifulsoup4
+          pip install playwright
           playwright install chromium
           playwright install-deps
 
-      - name: Run Scraper
+      - name: Run Debug Scraper
         run: python scrape.py
 
-      - name: Commit Results
-        run: |
-          git config --global user.name "Bot Scraper"
-          git config --global user.email "bot@github.com"
-          git add matches.json
-          git commit -m "Update matches with stream links" || exit 0
-          
-          # Tarik dulu update terbaru dari server sebelum push
-          git pull --rebase origin main
-          
-          git push
+      # --- BAGIAN PENTING UNTUK MELIHAT DEBUG ---
+      - name: Upload Debug Artifacts
+        if: always() # Selalu jalan meski error
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-results
+          path: |
+            debug_screenshot.png
+            debug_source.html
+      # ------------------------------------------
