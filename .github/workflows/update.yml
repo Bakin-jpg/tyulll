@@ -1,15 +1,22 @@
-name: Debug Scraper
+name: Scrape YeahScore V5
 
 on:
-  workflow_dispatch: # Jalankan manual dulu biar cepet
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *' # Tiap 15 menit
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
 
 jobs:
-  debug-scrape:
+  scrape:
     runs-on: ubuntu-latest
-    
+    timeout-minutes: 20 # Wajib agak lama
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -21,20 +28,18 @@ jobs:
 
       - name: Install Libraries
         run: |
-          pip install playwright
+          pip install playwright beautifulsoup4
           playwright install chromium
           playwright install-deps
 
-      - name: Run Debug Scraper
+      - name: Run Scraper
         run: python scrape.py
 
-      # --- BAGIAN PENTING UNTUK MELIHAT DEBUG ---
-      - name: Upload Debug Artifacts
-        if: always() # Selalu jalan meski error
-        uses: actions/upload-artifact@v4
-        with:
-          name: debug-results
-          path: |
-            debug_screenshot.png
-            debug_source.html
-      # ------------------------------------------
+      - name: Commit Results
+        run: |
+          git config --global user.name "Bot Scraper"
+          git config --global user.email "bot@github.com"
+          git add matches.json
+          git commit -m "Update matches" || exit 0
+          git pull --rebase origin main
+          git push
