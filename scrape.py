@@ -6,79 +6,51 @@ from bs4 import BeautifulSoup
 
 # --- FUNGSI UTAMA PENGAMBIL STREAM ---
 def get_real_stream_url(context, match_url):
-    """
-    Mencoba mendapatkan link m3u8 asli dengan 2 metode:
-    1. Sniffing Network (Menangkap request background)
-    2. DOM Inspection (Mencari src di dalam tag iframe)
-    """
     page = context.new_page()
     wrapper_url = None
     final_m3u8 = None
 
-    # --- METODE 1: Network Sniffer ---
     def handle_request(request):
         nonlocal wrapper_url
         url = request.url
-        # Keyword umum player di website ini
+        # Keyword umum player
         keywords = ["wowhaha.php", "xiaolin", "embed", "player", "rum.php"]
         if any(x in url for x in keywords) and "m3u8=" in url:
             wrapper_url = url
 
     try:
         page.on("request", handle_request)
-        
-        # Buka halaman match
         try:
-            # wait_until='networkidle' memastikan halaman diam sejenak (semua loading kelar)
-            page.goto(match_url, timeout=20000, wait_until="networkidle") 
+            page.goto(match_url, timeout=15000, wait_until="domcontentloaded")
         except:
-            pass # Lanjut ke pengecekan manual jika timeout
+            pass 
 
-        # --- METODE 2: DOM Inspection (Backup jika Network gagal) ---
         if not wrapper_url:
-            # Cari semua iframe di halaman
+            # Cek DOM Iframe
             iframes = page.query_selector_all("iframe")
             for frame in iframes:
                 src = frame.get_attribute("src")
                 if src and ("m3u8=" in src):
                     wrapper_url = src
-                    if not wrapper_url.startswith("http"): # Handle relative URL
+                    if not wrapper_url.startswith("http"):
                         wrapper_url = "https:" + wrapper_url if src.startswith("//") else src
-                    print(f"      [INFO] Wrapper found via DOM (Iframe)!")
                     break
 
         page.remove_listener("request", handle_request)
 
-        # --- EKSEKUSI: Ambil Token dari Wrapper ---
         if wrapper_url:
-            # Bersihkan URL jika ada karakter aneh
-            print(f"      [DEBUG] Wrapper URL: {wrapper_url[:60]}...")
-            
-            # Fetch source code wrapper tanpa render browser (cepat)
-            response = page.request.get(wrapper_url)
-            
-            if response.status == 200:
-                html_content = response.text()
-                
-                # REGEX: Cari var m3u8 = '...' atau var m3u8="..."
-                # Menangani kutip satu (') maupun kutip dua (")
-                pattern = r"var\s+m3u8\s*=\s*['\"]([^'\"]+)['\"]"
-                match = re.search(pattern, html_content)
-                
-                if match:
-                    final_m3u8 = match.group(1)
-                    print(f"      [SUCCESS] Stream URL Extracted!")
-                else:
-                    print(f"      [FAIL] Token pattern not found inside wrapper.")
-                    # Debug: Simpan potongan html untuk dicek
-                    # print(html_content[:500]) 
-            else:
-                print(f"      [FAIL] Wrapper unreachable (Status {response.status}).")
-        else:
-            print("      [FAIL] No wrapper/iframe detected.")
-
+            try:
+                response = page.request.get(wrapper_url, timeout=5000)
+                if response.status == 200:
+                    html_content = response.text()
+                    pattern = r"var\s+m3u8\s*=\s*['\"]([^'\"]+)['\"]"
+                    match = re.search(pattern, html_content)
+                    if match:
+                        final_m3u8 = match.group(1)
+            except:
+                pass
     except Exception as e:
-        print(f"      [ERROR] {e}")
+        print(f"      [ERROR Stream] {e}")
     finally:
         page.close()
 
@@ -93,55 +65,75 @@ def main():
     base_url = "https://yeahscore1.com"
 
     with sync_playwright() as p:
-        # headless=True agar berjalan di background. Ubah ke False jika ingin melihat browser.
-        browser = p.chromium.launch(headless=True)
+        # --- PERBAIKAN 1: Tambahkan argumen agar tidak terdeteksi sebagai Bot ---
+        browser = p.chromium.launch(
+            headless=True,
+            args=[
+                '--disable-blink-features=AutomationControlled', # PENTING: Sembunyikan identitas bot
+                '--no-sandbox',
+                '--disable-setuid-sandbox'
+            ]
+        )
         
-        # Context dengan User Agent PC agar dianggap user asli
         context = browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            viewport={'width': 1280, 'height': 720},
+            viewport={'width': 1366, 'height': 768},
             ignore_https_errors=True
         )
         page = context.new_page()
 
         print("1. Membuka Halaman Utama...")
         try:
-            page.goto(base_url + "/", timeout=60000, wait_until="domcontentloaded")
-            page.wait_for_timeout(3000) # Tunggu render Vue/React
+            page.goto(base_url + "/", timeout=60000)
             
+            # --- PERBAIKAN 2: Tunggu Elemen Muncul (Bukan cuma sleep) ---
+            print("   -> Menunggu daftar match muncul...")
+            try:
+                # Kita tunggu sampai container match muncul, max 15 detik
+                page.wait_for_selector(".b-live-matches, .b-live-schedule", timeout=15000)
+                print("   -> Elemen website terdeteksi!")
+            except Exception as e:
+                print("   -> [WARNING] Website lambat atau memblokir bot. Mengambil screenshot...")
+                page.screenshot(path="debug_error.png") # Screenshot untuk debug
+                print("   -> Screenshot disimpan sebagai debug_error.png")
+            
+            # Tambahan waktu render JS
+            page.wait_for_timeout(3000)
+
             html = page.content()
             soup = BeautifulSoup(html, 'html.parser')
 
             # ==========================================
-            # BAGIAN 1: SCRAPE LIVE MATCHES
+            # BAGIAN SCRAPING (SAMA SEPERTI SEBELUMNYA)
             # ==========================================
-            print("--- Memproses Live Matches ---")
+            
+            # 1. LIVE
             live_container = soup.select_one('.b-live-matches')
             if live_container:
                 league_groups = live_container.select('.collapse-group')
                 for group in league_groups:
                     league_title_el = group.select_one('.collapse-nav-title-name')
                     full_league_name = clean_text(league_title_el.get_text()) if league_title_el else "Live League"
-                    sport_name = "Football" # Default, bisa diperbaiki dengan cek icon/header
                     
                     matches = group.select('.collapse-match')
                     for match in matches:
                         try:
                             link_tag = match.select_one('a.link-wrapper')
                             if not link_tag: continue
+                            
+                            # Filter: Hanya ambil yang ada linknya
                             match_url = base_url + link_tag['href']
-
+                            
                             home_el = match.select_one('.left-column .name-club')
                             away_el = match.select_one('.right-column .name-club')
                             home = clean_text(home_el.get_text()) if home_el else "Home"
                             away = clean_text(away_el.get_text()) if away_el else "Away"
-
                             inplay_el = match.select_one('.inplay')
                             game_time = clean_text(inplay_el.get_text()) if inplay_el else "LIVE"
 
                             all_matches.append({
                                 "type": "LIVE",
-                                "sport": sport_name,
+                                "sport": "Football", # Default
                                 "league": full_league_name,
                                 "teams": f"{home} vs {away}",
                                 "time_display": f"LIVE {game_time}",
@@ -149,18 +141,15 @@ def main():
                                 "stream_url": None 
                             })
                         except: continue
-
-            # ==========================================
-            # BAGIAN 2: SCRAPE SCHEDULE
-            # ==========================================
-            print("--- Memproses Upcoming Schedule ---")
+            
+            # 2. UPCOMING
             schedule_container = soup.select_one('.b-live-schedule')
             if schedule_container:
+                # Cek apakah ada header sport
                 sport_headers = schedule_container.select('h2.b-bg-secondary')
                 for h2 in sport_headers:
                     raw_sport = clean_text(h2.get_text())
                     sport_name = re.sub(r'\s*\(\d+\)', '', raw_sport)
-                    
                     content_wrapper = h2.find_next_sibling('div')
                     if not content_wrapper: continue
 
@@ -202,43 +191,40 @@ def main():
             print(f"Error membuka halaman utama: {e}")
 
         # ==========================================
-        # BAGIAN 3: AMBIL LINK STREAM (Deep Extraction)
+        # BAGIAN AMBIL STREAM
         # ==========================================
         total_found = len(all_matches)
         print(f"\nTotal Match Terdeteksi: {total_found}")
-        print("Mulai mengambil link stream...")
+        
+        # JIKA HASIL 0, hentikan dan simpan debug
+        if total_found == 0:
+            print("!!! PERINGATAN: Tidak ada match ditemukan. Website mungkin memblokir IP GitHub.")
+            print("Cek screenshot 'debug_error.png' jika Anda menjalankannya secara lokal/artifact.")
+        else:
+            print("Mulai mengambil link stream...")
 
-        processed_matches = []
-        
-        # Filter: Hanya proses match yang "LIVE" atau match yang akan main dalam waktu dekat
-        # Agar tidak buang waktu scan match yang masih 2 hari lagi
-        # Untuk tes, kita ambil 10 LIVE teratas dan 5 UPCOMING teratas
-        
-        live_matches = [m for m in all_matches if m['type'] == 'LIVE']
-        upcoming_matches = [m for m in all_matches if m['type'] == 'UPCOMING'][:15] # Batasi 15 upcoming
-        
-        target_list = live_matches + upcoming_matches
+            processed_matches = []
+            
+            # Prioritas: Live Match + Top 5 Upcoming
+            live_matches = [m for m in all_matches if m['type'] == 'LIVE']
+            upcoming_matches = [m for m in all_matches if m['type'] == 'UPCOMING'][:10]
+            target_list = live_matches + upcoming_matches
 
-        for i, match in enumerate(target_list): 
-            print(f"[{i+1}/{len(target_list)}] {match['teams']} ({match['type']})")
-            
-            # Jika Upcoming masih lama, biasanya belum ada stream, tapi kita coba cek
-            real_stream = get_real_stream_url(context, match['url_page'])
-            
-            match['stream_url'] = real_stream
-            
-            # Jika berhasil dapat stream, referernya pakai domain wrapper (biasanya xiaolin)
-            # Jika gagal, default ke yeahscore
-            match['referer'] = "https://xiaolin3.live/" if real_stream else base_url
-            
-            processed_matches.append(match)
+            for i, match in enumerate(target_list): 
+                print(f"[{i+1}/{len(target_list)}] {match['teams']} ({match['type']})")
+                
+                real_stream = get_real_stream_url(context, match['url_page'])
+                match['stream_url'] = real_stream
+                match['referer'] = "https://xiaolin3.live/" if real_stream else base_url
+                
+                processed_matches.append(match)
+
+            # Simpan JSON
+            with open("matches.json", "w", encoding="utf-8") as f:
+                json.dump(processed_matches, f, indent=4)
+                print("\nData tersimpan di matches.json")
 
         browser.close()
-
-    # Simpan JSON
-    with open("matches.json", "w", encoding="utf-8") as f:
-        json.dump(processed_matches, f, indent=4)
-        print("\nData tersimpan di matches.json")
 
 if __name__ == "__main__":
     main()
