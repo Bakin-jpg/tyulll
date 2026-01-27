@@ -1,86 +1,5 @@
 [
     {
-        "type": "LIVE",
-        "league": "United Kingdom - League One",
-        "teams": "Doncaster vs Leyton Orient",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/doncaster-vs-leyton-orient-1387441",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F22%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "United Kingdom - League One",
-        "teams": "Huddersfield vs Luton",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/huddersfield-vs-luton-1387442",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F15%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "United Kingdom - League One",
-        "teams": "Lincoln vs Bradford",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F18%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "Italy - Coppa Italia",
-        "teams": "Fiorentina vs Como",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/fiorentina-vs-como-1477050",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F20%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "United Kingdom - League Two",
-        "teams": "Colchester vs Grimsby",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/colchester-vs-grimsby-1386338",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F33%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "United Kingdom - League Two",
-        "teams": "Notts County vs Swindon Town",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/notts-county-vs-swindon-town-1386341",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F44%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "United Kingdom - League Two",
-        "teams": "Salford City vs Chesterfield",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/salford-city-vs-chesterfield-1386342",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F9%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "Germany - Bundesliga",
-        "teams": "Werder Bremen vs 1899 Hoffenheim",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/werder-bremen-vs-1899-hoffenheim-1388451",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F25%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "Germany - Bundesliga",
-        "teams": "FC St. Pauli vs RB Leipzig",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/fc-st-pauli-vs-rb-leipzig-1388449",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F3%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "type": "UPCOMING",
         "league": "Tomorrow",
         "teams": "Paris Saint Germain vs Newcastle",
@@ -92,9 +11,9 @@
     {
         "type": "UPCOMING",
         "league": "Tomorrow",
-        "teams": "Napoli vs Chelsea",
+        "teams": "Liverpool vs Qarabag",
         "time_display": "20:00",
-        "url_page": "https://yeahscore1.com/match/napoli-vs-chelsea-1451146",
+        "url_page": "https://yeahscore1.com/match/liverpool-vs-qarabag-1451160",
         "stream_url": null,
         "referer": "https://yeahscore1.com"
     },
@@ -128,15 +47,6 @@
     {
         "type": "UPCOMING",
         "league": "Tomorrow",
-        "teams": "Liverpool vs Qarabag",
-        "time_display": "20:00",
-        "url_page": "https://yeahscore1.com/match/liverpool-vs-qarabag-1451160",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "league": "Tomorrow",
         "teams": "Benfica vs Real Madrid",
         "time_display": "20:00",
         "url_page": "https://yeahscore1.com/match/benfica-vs-real-madrid-1451162",
@@ -145,74 +55,83 @@
     },
     {
         "type": "UPCOMING",
-        "league": "League One",
-        "teams": "Huddersfield vs Luton",
-        "time_display": "Jan 27, 19:45",
-        "url_page": "https://yeahscore1.com/match/huddersfield-vs-luton-1387442",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F15%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
+        "league": "Tomorrow",
+        "teams": "Napoli vs Chelsea",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/napoli-vs-chelsea-1451146",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "type": "UPCOMING",
-        "league": "League One",
-        "teams": "Lincoln vs Bradford",
-        "time_display": "Jan 27, 19:45",
-        "url_page": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F18%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
+        "league": "A-League Women",
+        "teams": "Perth Glory FC W vs Sydney FC W",
+        "time_display": "Jan 28, 11:00",
+        "url_page": "https://yeahscore1.com/match/perth-glory-fc-w-vs-sydney-fc-w-1484541",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "type": "UPCOMING",
-        "league": "League One",
-        "teams": "Doncaster vs Leyton Orient",
-        "time_display": "Jan 27, 20:00",
-        "url_page": "https://yeahscore1.com/match/doncaster-vs-leyton-orient-1387441",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F22%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
+        "league": "Pro League",
+        "teams": "Al-Ahli Jeddah vs Al-Ettifaq",
+        "time_display": "Jan 28, 17:30",
+        "url_page": "https://yeahscore1.com/match/al-ahli-jeddah-vs-al-ettifaq-1436076",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "type": "UPCOMING",
-        "league": "League Two",
-        "teams": "Colchester vs Grimsby",
-        "time_display": "Jan 27, 19:45",
-        "url_page": "https://yeahscore1.com/match/colchester-vs-grimsby-1386338",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F33%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
+        "league": "Friendlies Women",
+        "teams": "USA W vs Chile W",
+        "time_display": "Jan 28, 03:00",
+        "url_page": "https://yeahscore1.com/match/usa-w-vs-chile-w-1503002",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "type": "UPCOMING",
-        "league": "League Two",
-        "teams": "Notts County vs Swindon Town",
-        "time_display": "Jan 27, 19:45",
-        "url_page": "https://yeahscore1.com/match/notts-county-vs-swindon-town-1386341",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F44%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
+        "league": "",
+        "teams": "NJ/NY Gotham FC W vs Corinthians W",
+        "time_display": "Jan 28, 12:30",
+        "url_page": "https://yeahscore1.com/match/njny-gotham-fc-w-vs-corinthians-w-1629480773",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "type": "UPCOMING",
-        "league": "League Two",
-        "teams": "Salford City vs Chesterfield",
-        "time_display": "Jan 27, 19:45",
-        "url_page": "https://yeahscore1.com/match/salford-city-vs-chesterfield-1386342",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F9%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
+        "league": "",
+        "teams": "Roma W vs Lazio W",
+        "time_display": "Jan 28, 17:00",
+        "url_page": "https://yeahscore1.com/match/roma-w-vs-lazio-w-1629480777",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "type": "UPCOMING",
-        "league": "Bundesliga",
-        "teams": "Werder Bremen vs 1899 Hoffenheim",
-        "time_display": "Jan 27, 19:30",
-        "url_page": "https://yeahscore1.com/match/werder-bremen-vs-1899-hoffenheim-1388451",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F25%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
+        "league": "",
+        "teams": "Inter Milano W vs Ternana W",
+        "time_display": "Jan 28, 17:00",
+        "url_page": "https://yeahscore1.com/match/inter-milano-w-vs-ternana-w-1629480776",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     },
     {
         "type": "UPCOMING",
-        "league": "Bundesliga",
-        "teams": "FC St. Pauli vs RB Leipzig",
-        "time_display": "Jan 27, 19:30",
-        "url_page": "https://yeahscore1.com/match/fc-st-pauli-vs-rb-leipzig-1388449",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F3_fhd%2Findex.m3u8&token=4d813241ae167a39da74329bc358db26184b93e7&is_vip=false&verify=1769547600-07Hj8OJ9HWgzNV3nNyACPfrRi6dyjp6IzgrII%2F2oZQQ%3D",
-        "referer": "https://xiaolin3.live/"
+        "league": "",
+        "teams": "Arsenal W vs AS FAR W",
+        "time_display": "Jan 28, 18:00",
+        "url_page": "https://yeahscore1.com/match/arsenal-w-vs-as-far-w-1629480780",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "ICE Hockey League",
+        "teams": "Steinbach Black Wings Linz vs HC Bolzano",
+        "time_display": "Jan 28, 18:15",
+        "url_page": "https://yeahscore1.com/match/steinbach-black-wings-linz-vs-hc-bolzano-1629480781",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
     }
 ]
