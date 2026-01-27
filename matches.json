@@ -5,18 +5,8 @@
         "league": "Australia - Australian Open",
         "teams": "Home vs Away",
         "time_display": "LIVE LIVE",
-        "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481830",
-        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn-bp-livestream.rumsport.com%2Fstream%2F15%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769473800&token=a3fabc9a71aa671181b71a3aabdafede974634ad.false.1769482800-sRkT3Sz7wHaIoFhOjK4LZyvarHIyUlPu8netmjt6Usc%3D",
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "LIVE",
-        "sport": "Football",
-        "league": "Australia - Australian Open",
-        "teams": "Home vs Away",
-        "time_display": "LIVE LIVE",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481831",
-        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F43%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769472000&token=a3fabc9a71aa671181b71a3aabdafede974634ad.false.1769482800-sRkT3Sz7wHaIoFhOjK4LZyvarHIyUlPu8netmjt6Usc%3D",
+        "stream_url": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F43%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769472000&token=46d294b39c8c9d97344c418e25e08903050c12b7.false.1769482800-yBmZe54gFYMDFrj3RrUy%2Bvnc6Hd7elOt%2FMmy1ts8%2BQY%3D",
         "referer": "https://yeahscore1.com"
     },
     {
@@ -266,6 +256,16 @@
         "teams": "\u00c9lan Chalon vs W\u00fcrzburg Baskets",
         "time_display": "Jan 27,  \n                19:00",
         "url_page": "https://yeahscore1.com/match/elan-chalon-vs-wurzburg-baskets-1629481715",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "sport": "Basketball",
+        "league": "NBA",
+        "teams": "Portland Trail Blazers vs Washington Wizards",
+        "time_display": "Jan 28,  \n                00:00",
+        "url_page": "https://yeahscore1.com/match/portland-trail-blazers-vs-washington-wizards-1629480739",
         "stream_url": null,
         "referer": "https://yeahscore1.com"
     },
