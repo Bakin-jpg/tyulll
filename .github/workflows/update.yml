@@ -3,7 +3,7 @@ name: Scrape YeahScore Full Stream
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *' # Jalan tiap 30 menit (jangan terlalu sering karena berat)
+    - cron: '*/5 * * * *' # Tetap 30 menit agar akun GitHub aman (tidak kena limit usage)
 
 permissions:
   contents: write
@@ -11,7 +11,7 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 15 # Tambah waktu timeout
+    timeout-minutes: 25 # DIUBAH: Naikkan ke 25 menit (deep scrape butuh waktu lebih lama)
 
     steps:
       - name: Checkout
@@ -20,12 +20,13 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: '3.10' # Disarankan pakai 3.10 untuk kompatibilitas Playwright terbaru
 
       - name: Install Libraries
         run: |
           pip install playwright beautifulsoup4
           playwright install chromium
+          playwright install-deps # DITAMBAH: Wajib ada! Menginstall dependency sistem Ubuntu agar browser tidak crash
 
       - name: Run Scraper
         run: python scrape.py
