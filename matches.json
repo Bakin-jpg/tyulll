@@ -6,43 +6,7 @@
         "type": "LIVE",
         "url_page": "https://yeahscore1.com/match/golden-state-warriors-vs-minnesota-timberwolves-1629480149",
         "stream_url": null,
-        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F17%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769481000&token=f2c719852cebdaaa54673890857dfa6036bd4c42.false.1769482800-l5jWZF%2FnbTN8LFvNphqoTWY7yBvKf0B6Uc1ejm%2BYGfs%3D"
-    },
-    {
-        "teams": "Portland Trail Blazers vs Boston Celtics",
-        "league": "International - NBA",
-        "time": "LIVE LIVE",
-        "type": "LIVE",
-        "url_page": "https://yeahscore1.com/match/portland-trail-blazers-vs-boston-celtics-1629480147",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F3%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769475600&token=f2c719852cebdaaa54673890857dfa6036bd4c42.false.1769482800-l5jWZF%2FnbTN8LFvNphqoTWY7yBvKf0B6Uc1ejm%2BYGfs%3D"
-    },
-    {
-        "teams": "Los Angeles Lakers vs Chicago Bulls",
-        "league": "International - NBA",
-        "time": "LIVE LIVE",
-        "type": "LIVE",
-        "url_page": "https://yeahscore1.com/match/los-angeles-lakers-vs-chicago-bulls-1629480145",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F39%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769475600&token=f2c719852cebdaaa54673890857dfa6036bd4c42.false.1769482800-l5jWZF%2FnbTN8LFvNphqoTWY7yBvKf0B6Uc1ejm%2BYGfs%3D"
-    },
-    {
-        "teams": "Memphis Grizzlies vs Houston Rockets",
-        "league": "International - NBA",
-        "time": "LIVE LIVE",
-        "type": "LIVE",
-        "url_page": "https://yeahscore1.com/match/memphis-grizzlies-vs-houston-rockets-1629480146",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F25%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769475600&token=f2c719852cebdaaa54673890857dfa6036bd4c42.false.1769482800-l5jWZF%2FnbTN8LFvNphqoTWY7yBvKf0B6Uc1ejm%2BYGfs%3D"
-    },
-    {
-        "teams": "Anaheim Ducks vs Edmonton Oilers",
-        "league": "International - NHL",
-        "time": "LIVE LIVE",
-        "type": "LIVE",
-        "url_page": "https://yeahscore1.com/match/anaheim-ducks-vs-edmonton-oilers-1629480148",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F44%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769477400&token=f2c719852cebdaaa54673890857dfa6036bd4c42.false.1769482800-l5jWZF%2FnbTN8LFvNphqoTWY7yBvKf0B6Uc1ejm%2BYGfs%3D"
+        "referer": "https://xiaolin3.live/wowhaha.php?m3u8=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F17%2Findex.m3u8&parent=yeahscore1.com&matchdate=1769481000&token=25551b65591ce66dbf9757836187de5bc909f561.false.1769482800-YVpQHg7hkblrvXtQ6v1DYaFOGbN55AameGh1PdaJXZI%3D"
     },
     {
         "teams": "Huddersfield vs Luton",
@@ -72,11 +36,11 @@
         "referer": null
     },
     {
-        "teams": "Colchester vs Grimsby",
+        "teams": "Salford City vs Chesterfield",
         "league": "League Two",
         "time": "Jan 27, 19:45",
         "type": "UPCOMING",
-        "url_page": "https://yeahscore1.com/match/colchester-vs-grimsby-1386338",
+        "url_page": "https://yeahscore1.com/match/salford-city-vs-chesterfield-1386342",
         "stream_url": null,
         "referer": null
     },
@@ -90,11 +54,11 @@
         "referer": null
     },
     {
-        "teams": "Salford City vs Chesterfield",
+        "teams": "Colchester vs Grimsby",
         "league": "League Two",
         "time": "Jan 27, 19:45",
         "type": "UPCOMING",
-        "url_page": "https://yeahscore1.com/match/salford-city-vs-chesterfield-1386342",
+        "url_page": "https://yeahscore1.com/match/colchester-vs-grimsby-1386338",
         "stream_url": null,
         "referer": null
     },
