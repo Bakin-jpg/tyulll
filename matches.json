@@ -1,1 +1,137 @@
-[]
+[
+    {
+        "type": "UPCOMING",
+        "league": "Today",
+        "teams": "Lincoln vs Bradford",
+        "time_display": "19:45",
+        "url_page": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Tomorrow",
+        "teams": "Paris Saint Germain vs Newcastle",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/paris-saint-germain-vs-newcastle-1451149",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Tomorrow",
+        "teams": "Arsenal vs Kairat Almaty",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/arsenal-vs-kairat-almaty-1451159",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Tomorrow",
+        "teams": "Liverpool vs Qarabag",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/liverpool-vs-qarabag-1451160",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Tomorrow",
+        "teams": "Barcelona vs FC Copenhagen",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/barcelona-vs-fc-copenhagen-1451161",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Tomorrow",
+        "teams": "Napoli vs Chelsea",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/napoli-vs-chelsea-1451146",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Tomorrow",
+        "teams": "Benfica vs Real Madrid",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/benfica-vs-real-madrid-1451162",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "League One",
+        "teams": "Huddersfield vs Luton",
+        "time_display": "Jan 27, 19:45",
+        "url_page": "https://yeahscore1.com/match/huddersfield-vs-luton-1387442",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "League One",
+        "teams": "Lincoln vs Bradford",
+        "time_display": "Jan 27, 19:45",
+        "url_page": "https://yeahscore1.com/match/lincoln-vs-bradford-1387443",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "League One",
+        "teams": "Doncaster vs Leyton Orient",
+        "time_display": "Jan 27, 20:00",
+        "url_page": "https://yeahscore1.com/match/doncaster-vs-leyton-orient-1387441",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "League Two",
+        "teams": "Colchester vs Grimsby",
+        "time_display": "Jan 27, 19:45",
+        "url_page": "https://yeahscore1.com/match/colchester-vs-grimsby-1386338",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "League Two",
+        "teams": "Notts County vs Swindon Town",
+        "time_display": "Jan 27, 19:45",
+        "url_page": "https://yeahscore1.com/match/notts-county-vs-swindon-town-1386341",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "League Two",
+        "teams": "Salford City vs Chesterfield",
+        "time_display": "Jan 27, 19:45",
+        "url_page": "https://yeahscore1.com/match/salford-city-vs-chesterfield-1386342",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Bundesliga",
+        "teams": "Werder Bremen vs 1899 Hoffenheim",
+        "time_display": "Jan 27, 19:30",
+        "url_page": "https://yeahscore1.com/match/werder-bremen-vs-1899-hoffenheim-1388451",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Bundesliga",
+        "teams": "FC St. Pauli vs RB Leipzig",
+        "time_display": "Jan 27, 19:30",
+        "url_page": "https://yeahscore1.com/match/fc-st-pauli-vs-rb-leipzig-1388449",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    }
+]
