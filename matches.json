@@ -1,1 +1,42 @@
-
+[
+    {
+        "type": "LIVE",
+        "sport": "Football",
+        "league": "Australia - Australian Open",
+        "teams": "Home vs Away",
+        "time_display": "LIVE LIVE",
+        "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481847",
+        "stream_url": "https://prd.jwpltx.com/v1/jwplayer6/ping.gif?h=-1405173309&e=s&n=4290665140962546&abc=0&aid=asklZGrLEeeE6gpVuA4vVw&amp=0&at=1&c=0&ccp=0&cp=0&d=1&eb=0&ed=9&emi=1aah8mq6mttz&i=1&lid=1p9d7dsgeejc&lsa=set&mt=1&pbd=1&pbr=1&pgi=rj5iy17yl69t&ph=1&pid=urnrfNAc&pii=0&pl=641&plc=1&pli=15ppprj1hhaz&pp=hlsjs&ppm=LIVE&prc=1&ps=4&pss=1&pt=&pu=https%3A%2F%2Fyeahscore1.com%2F&pv=8.40.5&pyc=1&s=0&sdk=0&stc=1&stpe=0&tv=4.0.9&vb=1&vi=0.59&vl=90&wd=1140&bwe=2261&cae=0&cct=0&ch=2&cst=28&cdid=video&drm=0&ff=880&fsm=0&l=0&mk=hls&mu=https%3A%2F%2Fcdn-rum.n2olabs1.pro%2Fstream.m3u8%3Furl%3Dhttps%253A%252F%252Flivecdn-bp-livestream.rumsport.com%252Fstream%252F15%252Findex.m3u8%26token%3De187505e5b2c9391f2711a33ca6c53074c6138c4%26is_vip%3Dfalse%26verify%3D1769493600-tqT8KXg4%252FFm7ChQLeN4xYJczbFmrQ2SKNfilFRlBeMw%253D&pcp=28&pd=2&plng=en-US&pni=1&pr=2&q=0&sp=0&strt=1640&tb=32&tt=0&vd=0&vs=0&sa=1769503266753",
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "LIVE",
+        "sport": "Football",
+        "league": "Australia - Australian Open",
+        "teams": "Home vs Away",
+        "time_display": "LIVE LIVE",
+        "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481831",
+        "stream_url": "https://prd.jwpltx.com/v1/error/ping.gif?h=-1728532007&e=err&n=0550550747175734&abc=0&aid=asklZGrLEeeE6gpVuA4vVw&amp=0&at=1&c=0&ccp=0&cp=0&d=1&eb=0&ed=9&emi=4qqnft14e9t7&i=1&lid=1p9d7dsgeejc&lsa=read&mt=1&pbd=1&pbr=1&pgi=tl04il126gma&ph=1&pid=urnrfNAc&pii=0&pl=641&plc=1&pli=1q3skaoc6m1n&pp=hlsjs&prc=1&ps=4&pss=1&pt=&pu=https%3A%2F%2Fyeahscore1.com%2F&pv=8.40.5&pyc=0&s=0&sdk=0&ss=1&stc=1&stpe=0&tv=4.0.9&vb=1&vi=0.59&vl=90&wd=1140&cme=0&erc=232011&mu=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F43%2Findex.m3u8&sa=1769503272046",
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "LIVE",
+        "sport": "Football",
+        "league": "International - ICC Under-19 Cricket World Cup",
+        "teams": "Pakistan vs New Zealand",
+        "time_display": "LIVE LIVE",
+        "url_page": "https://yeahscore1.com/match/pakistan-vs-new-zealand-1629480151",
+        "stream_url": "https://prd.jwpltx.com/v1/error/ping.gif?h=1456389092&e=err&n=6081777318064706&abc=0&aid=asklZGrLEeeE6gpVuA4vVw&amp=0&at=1&c=0&ccp=0&cp=0&d=1&eb=0&ed=9&emi=1a9t6oz1jdyg&i=1&lid=1p9d7dsgeejc&lsa=read&mt=1&pbd=1&pbr=1&pgi=1dmzmngoachp&ph=1&pid=urnrfNAc&pii=0&pl=641&plc=1&pli=1hzb7cla5i36&pp=hlsjs&prc=1&ps=4&pss=1&pt=&pu=https%3A%2F%2Fyeahscore1.com%2F&pv=8.40.5&pyc=0&s=0&sdk=0&stc=1&stpe=0&tv=4.0.9&vb=1&vi=0.54&vl=90&wd=1140&cme=0&erc=232011&mu=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F34%2Findex.m3u8&sa=1769503278941",
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "LIVE",
+        "sport": "Football",
+        "league": "International - ICC Under-19 Cricket World Cup",
+        "teams": "Zimbabwe vs India",
+        "time_display": "LIVE LIVE",
+        "url_page": "https://yeahscore1.com/match/zimbabwe-vs-india-1629480150",
+        "stream_url": "https://livecdn-bp-livestream.rumsport.com/stream/46/chunks.m3u8?x-sign=1464a326e914a1d4ee170f2ffdf10222&x-time=1769503260&is_vip=false&token=e187505e5b2c9391f2711a33ca6c53074c6138c4",
+        "referer": "https://yeahscore1.com"
+    }
+]
