@@ -1,14 +1,5 @@
 [
     {
-        "league": "Saudi Arabia - Pro League",
-        "type": "LIVE",
-        "time": "28 January 2026 17:30",
-        "teams": "Al-Ahli Jeddah vs Al-Ettifaq",
-        "url_page": "https://yeahscore1.com/match/al-ahli-jeddah-vs-al-ettifaq-1436076",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=c1dcad24c28b2e62ea63de2ad25f9b799115996d&is_vip=false&verify=1769623260-lLzSqGTY%2BpmYN5BTBTt6JYJlH6R%2B5ro1jZxf8ZyqN1s%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "EuroCup",
         "type": "UPCOMING",
         "time": "28 January 2026 16:00",
@@ -54,11 +45,38 @@
         "referer": "https://xiaolin3.live/"
     },
     {
+        "league": "Pro League",
+        "type": "UPCOMING",
+        "time": "28 January 2026 17:30",
+        "teams": "Al-Ahli Jeddah vs Al-Ettifaq",
+        "url_page": "https://yeahscore1.com/match/al-ahli-jeddah-vs-al-ettifaq-1436076",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
         "league": "EuroCup",
         "type": "UPCOMING",
         "time": "28 January 2026 17:30",
         "teams": "Panionios Cosmorama Travel Athens vs London Lions",
         "url_page": "https://yeahscore1.com/match/panionios-cosmorama-travel-athens-vs-london-lions-1629480779",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "28 January 2026 18:00",
+        "teams": "Arsenal W vs AS FAR W",
+        "url_page": "https://yeahscore1.com/match/arsenal-w-vs-as-far-w-1629480780",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Basketball Champions League",
+        "type": "UPCOMING",
+        "time": "28 January 2026 18:00",
+        "teams": "Joventut Badalona vs Baloncesto Málaga",
+        "url_page": "https://yeahscore1.com/match/joventut-badalona-vs-baloncesto-malaga-1629481717",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
