@@ -1,14 +1,5 @@
 [
     {
-        "league": "Basketball Champions League",
-        "type": "UPCOMING",
-        "time": "28 January 2026 17:00",
-        "teams": "AEK Athens FC vs ALBA Berlin",
-        "url_page": "https://yeahscore1.com/match/aek-athens-fc-vs-alba-berlin-1629481716",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "Pro League",
         "type": "UPCOMING",
         "time": "28 January 2026 17:30",
@@ -383,6 +374,15 @@
         "time": "29 January 2026 01:00",
         "teams": "Charlotte Hornets vs Memphis Grizzlies",
         "url_page": "https://yeahscore1.com/match/charlotte-hornets-vs-memphis-grizzlies-1629480803",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Liga Profesional Argentina",
+        "type": "UPCOMING",
+        "time": "29 January 2026 01:15",
+        "teams": "Estudiantes L.P. vs Boca Juniors",
+        "url_page": "https://yeahscore1.com/match/estudiantes-lp-vs-boca-juniors-1491837",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     }
