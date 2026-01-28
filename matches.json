@@ -1,11 +1,38 @@
 [
     {
         "type": "LIVE",
+        "league": "- Friendlies Women",
+        "teams": "USA W vs Chile W",
+        "time_display": "LIVE NOW",
+        "url_page": "https://yeahscore1.com/match/usa-w-vs-chile-w-1503002",
+        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F17%2Findex.m3u8&token=81744050260eb658e9371c079b2cc3b4ee91030c&is_vip=false&verify=1769569200-a9pUnk9VH6Xz%2FHGS4ssd6iszqOIdw9bIvFGt6vhHAdQ%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "type": "LIVE",
+        "league": "International - NHL",
+        "teams": "San Jose Sharks vs Vancouver Canucks",
+        "time_display": "LIVE NOW",
+        "url_page": "https://yeahscore1.com/match/san-jose-sharks-vs-vancouver-canucks-1629480768",
+        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F15%2Findex.m3u8&token=81744050260eb658e9371c079b2cc3b4ee91030c&is_vip=false&verify=1769569200-a9pUnk9VH6Xz%2FHGS4ssd6iszqOIdw9bIvFGt6vhHAdQ%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "type": "LIVE",
+        "league": "International - NHL",
+        "teams": "Washington Capitals vs Seattle Kraken",
+        "time_display": "LIVE NOW",
+        "url_page": "https://yeahscore1.com/match/washington-capitals-vs-seattle-kraken-1629480767",
+        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F9%2Findex.m3u8&token=81744050260eb658e9371c079b2cc3b4ee91030c&is_vip=false&verify=1769569200-a9pUnk9VH6Xz%2FHGS4ssd6iszqOIdw9bIvFGt6vhHAdQ%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "type": "LIVE",
         "league": "International - NHL",
         "teams": "Chicago Blackhawks vs Minnesota Wild",
         "time_display": "LIVE NOW",
         "url_page": "https://yeahscore1.com/match/chicago-blackhawks-vs-minnesota-wild-1629480760",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F20%2Findex.m3u8&token=e3b8f368e5d0f57353b7b8dd52091594b8b33fd3&is_vip=false&verify=1769558400-IS93xrb9DErp1UiQOjdAkfjQXlglSAG%2FqRVU9bzCd80%3D",
+        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F20%2Findex.m3u8&token=81744050260eb658e9371c079b2cc3b4ee91030c&is_vip=false&verify=1769569200-a9pUnk9VH6Xz%2FHGS4ssd6iszqOIdw9bIvFGt6vhHAdQ%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,34 +41,34 @@
         "teams": "Dallas Stars vs St. Louis Blues",
         "time_display": "LIVE NOW",
         "url_page": "https://yeahscore1.com/match/dallas-stars-vs-st-louis-blues-1629480759",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F25%2Findex.m3u8&token=e3b8f368e5d0f57353b7b8dd52091594b8b33fd3&is_vip=false&verify=1769558400-IS93xrb9DErp1UiQOjdAkfjQXlglSAG%2FqRVU9bzCd80%3D",
+        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F25%2Findex.m3u8&token=81744050260eb658e9371c079b2cc3b4ee91030c&is_vip=false&verify=1769569200-a9pUnk9VH6Xz%2FHGS4ssd6iszqOIdw9bIvFGt6vhHAdQ%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
         "type": "LIVE",
-        "league": "International - NHL",
-        "teams": "Winnipeg Jets vs New Jersey Devils",
+        "league": "International - NBA",
+        "teams": "Los Angeles Clippers vs Utah Jazz",
         "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/winnipeg-jets-vs-new-jersey-devils-1629480744",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F17%2Findex.m3u8&token=e3b8f368e5d0f57353b7b8dd52091594b8b33fd3&is_vip=false&verify=1769558400-IS93xrb9DErp1UiQOjdAkfjQXlglSAG%2FqRVU9bzCd80%3D",
+        "url_page": "https://yeahscore1.com/match/los-angeles-clippers-vs-utah-jazz-1629480766",
+        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F32%2Findex.m3u8&token=81744050260eb658e9371c079b2cc3b4ee91030c&is_vip=false&verify=1769569200-a9pUnk9VH6Xz%2FHGS4ssd6iszqOIdw9bIvFGt6vhHAdQ%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
         "type": "LIVE",
-        "league": "International - NHL",
-        "teams": "Nashville Predators vs Boston Bruins",
+        "league": "International - NBA",
+        "teams": "Brooklyn Nets vs Phoenix Suns",
         "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/nashville-predators-vs-boston-bruins-1629480745",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F18%2Findex.m3u8&token=e3b8f368e5d0f57353b7b8dd52091594b8b33fd3&is_vip=false&verify=1769558400-IS93xrb9DErp1UiQOjdAkfjQXlglSAG%2FqRVU9bzCd80%3D",
+        "url_page": "https://yeahscore1.com/match/brooklyn-nets-vs-phoenix-suns-1629480764",
+        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F38%2Findex.m3u8&token=81744050260eb658e9371c079b2cc3b4ee91030c&is_vip=false&verify=1769569200-a9pUnk9VH6Xz%2FHGS4ssd6iszqOIdw9bIvFGt6vhHAdQ%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
         "type": "LIVE",
-        "league": "International - NHL",
-        "teams": "Utah Mammoth vs Florida Panthers",
+        "league": "International - NBA",
+        "teams": "Detroit Pistons vs Denver Nuggets",
         "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/utah-mammoth-vs-florida-panthers-1629480743",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F15%2Findex.m3u8&token=e3b8f368e5d0f57353b7b8dd52091594b8b33fd3&is_vip=false&verify=1769558400-IS93xrb9DErp1UiQOjdAkfjQXlglSAG%2FqRVU9bzCd80%3D",
+        "url_page": "https://yeahscore1.com/match/detroit-pistons-vs-denver-nuggets-1629480763",
+        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F35%2Findex.m3u8&token=81744050260eb658e9371c079b2cc3b4ee91030c&is_vip=false&verify=1769569200-a9pUnk9VH6Xz%2FHGS4ssd6iszqOIdw9bIvFGt6vhHAdQ%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -50,7 +77,7 @@
         "teams": "New Orleans Pelicans vs Oklahoma City Thunder",
         "time_display": "LIVE NOW",
         "url_page": "https://yeahscore1.com/match/new-orleans-pelicans-vs-oklahoma-city-thunder-1629480761",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F39%2Findex.m3u8&token=e3b8f368e5d0f57353b7b8dd52091594b8b33fd3&is_vip=false&verify=1769558400-IS93xrb9DErp1UiQOjdAkfjQXlglSAG%2FqRVU9bzCd80%3D",
+        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F39%2Findex.m3u8&token=81744050260eb658e9371c079b2cc3b4ee91030c&is_vip=false&verify=1769569200-a9pUnk9VH6Xz%2FHGS4ssd6iszqOIdw9bIvFGt6vhHAdQ%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -59,52 +86,25 @@
         "teams": "Milwaukee Bucks vs Philadelphia 76ers",
         "time_display": "LIVE NOW",
         "url_page": "https://yeahscore1.com/match/milwaukee-bucks-vs-philadelphia-76ers-1629480762",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F22%2Findex.m3u8&token=e3b8f368e5d0f57353b7b8dd52091594b8b33fd3&is_vip=false&verify=1769558400-IS93xrb9DErp1UiQOjdAkfjQXlglSAG%2FqRVU9bzCd80%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "International - NBA",
-        "teams": "Sacramento Kings vs New York Knicks",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/sacramento-kings-vs-new-york-knicks-1629480757",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F34%2Findex.m3u8&token=e3b8f368e5d0f57353b7b8dd52091594b8b33fd3&is_vip=false&verify=1769558400-IS93xrb9DErp1UiQOjdAkfjQXlglSAG%2FqRVU9bzCd80%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "International - NBA",
-        "teams": "Portland Trail Blazers vs Washington Wizards",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/portland-trail-blazers-vs-washington-wizards-1629480739",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F32%2Findex.m3u8&token=e3b8f368e5d0f57353b7b8dd52091594b8b33fd3&is_vip=false&verify=1769558400-IS93xrb9DErp1UiQOjdAkfjQXlglSAG%2FqRVU9bzCd80%3D",
+        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F22%2Findex.m3u8&token=81744050260eb658e9371c079b2cc3b4ee91030c&is_vip=false&verify=1769569200-a9pUnk9VH6Xz%2FHGS4ssd6iszqOIdw9bIvFGt6vhHAdQ%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
         "type": "LIVE",
         "league": "United States of America - NBA G League",
-        "teams": "Mexico City Capitanes vs Iowa Wolves",
+        "teams": "College Park Skyhawks vs South Bay Lakers",
         "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/mexico-city-capitanes-vs-iowa-wolves-1629480758",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F44%2Findex.m3u8&token=e3b8f368e5d0f57353b7b8dd52091594b8b33fd3&is_vip=false&verify=1769558400-IS93xrb9DErp1UiQOjdAkfjQXlglSAG%2FqRVU9bzCd80%3D",
+        "url_page": "https://yeahscore1.com/match/college-park-skyhawks-vs-south-bay-lakers-1629480769",
+        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F44%2Findex.m3u8&token=81744050260eb658e9371c079b2cc3b4ee91030c&is_vip=false&verify=1769569200-a9pUnk9VH6Xz%2FHGS4ssd6iszqOIdw9bIvFGt6vhHAdQ%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
         "type": "LIVE",
-        "league": "Australia - Australian Open",
-        "teams": "Unknown Match",
+        "league": "United States of America - NBA G League",
+        "teams": "Austin Spurs vs Valley Suns",
         "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481922",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F43%2Findex.m3u8&token=e3b8f368e5d0f57353b7b8dd52091594b8b33fd3&is_vip=false&verify=1769558400-IS93xrb9DErp1UiQOjdAkfjQXlglSAG%2FqRVU9bzCd80%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "Australia - Australian Open",
-        "teams": "Unknown Match",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481923",
-        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F47%2Findex.m3u8&token=e3b8f368e5d0f57353b7b8dd52091594b8b33fd3&is_vip=false&verify=1769558400-IS93xrb9DErp1UiQOjdAkfjQXlglSAG%2FqRVU9bzCd80%3D",
+        "url_page": "https://yeahscore1.com/match/austin-spurs-vs-valley-suns-1629480765",
+        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F23%2Findex.m3u8&token=81744050260eb658e9371c079b2cc3b4ee91030c&is_vip=false&verify=1769569200-a9pUnk9VH6Xz%2FHGS4ssd6iszqOIdw9bIvFGt6vhHAdQ%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -119,9 +119,36 @@
     {
         "type": "UPCOMING",
         "league": "Today",
-        "teams": "Liverpool vs Qarabag",
+        "teams": "Arsenal vs Kairat Almaty",
         "time_display": "20:00",
-        "url_page": "https://yeahscore1.com/match/liverpool-vs-qarabag-1451160",
+        "url_page": "https://yeahscore1.com/match/arsenal-vs-kairat-almaty-1451159",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Today",
+        "teams": "Barcelona vs FC Copenhagen",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/barcelona-vs-fc-copenhagen-1451161",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Today",
+        "teams": "Napoli vs Chelsea",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/napoli-vs-chelsea-1451146",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "Today",
+        "teams": "Benfica vs Real Madrid",
+        "time_display": "20:00",
+        "url_page": "https://yeahscore1.com/match/benfica-vs-real-madrid-1451162",
         "stream_url": null,
         "referer": "https://yeahscore1.com"
     },
@@ -145,28 +172,46 @@
     },
     {
         "type": "UPCOMING",
-        "league": "Today",
+        "league": "UEFA Champions League",
+        "teams": "Liverpool vs Qarabag",
+        "time_display": "Jan 28, 20:00",
+        "url_page": "https://yeahscore1.com/match/liverpool-vs-qarabag-1451160",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "UEFA Champions League",
         "teams": "Arsenal vs Kairat Almaty",
-        "time_display": "20:00",
+        "time_display": "Jan 28, 20:00",
         "url_page": "https://yeahscore1.com/match/arsenal-vs-kairat-almaty-1451159",
         "stream_url": null,
         "referer": "https://yeahscore1.com"
     },
     {
         "type": "UPCOMING",
-        "league": "Today",
-        "teams": "Benfica vs Real Madrid",
-        "time_display": "20:00",
-        "url_page": "https://yeahscore1.com/match/benfica-vs-real-madrid-1451162",
+        "league": "UEFA Champions League",
+        "teams": "Manchester City vs Galatasaray",
+        "time_display": "Jan 28, 20:00",
+        "url_page": "https://yeahscore1.com/match/manchester-city-vs-galatasaray-1451153",
         "stream_url": null,
         "referer": "https://yeahscore1.com"
     },
     {
         "type": "UPCOMING",
-        "league": "Today",
-        "teams": "Napoli vs Chelsea",
-        "time_display": "20:00",
-        "url_page": "https://yeahscore1.com/match/napoli-vs-chelsea-1451146",
+        "league": "UEFA Champions League",
+        "teams": "Paris Saint Germain vs Newcastle",
+        "time_display": "Jan 28, 20:00",
+        "url_page": "https://yeahscore1.com/match/paris-saint-germain-vs-newcastle-1451149",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "UEFA Champions League",
+        "teams": "Monaco vs Juventus",
+        "time_display": "Jan 28, 20:00",
+        "url_page": "https://yeahscore1.com/match/monaco-vs-juventus-1451148",
         "stream_url": null,
         "referer": "https://yeahscore1.com"
     },
@@ -194,52 +239,7 @@
         "teams": "USA W vs Chile W",
         "time_display": "Jan 28, 03:00",
         "url_page": "https://yeahscore1.com/match/usa-w-vs-chile-w-1503002",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "league": "",
-        "teams": "NJ/NY Gotham FC W vs Corinthians W",
-        "time_display": "Jan 28, 12:30",
-        "url_page": "https://yeahscore1.com/match/njny-gotham-fc-w-vs-corinthians-w-1629480773",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "league": "",
-        "teams": "Roma W vs Lazio W",
-        "time_display": "Jan 28, 17:00",
-        "url_page": "https://yeahscore1.com/match/roma-w-vs-lazio-w-1629480777",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "league": "",
-        "teams": "Inter Milano W vs Ternana W",
-        "time_display": "Jan 28, 17:00",
-        "url_page": "https://yeahscore1.com/match/inter-milano-w-vs-ternana-w-1629480776",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "league": "",
-        "teams": "Arsenal W vs AS FAR W",
-        "time_display": "Jan 28, 18:00",
-        "url_page": "https://yeahscore1.com/match/arsenal-w-vs-as-far-w-1629480780",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "league": "ICE Hockey League",
-        "teams": "Steinbach Black Wings Linz vs HC Bolzano",
-        "time_display": "Jan 28, 18:15",
-        "url_page": "https://yeahscore1.com/match/steinbach-black-wings-linz-vs-hc-bolzano-1629480781",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
+        "stream_url": "https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2Flivecdn.rumsport3.live%2Fstream%2F17%2Findex.m3u8&token=81744050260eb658e9371c079b2cc3b4ee91030c&is_vip=false&verify=1769569200-a9pUnk9VH6Xz%2FHGS4ssd6iszqOIdw9bIvFGt6vhHAdQ%3D",
+        "referer": "https://xiaolin3.live/"
     }
 ]
