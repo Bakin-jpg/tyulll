@@ -1,17 +1,24 @@
 import json
 import re
 import time
+import socket  # Tambahan untuk cek IP manual jika perlu
+from urllib.parse import urlparse # Tambahan untuk parsing domain
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
 def get_stream_token(context, iframe_url, referer):
-    # ... (Kode fungsi ini tetap sama, tidak perlu diubah) ...
+    """
+    1. Buka Iframe -> Ambil URL Wrapper (cdn-rum...).
+    2. Request Wrapper -> Ambil URL Final.
+    3. DEBUG: Request URL Final -> Print Info Server, IP, dan Isi .ts
+    """
     page = context.new_page()
     final_url = None
 
     try:
         print(f"      -> Bedah Iframe: {iframe_url[:60]}...")
         
+        # --- LANGKAH 1: Request Source Iframe ---
         response = page.request.get(
             iframe_url, 
             headers={"Referer": referer}
@@ -28,8 +35,10 @@ def get_stream_token(context, iframe_url, referer):
         else:
             print(f"      [GAGAL] Iframe Status: {response.status}")
 
+        # --- LANGKAH 2: Fetch Wrapper ---
         if wrapper_url:
             try:
+                # Header wajib buat player ini
                 headers_stream = {
                     "Referer": "https://xiaolin3.live/",
                     "Origin": "https://xiaolin3.live",
@@ -47,14 +56,57 @@ def get_stream_token(context, iframe_url, referer):
                             final_url = line
                             break
                     
+                    # --- LANGKAH 3: DEBUG INFO SERVER & ISI M3U8 ---
                     if final_url:
                         print(f"      [SUKSES] Link Final didapatkan.")
+                        print(f"      [DEBUG] Menganalisis Server & Konten...")
+                        
                         try:
+                            # Request ke URL final
                             debug_resp = page.request.get(final_url, headers=headers_stream)
+                            
                             if debug_resp.status == 200:
+                                # ============================================================
+                                # TAMBAHAN: CEK INFO SERVER & IP
+                                # ============================================================
+                                print("\n" + "="*20 + " INFO SERVER & IP " + "="*20)
+                                
+                                # 1. Ambil Header Server
+                                all_headers = debug_resp.headers
+                                server_soft = all_headers.get("server", "Hidden/Unknown")
+                                content_type = all_headers.get("content-type", "-")
+                                
+                                print(f"      [SERVER HEADER]   : {server_soft}")
+                                print(f"      [CONTENT TYPE]    : {content_type}")
+
+                                # 2. Ambil IP Address
+                                # Playwright APIResponse terkadang tidak mengekspos IP langsung jika lewat proxy internal,
+                                # jadi kita gunakan fallback socket python murni agar akurat.
+                                server_ip = "Unknown"
+                                try:
+                                    # Cara 1: Coba fitur Playwright (tersedia di versi baru)
+                                    addr = debug_resp.server_addr()
+                                    if addr:
+                                        server_ip = addr['ipAddress']
+                                        print(f"      [IP (Playwright)] : {server_ip}:{addr['port']}")
+                                    else:
+                                        raise Exception("No info")
+                                except:
+                                    # Cara 2: Fallback pakai Socket DNS Lookup
+                                    try:
+                                        parsed_uri = urlparse(final_url)
+                                        domain = parsed_uri.netloc.split(':')[0] # Hapus port jika ada
+                                        server_ip = socket.gethostbyname(domain)
+                                        print(f"      [IP (DNS Lookup)] : {server_ip}")
+                                    except Exception as dns_err:
+                                        print(f"      [IP ERROR]        : Gagal resolve ({dns_err})")
+
+                                print("="*56)
+                                # ============================================================
+
                                 debug_content = debug_resp.text()
                                 print("\n" + "="*20 + " ISI FILE M3U8 " + "="*20)
-                                preview_lines = debug_content.split('\n')[:15] 
+                                preview_lines = debug_content.split('\n')[:10] 
                                 print('\n'.join(preview_lines))
                                 print("... (dan seterusnya)")
                                 print("="*55 + "\n")
@@ -62,33 +114,27 @@ def get_stream_token(context, iframe_url, referer):
                                 print(f"      [DEBUG ERROR] Gagal baca isi final m3u8. Status: {debug_resp.status}")
                         except Exception as d:
                             print(f"      [DEBUG ERROR] {d}")
+
                 else:
                     print(f"      [GAGAL] Gagal fetch wrapper. Status: {m3u8_resp.status}")
+
             except Exception as e:
                 print(f"      [ERROR] Gagal request wrapper: {e}")
+
     except Exception as e:
         print(f"      [ERROR] Global: {e}")
     finally:
         page.close()
+    
     return final_url
 
 def main():
     all_matches = []
     base_url = "https://yeahscore1.com"
 
-    # KONFIGURASI PROXY DI SINI
-    # Gunakan format: "http://ip:port" atau "server": "ip:port"
-    # Proxy yang Anda berikan: 103.175.80.202:8080
-    indo_proxy = {
-        "server": "http://113.192.1.27:8181" 
-    }
-
     with sync_playwright() as p:
-        print(f"Meluncurkan browser dengan Proxy: {indo_proxy['server']}...")
-        
         browser = p.chromium.launch(
             headless=True,
-            proxy=indo_proxy,  # <--- INI TAMBAHANNYA
             args=[
                 '--disable-blink-features=AutomationControlled',
                 '--no-sandbox',
@@ -96,18 +142,14 @@ def main():
                 '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
             ]
         )
-        
-        # Context tidak perlu new_page() langsung, gunakan browser.new_context()
-        # Proxy sudah dihandle di level browser, tapi jika butuh auth bisa diset di context
         context = browser.new_context()
         page = context.new_page()
 
         print("1. Membuka Halaman Utama...")
         try:
-            # Tambahkan timeout lebih lama karena pakai proxy biasanya lebih lambat
-            page.goto(base_url + "/", timeout=90000, wait_until="domcontentloaded")
+            page.goto(base_url + "/", timeout=60000, wait_until="domcontentloaded")
             try:
-                page.wait_for_selector("a.link-wrapper", timeout=20000)
+                page.wait_for_selector("a.link-wrapper", timeout=15000)
             except: pass
 
             html = page.content()
@@ -173,9 +215,10 @@ def main():
             iframe_src = None
             
             try:
-                detail_page.goto(match['url_page'], timeout=30000, wait_until="domcontentloaded")
+                detail_page.goto(match['url_page'], timeout=15000, wait_until="domcontentloaded")
+                
                 try:
-                    detail_page.wait_for_selector('iframe[src*="wowhaha"], iframe[src*="xiaolin"]', timeout=5000)
+                    detail_page.wait_for_selector('iframe[src*="wowhaha"], iframe[src*="xiaolin"]', timeout=3000)
                 except: pass
                 
                 iframes = detail_page.query_selector_all("iframe")
