@@ -5,16 +5,7 @@
         "time": "28 January 2026 17:30",
         "teams": "Al-Ahli Jeddah vs Al-Ettifaq",
         "url_page": "https://yeahscore1.com/match/al-ahli-jeddah-vs-al-ettifaq-1436076",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=47a5683fbd9e43e33a9c0f1a3edfc344f4ac3e12&is_vip=false&verify=1769621700-9olvhhoOuIbs9H%2BoW%2FApkQwDDM5xOmbPmw%2B%2B%2FSePRqk%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "28 January 2026 12:00",
-        "teams": "Board 1",
-        "url_page": "https://yeahscore1.com/match/board-1-1629480772",
-        "stream_url": null,
+        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=6e3903e65ee80def5a0ce6bfdda4edae15a13244&is_vip=false&verify=1769621820-oneKDhtIZm5ka59zdg9GD21KXqV1mSKW1GGNavZoiW8%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -356,6 +347,15 @@
         "time": "29 January 2026 00:30",
         "teams": "New York Knicks vs Toronto Raptors",
         "url_page": "https://yeahscore1.com/match/new-york-knicks-vs-toronto-raptors-1629480802",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "NBA",
+        "type": "UPCOMING",
+        "time": "29 January 2026 00:30",
+        "teams": "Atlanta Hawks vs Boston Celtics",
+        "url_page": "https://yeahscore1.com/match/atlanta-hawks-vs-boston-celtics-1629480800",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     }
