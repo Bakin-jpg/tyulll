@@ -1,45 +1,36 @@
-name: Scrape YeahScore V5
+name: Scrape Bola Indonesia
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # Bisa dijalankan manual lewat tombol di GitHub Actions
   schedule:
-    - cron: '*/15 * * * *' # Tiap 15 menit
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
-
-permissions:
-  contents: write
+    - cron: '*/30 * * * *' # Jalan otomatis tiap 30 menit (opsional)
 
 jobs:
-  scrape:
+  scrape-indo:
     runs-on: ubuntu-latest
-    timeout-minutes: 20 # Wajib agak lama
-
+    
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+    - name: Checkout Repository
+      uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
 
-      - name: Install Libraries
-        run: |
-          pip install playwright beautifulsoup4
-          playwright install chromium
-          playwright install-deps
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install playwright beautifulsoup4
+        playwright install chromium
+        playwright install-deps
 
-      - name: Run Scraper
-        run: python scrape.py
+    - name: Run Scraper
+      run: python scrape.py
 
-      - name: Commit Results
-        run: |
-          git config --global user.name "Bot Scraper"
-          git config --global user.email "bot@github.com"
-          git add matches.json
-          git commit -m "Update matches" || exit 0
-          git pull --rebase origin main
-          git push
+    - name: Upload Result
+      uses: actions/upload-artifact@v4
+      with:
+        name: match-results
+        path: matches.json
+        retention-days: 1
