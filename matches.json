@@ -5,7 +5,7 @@
         "time": "28 January 2026 07:30",
         "teams": "Australia vs West Indies",
         "url_page": "https://yeahscore1.com/match/australia-vs-west-indies-1629480770",
-        "stream_url": "https://livecdn.rumsport3.live/stream/46/chunks.m3u8?token=31fe355315eeb8f7f72dadcee7f093cd09615de9&is_vip=false&verify=1769594460-8iKECB4ABPG0aMDkSwrGWizOll0UG6ecM19r8x0Yuzk%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/46/chunks.m3u8?token=55d26227f8766b83df8aa668ea894dc3b585649f&is_vip=false&verify=1769597460-MdwQbT5gmqmNLQAz1bMc%2B2eCkr6TdoNJwTh9rV5FUaY%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,16 +14,7 @@
         "time": "28 January 2026 08:00",
         "teams": "Rod Laver Arena",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481929",
-        "stream_url": "https://livecdn-bp-livestream.rumsport.com/stream/43/chunks.m3u8?x-sign=d41d71400cf33e5d378af3081b3cc244&x-time=1769594460&is_vip=false&token=31fe355315eeb8f7f72dadcee7f093cd09615de9",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "A-League Women",
-        "type": "UPCOMING",
-        "time": "28 January 2026 11:00",
-        "teams": "Perth Glory FC W vs Sydney FC W",
-        "url_page": "https://yeahscore1.com/match/perth-glory-fc-w-vs-sydney-fc-w-1484541",
-        "stream_url": null,
+        "stream_url": "https://livecdn.rumsport3.live/stream/43/chunks.m3u8?token=55d26227f8766b83df8aa668ea894dc3b585649f&is_vip=false&verify=1769597460-Yb67E9yn7qBm59%2B0t%2BKHfaL7KGes7b5gYv2eoz3fNRE%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -207,6 +198,24 @@
         "referer": "https://xiaolin3.live/"
     },
     {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "28 January 2026 20:00",
+        "teams": "Liverpool vs Qarabag",
+        "url_page": "https://yeahscore1.com/match/liverpool-vs-qarabag-1451160",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Champions League",
+        "type": "UPCOMING",
+        "time": "28 January 2026 20:00",
+        "teams": "Barcelona vs FC Copenhagen",
+        "url_page": "https://yeahscore1.com/match/barcelona-vs-fc-copenhagen-1451161",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
         "league": "UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
@@ -219,26 +228,8 @@
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
-        "teams": "Liverpool vs Qarabag",
-        "url_page": "https://yeahscore1.com/match/liverpool-vs-qarabag-1451160",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "28 January 2026 20:00",
-        "teams": "Arsenal vs Kairat Almaty",
-        "url_page": "https://yeahscore1.com/match/arsenal-vs-kairat-almaty-1451159",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "28 January 2026 20:00",
-        "teams": "Manchester City vs Galatasaray",
-        "url_page": "https://yeahscore1.com/match/manchester-city-vs-galatasaray-1451153",
+        "teams": "Benfica vs Real Madrid",
+        "url_page": "https://yeahscore1.com/match/benfica-vs-real-madrid-1451162",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -252,11 +243,11 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "UEFA Champions League",
+        "league": "Others / International",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
-        "teams": "Barcelona vs FC Copenhagen",
-        "url_page": "https://yeahscore1.com/match/barcelona-vs-fc-copenhagen-1451161",
+        "teams": "Manchester City vs Galatasaray",
+        "url_page": "https://yeahscore1.com/match/manchester-city-vs-galatasaray-1451153",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
