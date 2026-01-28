@@ -1,7 +1,14 @@
 name: Scrape Manual Trigger
 
 on:
-  workflow_dispatch: # HANYA BISA DIJALANKAN VIA TOMBOL / API
+  workflow_dispatch: # Trigger via API PHP
+
+# =================================================
+# INI YANG KURANG! TAMBAHIN BLOK INI BIAR GAK 403
+# =================================================
+permissions:
+  contents: write
+# =================================================
 
 jobs:
   scrape:
@@ -11,6 +18,8 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} # Pastikan dia pake token bawaan yang udah dikasih izin write
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -32,8 +41,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: debug-results
-          path: |
-            matches.json
+          path: matches.json
           retention-days: 1
 
       - name: Commit Results
@@ -41,11 +49,18 @@ jobs:
         run: |
           git config --global user.name "API Bot"
           git config --global user.email "bot@api.com"
+          
           git add matches.json
+          
+          # Cek ada perubahan gak
           if [[ -n $(git status -s) ]]; then
             git commit -m "API Update: $(date)"
+            
+            # Tarik dulu takutnya ada update lain biar gak bentrok
             git pull --rebase origin main
+            
+            # Push pake token bawaan
             git push
           else
-            echo "No changes."
+            echo "Gak ada update data."
           fi
