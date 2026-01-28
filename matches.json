@@ -5,7 +5,7 @@
         "time": "28 January 2026 11:00",
         "teams": "Perth Glory FC W vs Sydney FC W",
         "url_page": "https://yeahscore1.com/match/perth-glory-fc-w-vs-sydney-fc-w-1484541",
-        "stream_url": "https://livecdn.rumsport3.live/stream/20/stream/20_fhd/chunks.m3u8?token=d573efa847578cbd88229af02543e610a596d2e8&is_vip=false&verify=1769602860-ppOCoqDppvh1YzulOvA%2BtsUkF2Pba2BejotCZvXWeUw%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/20/stream/20_fhd/chunks.m3u8?token=0a56e6c547c31500e64ee4c10dd8e134d735ee9d&is_vip=false&verify=1769602980-vQ4s92c1RRMrNx1yjC3J6SN3J%2BqHTOyzKW%2B8V3ddI1c%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,6 +14,15 @@
         "time": "28 January 2026 07:30",
         "teams": "Australia vs West Indies",
         "url_page": "https://yeahscore1.com/match/australia-vs-west-indies-1629480770",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UCI Pro Series",
+        "type": "UPCOMING",
+        "time": "28 January 2026 11:30",
+        "teams": "ES2, Alula Tour, Stage 2",
+        "url_page": "https://yeahscore1.com/match/es2-alula-tour-stage-2-1629480771",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
