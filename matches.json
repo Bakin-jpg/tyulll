@@ -1,55 +1,19 @@
 [
     {
+        "league": "International - EuroCup",
+        "type": "LIVE",
+        "time": "28 January 2026 16:00",
+        "teams": "Bahçeşehir Koleji SK vs Aris Thessaloniki Betsson",
+        "url_page": "https://yeahscore1.com/match/bahcesehir-koleji-sk-vs-aris-thessaloniki-betsson-1629480775",
+        "stream_url": "https://livecdn-bp-livestream.rumsport.com/stream/32/chunks.m3u8?x-sign=58d75dbee0407338c8f7bc7562dc7ceb&x-time=1769619060&is_vip=false&token=3d877eecc945f1c32a91416dd6dac196c50bd662",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "28 January 2026 12:00",
         "teams": "Board 1",
         "url_page": "https://yeahscore1.com/match/board-1-1629480772",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "EuroCup",
-        "type": "UPCOMING",
-        "time": "28 January 2026 16:00",
-        "teams": "Bahçeşehir Koleji SK vs Aris Thessaloniki Betsson",
-        "url_page": "https://yeahscore1.com/match/bahcesehir-koleji-sk-vs-aris-thessaloniki-betsson-1629480775",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "28 January 2026 17:00",
-        "teams": "Roma W vs Lazio W",
-        "url_page": "https://yeahscore1.com/match/roma-w-vs-lazio-w-1629480777",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "28 January 2026 17:00",
-        "teams": "Inter Milano W vs Ternana W",
-        "url_page": "https://yeahscore1.com/match/inter-milano-w-vs-ternana-w-1629480776",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Basketball Champions League",
-        "type": "UPCOMING",
-        "time": "28 January 2026 17:00",
-        "teams": "AEK Athens FC vs ALBA Berlin",
-        "url_page": "https://yeahscore1.com/match/aek-athens-fc-vs-alba-berlin-1629481716",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "EuroCup",
-        "type": "UPCOMING",
-        "time": "28 January 2026 17:00",
-        "teams": "Neptunas Klaipeda vs Hapoel Midtown Jerusalem",
-        "url_page": "https://yeahscore1.com/match/neptunas-klaipeda-vs-hapoel-midtown-jerusalem-1629480778",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
