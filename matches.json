@@ -81,7 +81,7 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Others / International",
+        "league": "UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
         "teams": "Paris Saint Germain vs Newcastle",
@@ -90,7 +90,7 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "UEFA Champions League",
+        "league": "Others / International",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
         "teams": "Liverpool vs Qarabag",
@@ -102,8 +102,8 @@
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
-        "teams": "Arsenal vs Kairat Almaty",
-        "url_page": "https://yeahscore1.com/match/arsenal-vs-kairat-almaty-1451159",
+        "teams": "Barcelona vs FC Copenhagen",
+        "url_page": "https://yeahscore1.com/match/barcelona-vs-fc-copenhagen-1451161",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -117,16 +117,7 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "28 January 2026 20:00",
-        "teams": "Monaco vs Juventus",
-        "url_page": "https://yeahscore1.com/match/monaco-vs-juventus-1451148",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
+        "league": "UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
         "teams": "Benfica vs Real Madrid",
@@ -135,7 +126,16 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Others / International",
+        "league": "UEFA Champions League",
+        "type": "UPCOMING",
+        "time": "28 January 2026 20:00",
+        "teams": "Arsenal vs Kairat Almaty",
+        "url_page": "https://yeahscore1.com/match/arsenal-vs-kairat-almaty-1451159",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
         "teams": "Napoli vs Chelsea",
@@ -147,17 +147,8 @@
         "league": "UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
-        "teams": "Pafos vs Slavia Praha",
-        "url_page": "https://yeahscore1.com/match/pafos-vs-slavia-praha-1451151",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "UEFA Champions League",
-        "type": "UPCOMING",
-        "time": "28 January 2026 20:00",
-        "teams": "Union St. Gilloise vs Atalanta",
-        "url_page": "https://yeahscore1.com/match/union-st-gilloise-vs-atalanta-1451158",
+        "teams": "Monaco vs Juventus",
+        "url_page": "https://yeahscore1.com/match/monaco-vs-juventus-1451148",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -174,26 +165,8 @@
         "league": "UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
-        "teams": "Athletic Club vs Sporting CP",
-        "url_page": "https://yeahscore1.com/match/athletic-club-vs-sporting-cp-1451156",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "UEFA Champions League",
-        "type": "UPCOMING",
-        "time": "28 January 2026 20:00",
-        "teams": "Atletico Madrid vs Bodo/Glimt",
-        "url_page": "https://yeahscore1.com/match/atletico-madrid-vs-bodoglimt-1451152",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "UEFA Champions League",
-        "type": "UPCOMING",
-        "time": "28 January 2026 20:00",
-        "teams": "Barcelona vs FC Copenhagen",
-        "url_page": "https://yeahscore1.com/match/barcelona-vs-fc-copenhagen-1451161",
+        "teams": "Ajax vs Olympiakos Piraeus",
+        "url_page": "https://yeahscore1.com/match/ajax-vs-olympiakos-piraeus-1451157",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
