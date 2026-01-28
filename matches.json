@@ -4,9 +4,7 @@
         "teams": "Unknown Match",
         "time_display": "LIVE NOW",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481922",
-        "stream_url": "https://livecdn.rumsport3.live/stream/43/chunks.m3u8?token=4c2c47a5eecd448e4d23bf10d5bf932974ec985d&is_vip=false&verify=1769580540-FLZqrQ9imXEqpG2mz1czdN5rFoGIg38VQ4HNre5ht%2BY%3D",
-        "server_info": "cloudflare",
-        "server_ip": "104.18.3.211",
+        "stream_url": "https://livecdn.rumsport3.live/stream/43/chunks.m3u8?token=fb63f88e2e17279be16a26c81cfd7451d49b2e02&is_vip=false&verify=1769581140-Ij8n2IiAJaslJL8ahz7muTeWaOsw%2BgiPmkMJmLKGbZM%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,9 +12,7 @@
         "teams": "Unknown Match",
         "time_display": "LIVE NOW",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481923",
-        "stream_url": "https://livecdn.rumsport3.live/stream/47/chunks.m3u8?token=4c2c47a5eecd448e4d23bf10d5bf932974ec985d&is_vip=false&verify=1769580540-FyNLOOFOHDzuLv0takyAD4ZPpPvZdAQQKgy7gW1oq5w%3D",
-        "server_info": "cloudflare",
-        "server_ip": "104.18.2.211",
+        "stream_url": "https://livecdn.rumsport3.live/stream/47/chunks.m3u8?token=fb63f88e2e17279be16a26c81cfd7451d49b2e02&is_vip=false&verify=1769581140-60aacEWjqKfXiOMRkNPDBzw8et5ThZDepZy3IQ2gm3Y%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -24,9 +20,7 @@
         "teams": "Unknown Match",
         "time_display": "LIVE NOW",
         "url_page": "https://yeahscore1.com/match/anz-arena-1629480747",
-        "stream_url": "https://livecdn.rumsport3.live/stream/45/chunks.m3u8?token=4c2c47a5eecd448e4d23bf10d5bf932974ec985d&is_vip=false&verify=1769580540-Q5W6b92LSr%2Fzoz9N2Urzm3FvwnSAN0ZNwl%2BREp2bpNc%3D",
-        "server_info": "cloudflare",
-        "server_ip": "104.18.2.211",
+        "stream_url": "https://livecdn.rumsport3.live/stream/45/chunks.m3u8?token=fb63f88e2e17279be16a26c81cfd7451d49b2e02&is_vip=false&verify=1769581140-AgEyGwnUBLWQk7HaP%2BSutl13cxFssbUIYpoR0tQKF10%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -35,8 +29,6 @@
         "time_display": "20:00",
         "url_page": "https://yeahscore1.com/match/paris-saint-germain-vs-newcastle-1451149",
         "stream_url": null,
-        "server_info": null,
-        "server_ip": null,
         "referer": "https://yeahscore1.com"
     },
     {
@@ -45,8 +37,6 @@
         "time_display": "20:00",
         "url_page": "https://yeahscore1.com/match/liverpool-vs-qarabag-1451160",
         "stream_url": null,
-        "server_info": null,
-        "server_ip": null,
         "referer": "https://yeahscore1.com"
     },
     {
@@ -55,8 +45,6 @@
         "time_display": "20:00",
         "url_page": "https://yeahscore1.com/match/benfica-vs-real-madrid-1451162",
         "stream_url": null,
-        "server_info": null,
-        "server_ip": null,
         "referer": "https://yeahscore1.com"
     },
     {
@@ -65,8 +53,6 @@
         "time_display": "20:00",
         "url_page": "https://yeahscore1.com/match/manchester-city-vs-galatasaray-1451153",
         "stream_url": null,
-        "server_info": null,
-        "server_ip": null,
         "referer": "https://yeahscore1.com"
     },
     {
@@ -75,8 +61,6 @@
         "time_display": "20:00",
         "url_page": "https://yeahscore1.com/match/monaco-vs-juventus-1451148",
         "stream_url": null,
-        "server_info": null,
-        "server_ip": null,
         "referer": "https://yeahscore1.com"
     }
 ]
