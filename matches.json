@@ -1,38 +1,29 @@
 [
     {
+        "league": "International - ICC Under-19 Cricket World Cup",
+        "type": "LIVE",
+        "time": "28 January 2026 07:30",
+        "teams": "Australia vs West Indies",
+        "url_page": "https://yeahscore1.com/match/australia-vs-west-indies-1629480770",
+        "stream_url": "https://livecdn.rumsport3.live/stream/46/chunks.m3u8?token=5bf71d21543140fdad46715427c7f35cf99e02fb&is_vip=false&verify=1769601060-Iz%2FSkpUeKjBNsgTYKWDzFaFgpPXLuQhhdy1UDMClND0%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
         "league": "Australia - A-League Women",
         "type": "LIVE",
         "time": "28 January 2026 11:00",
         "teams": "Perth Glory FC W vs Sydney FC W",
         "url_page": "https://yeahscore1.com/match/perth-glory-fc-w-vs-sydney-fc-w-1484541",
-        "stream_url": "https://livecdn.rumsport3.live/stream/20/stream/20_fhd/chunks.m3u8?token=c80895d48120ce84bf3a2b4d6cfb99ccd40efacc&is_vip=false&verify=1769600940-3tKDS3T0A9%2FXYDMADXMZUBAlq57u5m1CbOxCQRCJxAE%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/20/stream/20_fhd/chunks.m3u8?token=5bf71d21543140fdad46715427c7f35cf99e02fb&is_vip=false&verify=1769601060-C6IXOzxBIjWBj0YG1snpCfoPL1ioCQy9OzxvU58s%2FrQ%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "ICC Under-19 Cricket World Cup",
-        "type": "UPCOMING",
-        "time": "28 January 2026 07:30",
-        "teams": "Australia vs West Indies",
-        "url_page": "https://yeahscore1.com/match/australia-vs-west-indies-1629480770",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "UCI Pro Series",
-        "type": "UPCOMING",
+        "league": "International - UCI Pro Series",
+        "type": "LIVE",
         "time": "28 January 2026 11:30",
         "teams": "ES2, Alula Tour, Stage 2",
         "url_page": "https://yeahscore1.com/match/es2-alula-tour-stage-2-1629480771",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "28 January 2026 12:00",
-        "teams": "Board 1",
-        "url_page": "https://yeahscore1.com/match/board-1-1629480772",
-        "stream_url": null,
+        "stream_url": "https://livecdn.rumsport3.live/stream/33/chunks.m3u8?token=5bf71d21543140fdad46715427c7f35cf99e02fb&is_vip=false&verify=1769601060-tq7HHgMFoGu94GXnTWqlK8Guxfv6IwCY3k4N2WWbGKg%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
