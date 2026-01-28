@@ -5,7 +5,16 @@
         "time": "28 January 2026 13:30",
         "teams": "ES2, Challenge Mallorca, Trofeo Calvia",
         "url_page": "https://yeahscore1.com/match/es2-challenge-mallorca-trofeo-calvia-1629480774",
-        "stream_url": "https://livecdn.rumsport3.live/stream/33/chunks.m3u8?token=8e8c1086354bff4b6133031cc5f82cf7e9bba7f8&is_vip=false&verify=1769616180-Y9BjV4YlhYDn%2B9SWXBkxInqgRA6Mv6n7awXxIOQYvPM%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/33/chunks.m3u8?token=1456005832e08dbcd5a6fd1d2589180d29618a96&is_vip=false&verify=1769616300-2zDGstbzzpHQlRrdMArGWcJiaWbb9V1nqTWmvyhWmDc%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "International - EuroCup",
+        "type": "LIVE",
+        "time": "28 January 2026 16:00",
+        "teams": "Bahçeşehir Koleji SK vs Aris Thessaloniki Betsson",
+        "url_page": "https://yeahscore1.com/match/bahcesehir-koleji-sk-vs-aris-thessaloniki-betsson-1629480775",
+        "stream_url": "https://livecdn-bp-livestream.rumsport.com/stream/32/chunks.m3u8?x-sign=f62a8e275109b47cebe01e6033fe0d08&x-time=1769616300&is_vip=false&token=1456005832e08dbcd5a6fd1d2589180d29618a96",
         "referer": "https://xiaolin3.live/"
     },
     {
