@@ -9,15 +9,6 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "EuroCup",
-        "type": "UPCOMING",
-        "time": "28 January 2026 17:00",
-        "teams": "Neptunas Klaipeda vs Hapoel Midtown Jerusalem",
-        "url_page": "https://yeahscore1.com/match/neptunas-klaipeda-vs-hapoel-midtown-jerusalem-1629480778",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "Pro League",
         "type": "UPCOMING",
         "time": "28 January 2026 17:30",
@@ -77,6 +68,15 @@
         "time": "28 January 2026 18:30",
         "teams": "Veolia Towers Hamburg vs Slask Wroclaw",
         "url_page": "https://yeahscore1.com/match/veolia-towers-hamburg-vs-slask-wroclaw-1629480783",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "EuroCup",
+        "type": "UPCOMING",
+        "time": "28 January 2026 19:00",
+        "teams": "Umana Reyer Venice vs Cedevita Olimpija Ljubljana",
+        "url_page": "https://yeahscore1.com/match/umana-reyer-venice-vs-cedevita-olimpija-ljubljana-1629480784",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -365,6 +365,15 @@
         "time": "29 January 2026 00:30",
         "teams": "Colorado Avalanche vs Ottawa Senators",
         "url_page": "https://yeahscore1.com/match/colorado-avalanche-vs-ottawa-senators-1629480798",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "NBA G League",
+        "type": "UPCOMING",
+        "time": "29 January 2026 01:00",
+        "teams": "Sioux Falls Skyforce vs Birmingham Squadron",
+        "url_page": "https://yeahscore1.com/match/sioux-falls-skyforce-vs-birmingham-squadron-1629480804",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
