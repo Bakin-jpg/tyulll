@@ -1,5 +1,14 @@
 [
     {
+        "league": "Saudi Arabia - Pro League",
+        "type": "LIVE",
+        "time": "28 January 2026 17:30",
+        "teams": "Al-Ahli Jeddah vs Al-Ettifaq",
+        "url_page": "https://yeahscore1.com/match/al-ahli-jeddah-vs-al-ettifaq-1436076",
+        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=47a5683fbd9e43e33a9c0f1a3edfc344f4ac3e12&is_vip=false&verify=1769621700-9olvhhoOuIbs9H%2BoW%2FApkQwDDM5xOmbPmw%2B%2B%2FSePRqk%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "28 January 2026 12:00",
@@ -50,6 +59,15 @@
         "time": "28 January 2026 17:00",
         "teams": "Neptunas Klaipeda vs Hapoel Midtown Jerusalem",
         "url_page": "https://yeahscore1.com/match/neptunas-klaipeda-vs-hapoel-midtown-jerusalem-1629480778",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "EuroCup",
+        "type": "UPCOMING",
+        "time": "28 January 2026 17:30",
+        "teams": "Panionios Cosmorama Travel Athens vs London Lions",
+        "url_page": "https://yeahscore1.com/match/panionios-cosmorama-travel-athens-vs-london-lions-1629480779",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
