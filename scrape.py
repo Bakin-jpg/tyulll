@@ -5,18 +5,13 @@ from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
 def get_stream_token(context, iframe_url, referer):
-    """
-    1. Buka Iframe -> Ambil URL Wrapper (cdn-rum...).
-    2. Request Wrapper -> Ambil URL Final.
-    3. DEBUG: Request URL Final -> Print isinya (list .ts) ke terminal.
-    """
+    # ... (Kode fungsi ini tetap sama, tidak perlu diubah) ...
     page = context.new_page()
     final_url = None
 
     try:
         print(f"      -> Bedah Iframe: {iframe_url[:60]}...")
         
-        # --- LANGKAH 1: Request Source Iframe ---
         response = page.request.get(
             iframe_url, 
             headers={"Referer": referer}
@@ -33,10 +28,8 @@ def get_stream_token(context, iframe_url, referer):
         else:
             print(f"      [GAGAL] Iframe Status: {response.status}")
 
-        # --- LANGKAH 2: Fetch Wrapper ---
         if wrapper_url:
             try:
-                # Header wajib buat player ini
                 headers_stream = {
                     "Referer": "https://xiaolin3.live/",
                     "Origin": "https://xiaolin3.live",
@@ -54,19 +47,13 @@ def get_stream_token(context, iframe_url, referer):
                             final_url = line
                             break
                     
-                    # --- LANGKAH 3: DEBUG ISI FINAL M3U8 (REQUEST KE CHUNKS.M3U8) ---
                     if final_url:
                         print(f"      [SUKSES] Link Final didapatkan.")
-                        print(f"      [DEBUG] Mencoba membaca isi M3U8 untuk analisis...")
-                        
                         try:
-                            # Kita request URL finalnya cuma buat di-print isinya
                             debug_resp = page.request.get(final_url, headers=headers_stream)
                             if debug_resp.status == 200:
                                 debug_content = debug_resp.text()
                                 print("\n" + "="*20 + " ISI FILE M3U8 " + "="*20)
-                                # Print maksimal 500 karakter atau 10 baris pertama biar gak nyampah full layar
-                                # Tapi kalau mau full, hapus slicing-nya. Ini saya kasih 15 baris pertama.
                                 preview_lines = debug_content.split('\n')[:15] 
                                 print('\n'.join(preview_lines))
                                 print("... (dan seterusnya)")
@@ -75,27 +62,33 @@ def get_stream_token(context, iframe_url, referer):
                                 print(f"      [DEBUG ERROR] Gagal baca isi final m3u8. Status: {debug_resp.status}")
                         except Exception as d:
                             print(f"      [DEBUG ERROR] {d}")
-
                 else:
                     print(f"      [GAGAL] Gagal fetch wrapper. Status: {m3u8_resp.status}")
-
             except Exception as e:
                 print(f"      [ERROR] Gagal request wrapper: {e}")
-
     except Exception as e:
         print(f"      [ERROR] Global: {e}")
     finally:
         page.close()
-    
     return final_url
 
 def main():
     all_matches = []
     base_url = "https://yeahscore1.com"
 
+    # KONFIGURASI PROXY DI SINI
+    # Gunakan format: "http://ip:port" atau "server": "ip:port"
+    # Proxy yang Anda berikan: 103.175.80.202:8080
+    indo_proxy = {
+        "server": "http://103.175.80.202:8080" 
+    }
+
     with sync_playwright() as p:
+        print(f"Meluncurkan browser dengan Proxy: {indo_proxy['server']}...")
+        
         browser = p.chromium.launch(
             headless=True,
+            proxy=indo_proxy,  # <--- INI TAMBAHANNYA
             args=[
                 '--disable-blink-features=AutomationControlled',
                 '--no-sandbox',
@@ -103,14 +96,18 @@ def main():
                 '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
             ]
         )
+        
+        # Context tidak perlu new_page() langsung, gunakan browser.new_context()
+        # Proxy sudah dihandle di level browser, tapi jika butuh auth bisa diset di context
         context = browser.new_context()
         page = context.new_page()
 
         print("1. Membuka Halaman Utama...")
         try:
-            page.goto(base_url + "/", timeout=60000, wait_until="domcontentloaded")
+            # Tambahkan timeout lebih lama karena pakai proxy biasanya lebih lambat
+            page.goto(base_url + "/", timeout=90000, wait_until="domcontentloaded")
             try:
-                page.wait_for_selector("a.link-wrapper", timeout=15000)
+                page.wait_for_selector("a.link-wrapper", timeout=20000)
             except: pass
 
             html = page.content()
@@ -163,7 +160,6 @@ def main():
         # ==========================================
         print(f"\nTotal Match Valid: {len(all_matches)}")
         
-        # Ambil LIVE dan sedikit UPCOMING
         targets = [m for m in all_matches if m['type'] == 'LIVE']
         upcoming = [m for m in all_matches if m['type'] == 'UPCOMING'][:5] 
         targets.extend(upcoming)
@@ -177,11 +173,9 @@ def main():
             iframe_src = None
             
             try:
-                detail_page.goto(match['url_page'], timeout=15000, wait_until="domcontentloaded")
-                
-                # Coba tunggu iframe
+                detail_page.goto(match['url_page'], timeout=30000, wait_until="domcontentloaded")
                 try:
-                    detail_page.wait_for_selector('iframe[src*="wowhaha"], iframe[src*="xiaolin"]', timeout=3000)
+                    detail_page.wait_for_selector('iframe[src*="wowhaha"], iframe[src*="xiaolin"]', timeout=5000)
                 except: pass
                 
                 iframes = detail_page.query_selector_all("iframe")
