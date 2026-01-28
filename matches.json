@@ -1,19 +1,19 @@
 [
     {
-        "league": "International - EuroCup",
-        "type": "LIVE",
-        "time": "28 January 2026 16:00",
-        "teams": "Bahçeşehir Koleji SK vs Aris Thessaloniki Betsson",
-        "url_page": "https://yeahscore1.com/match/bahcesehir-koleji-sk-vs-aris-thessaloniki-betsson-1629480775",
-        "stream_url": "https://livecdn-bp-livestream.rumsport.com/stream/32/chunks.m3u8?x-sign=61ab8c2fbacf44fb3d55aafb2e9a3313&x-time=1769618580&is_vip=false&token=3f08e84db2806b111ccc3cc630de51a93e3aedec",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "28 January 2026 12:00",
         "teams": "Board 1",
         "url_page": "https://yeahscore1.com/match/board-1-1629480772",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "EuroCup",
+        "type": "UPCOMING",
+        "time": "28 January 2026 16:00",
+        "teams": "Bahçeşehir Koleji SK vs Aris Thessaloniki Betsson",
+        "url_page": "https://yeahscore1.com/match/bahcesehir-koleji-sk-vs-aris-thessaloniki-betsson-1629480775",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
