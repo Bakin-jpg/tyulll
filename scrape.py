@@ -1,28 +1,17 @@
 import json
 import re
 import time
-import socket
-from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
 def get_stream_token(context, iframe_url, referer):
     """
-    Mengembalikan dictionary:
-    {
-        "url":String|None, 
-        "server":String|None, 
-        "ip":String|None
-    }
+    1. Buka Iframe -> Ambil URL Wrapper (cdn-rum...).
+    2. Request Wrapper -> Ambil URL Final.
+    3. DEBUG: Request URL Final -> Print isinya (list .ts) ke terminal.
     """
     page = context.new_page()
-    
-    # Inisialisasi hasil default
-    result = {
-        "url": None,
-        "server": None,
-        "ip": None
-    }
+    final_url = None
 
     try:
         print(f"      -> Bedah Iframe: {iframe_url[:60]}...")
@@ -47,6 +36,7 @@ def get_stream_token(context, iframe_url, referer):
         # --- LANGKAH 2: Fetch Wrapper ---
         if wrapper_url:
             try:
+                # Header wajib buat player ini
                 headers_stream = {
                     "Referer": "https://xiaolin3.live/",
                     "Origin": "https://xiaolin3.live",
@@ -58,47 +48,31 @@ def get_stream_token(context, iframe_url, referer):
                 if m3u8_resp.status == 200:
                     content = m3u8_resp.text()
                     lines = content.strip().split('\n')
-                    
-                    final_url = None
                     for line in lines:
                         line = line.strip()
                         if line.startswith("http"):
                             final_url = line
                             break
                     
-                    # --- LANGKAH 3: AMBIL INFO SERVER & IP ---
+                    # --- LANGKAH 3: DEBUG ISI FINAL M3U8 (REQUEST KE CHUNKS.M3U8) ---
                     if final_url:
-                        result["url"] = final_url # Simpan URL
                         print(f"      [SUKSES] Link Final didapatkan.")
+                        print(f"      [DEBUG] Mencoba membaca isi M3U8 untuk analisis...")
                         
                         try:
-                            # Request HEAD atau GET limit 0 bytes cuma buat header (opsional), 
-                            # tapi biar aman kita GET biasa lalu close connection.
+                            # Kita request URL finalnya cuma buat di-print isinya
                             debug_resp = page.request.get(final_url, headers=headers_stream)
-                            
                             if debug_resp.status == 200:
-                                # 1. Ambil Header Server (Simpan ke result)
-                                all_headers = debug_resp.headers
-                                result["server"] = all_headers.get("server", "Unknown")
-                                
-                                # 2. Ambil IP Address (Simpan ke result)
-                                try:
-                                    # Cara: DNS Lookup via Python Socket
-                                    parsed_uri = urlparse(final_url)
-                                    domain = parsed_uri.netloc.split(':')[0] 
-                                    resolved_ip = socket.gethostbyname(domain)
-                                    result["ip"] = resolved_ip
-                                except Exception:
-                                    result["ip"] = "Failed to Resolve"
-
-                                # DEBUG PRINT (Biar tetap kelihatan di terminal)
-                                print("\n" + "="*20 + " INFO SAVED " + "="*20)
-                                print(f"      [SERVER] : {result['server']}")
-                                print(f"      [IP]     : {result['ip']}")
-                                print("="*52 + "\n")
-
+                                debug_content = debug_resp.text()
+                                print("\n" + "="*20 + " ISI FILE M3U8 " + "="*20)
+                                # Print maksimal 500 karakter atau 10 baris pertama biar gak nyampah full layar
+                                # Tapi kalau mau full, hapus slicing-nya. Ini saya kasih 15 baris pertama.
+                                preview_lines = debug_content.split('\n')[:15] 
+                                print('\n'.join(preview_lines))
+                                print("... (dan seterusnya)")
+                                print("="*55 + "\n")
                             else:
-                                print(f"      [DEBUG ERROR] Status code: {debug_resp.status}")
+                                print(f"      [DEBUG ERROR] Gagal baca isi final m3u8. Status: {debug_resp.status}")
                         except Exception as d:
                             print(f"      [DEBUG ERROR] {d}")
 
@@ -113,7 +87,7 @@ def get_stream_token(context, iframe_url, referer):
     finally:
         page.close()
     
-    return result
+    return final_url
 
 def main():
     all_matches = []
@@ -171,15 +145,12 @@ def main():
                     match_type = "LIVE" if is_live else "UPCOMING"
                     display_time = "LIVE NOW" if is_live else time_raw
                     
-                    # Kita siapkan field kosong untuk data stream nanti
                     all_matches.append({
                         "type": match_type,
                         "teams": teams,
                         "time_display": display_time,
                         "url_page": match_url,
                         "stream_url": None,
-                        "server_info": None, # Field baru
-                        "server_ip": None,   # Field baru
                         "referer": base_url
                     })
                 except: continue
@@ -192,6 +163,7 @@ def main():
         # ==========================================
         print(f"\nTotal Match Valid: {len(all_matches)}")
         
+        # Ambil LIVE dan sedikit UPCOMING
         targets = [m for m in all_matches if m['type'] == 'LIVE']
         upcoming = [m for m in all_matches if m['type'] == 'UPCOMING'][:5] 
         targets.extend(upcoming)
@@ -206,6 +178,8 @@ def main():
             
             try:
                 detail_page.goto(match['url_page'], timeout=15000, wait_until="domcontentloaded")
+                
+                # Coba tunggu iframe
                 try:
                     detail_page.wait_for_selector('iframe[src*="wowhaha"], iframe[src*="xiaolin"]', timeout=3000)
                 except: pass
@@ -222,15 +196,9 @@ def main():
                 detail_page.close()
 
             if iframe_src:
-                # Panggil fungsi yang sekarang mengembalikan dictionary
-                stream_data = get_stream_token(context, iframe_src, match['url_page'])
-                
-                # Masukkan data ke dictionary match
-                match['stream_url'] = stream_data['url']
-                match['server_info'] = stream_data['server']
-                match['server_ip'] = stream_data['ip']
-                
-                if stream_data['url']:
+                token_url = get_stream_token(context, iframe_src, match['url_page'])
+                match['stream_url'] = token_url
+                if token_url:
                     match['referer'] = "https://xiaolin3.live/"
             else:
                 print("      [INFO] Tidak ada player/iframe.")
@@ -239,7 +207,6 @@ def main():
 
         browser.close()
 
-    # Simpan ke JSON
     with open("matches.json", "w", encoding="utf-8") as f:
         json.dump(final_data, f, indent=4)
         print("\nSelesai. Data tersimpan di matches.json")
