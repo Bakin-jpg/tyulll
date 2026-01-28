@@ -1,11 +1,11 @@
 [
     {
-        "league": "ICC Under-19 Cricket World Cup",
-        "type": "UPCOMING",
-        "time": "28 January 2026 07:30",
-        "teams": "Australia vs West Indies",
-        "url_page": "https://yeahscore1.com/match/australia-vs-west-indies-1629480770",
-        "stream_url": null,
+        "league": "International - UCI Pro Series",
+        "type": "LIVE",
+        "time": "28 January 2026 13:30",
+        "teams": "ES2, Challenge Mallorca, Trofeo Calvia",
+        "url_page": "https://yeahscore1.com/match/es2-challenge-mallorca-trofeo-calvia-1629480774",
+        "stream_url": "https://livecdn.rumsport3.live/stream/33/chunks.m3u8?token=de40847562fc032b942fdea3d6d9e084a3cb6b03&is_vip=false&verify=1769614260-DnIx4ttYI%2FP7FD8Tdj%2F%2B4nXjma6qfZw3%2Bew%2FnBdN30k%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,24 +14,6 @@
         "time": "28 January 2026 12:00",
         "teams": "Board 1",
         "url_page": "https://yeahscore1.com/match/board-1-1629480772",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "28 January 2026 12:30",
-        "teams": "NJ/NY Gotham FC W vs Corinthians W",
-        "url_page": "https://yeahscore1.com/match/njny-gotham-fc-w-vs-corinthians-w-1629480773",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "UCI Pro Series",
-        "type": "UPCOMING",
-        "time": "28 January 2026 13:30",
-        "teams": "ES2, Challenge Mallorca, Trofeo Calvia",
-        "url_page": "https://yeahscore1.com/match/es2-challenge-mallorca-trofeo-calvia-1629480774",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -288,6 +270,15 @@
         "referer": "https://xiaolin3.live/"
     },
     {
+        "league": "NHL",
+        "type": "UPCOMING",
+        "time": "29 January 2026 00:00",
+        "teams": "Philadelphia Flyers vs Columbus Blue Jackets",
+        "url_page": "https://yeahscore1.com/match/philadelphia-flyers-vs-columbus-blue-jackets-1629480788",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
         "league": "Australian Open",
         "type": "UPCOMING",
         "time": "29 January 2026 00:00",
@@ -380,9 +371,9 @@
     {
         "league": "NHL",
         "type": "UPCOMING",
-        "time": "29 January 2026 00:00",
-        "teams": "Philadelphia Flyers vs Columbus Blue Jackets",
-        "url_page": "https://yeahscore1.com/match/philadelphia-flyers-vs-columbus-blue-jackets-1629480788",
+        "time": "29 January 2026 00:30",
+        "teams": "New York Rangers vs New York Islanders",
+        "url_page": "https://yeahscore1.com/match/new-york-rangers-vs-new-york-islanders-1629480799",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     }
