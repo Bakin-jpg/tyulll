@@ -9,15 +9,6 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "UCI Pro Series",
-        "type": "UPCOMING",
-        "time": "28 January 2026 11:30",
-        "teams": "ES2, Alula Tour, Stage 2",
-        "url_page": "https://yeahscore1.com/match/es2-alula-tour-stage-2-1629480771",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "28 January 2026 12:00",
@@ -320,6 +311,15 @@
         "time": "29 January 2026 00:00",
         "teams": "1573 Arena",
         "url_page": "https://yeahscore1.com/match/1573-arena-1629480792",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Australian Open",
+        "type": "UPCOMING",
+        "time": "29 January 2026 00:00",
+        "teams": "Kia Arena",
+        "url_page": "https://yeahscore1.com/match/kia-arena-1629480795",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
