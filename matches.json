@@ -1,19 +1,19 @@
 [
     {
-        "league": "Australia - A-League Women",
-        "type": "LIVE",
-        "time": "28 January 2026 11:00",
-        "teams": "Perth Glory FC W vs Sydney FC W",
-        "url_page": "https://yeahscore1.com/match/perth-glory-fc-w-vs-sydney-fc-w-1484541",
-        "stream_url": "https://livecdn.rumsport3.live/stream/20/stream/20_fhd/chunks.m3u8?token=9331b23b69aae1bb4761a8d97d8244a319a9aadc&is_vip=false&verify=1769603580-MILsZC7ZxqmdkcXVqEEtzPDGzEZTLVrFkP2SBnN0ILs%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "ICC Under-19 Cricket World Cup",
         "type": "UPCOMING",
         "time": "28 January 2026 07:30",
         "teams": "Australia vs West Indies",
         "url_page": "https://yeahscore1.com/match/australia-vs-west-indies-1629480770",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "A-League Women",
+        "type": "UPCOMING",
+        "time": "28 January 2026 11:00",
+        "teams": "Perth Glory FC W vs Sydney FC W",
+        "url_page": "https://yeahscore1.com/match/perth-glory-fc-w-vs-sydney-fc-w-1484541",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -32,6 +32,15 @@
         "time": "28 January 2026 12:00",
         "teams": "Board 1",
         "url_page": "https://yeahscore1.com/match/board-1-1629480772",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "28 January 2026 12:30",
+        "teams": "NJ/NY Gotham FC W vs Corinthians W",
+        "url_page": "https://yeahscore1.com/match/njny-gotham-fc-w-vs-corinthians-w-1629480773",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
