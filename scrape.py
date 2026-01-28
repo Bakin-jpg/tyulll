@@ -80,7 +80,7 @@ def main():
     # Gunakan format: "http://ip:port" atau "server": "ip:port"
     # Proxy yang Anda berikan: 103.175.80.202:8080
     indo_proxy = {
-        "server": "http://103.175.80.202:8080" 
+        "server": "http://113.192.1.27:8181" 
     }
 
     with sync_playwright() as p:
