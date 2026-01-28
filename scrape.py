@@ -1,85 +1,75 @@
 import json
 import re
 import time
-from urllib.parse import unquote, urlparse, parse_qs, urlencode
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
-def clean_stream_url(raw_url):
-    """
-    Mengubah URL Proxy menjadi Direct Stream URL.
-    Input: https://cdn-rum.n2olabs1.pro/stream.m3u8?url=https%3A%2F%2F...&token=...
-    Output: https://livecdn.rumsport3.live/stream/17/chunks.m3u8?token=...
-    """
-    try:
-        if not raw_url: return None
-
-        # 1. Parse URL awal untuk ambil parameter
-        parsed = urlparse(raw_url)
-        params = parse_qs(parsed.query)
-
-        # 2. Ambil target URL asli dari parameter 'url' dan decode
-        # encode: https%3A%2F%2Flivecdn... -> decode: https://livecdn...
-        target_encoded = params.get('url', [None])[0]
-        
-        if not target_encoded:
-            return raw_url # Kembalikan asli jika pola beda
-
-        real_url = unquote(target_encoded)
-
-        # 3. Ubah 'index.m3u8' menjadi 'chunks.m3u8' sesuai request kamu
-        real_url = real_url.replace('index.m3u8', 'chunks.m3u8')
-
-        # 4. Ambil parameter auth penting (token, verify, is_vip)
-        # Kita ambil dari query params URL pembungkus
-        auth_params = {}
-        if 'token' in params: auth_params['token'] = params['token'][0]
-        if 'verify' in params: auth_params['verify'] = params['verify'][0]
-        if 'is_vip' in params: auth_params['is_vip'] = params['is_vip'][0]
-
-        # 5. Gabungkan URL asli dengan parameter auth
-        final_url = f"{real_url}?{urlencode(auth_params)}"
-        return final_url
-
-    except Exception as e:
-        print(f"      [WARNING] Gagal clean URL: {e}")
-        return raw_url
-
 def get_stream_token(context, iframe_url, referer):
     """
-    Buka URL iframe secara langsung dan ambil token lewat Regex HTML.
+    1. Buka Iframe -> Ambil URL Wrapper (cdn-rum...).
+    2. Request URL Wrapper -> Ambil URL Final (livecdn...) dari dalam isinya.
     """
+    page = context.new_page()
+    final_url = None
+
     try:
         print(f"      -> Bedah Iframe: {iframe_url[:60]}...")
-        page = context.new_page()
         
+        # --- LANGKAH 1: Request Source Iframe ---
         response = page.request.get(
             iframe_url, 
             headers={"Referer": referer}
         )
         
+        wrapper_url = None
         if response.status == 200:
             html_content = response.text()
             # Regex menangkap: var m3u8 = 'https://...';
             match = re.search(r"var\s+m3u8\s*=\s*['\"]([^'\"]+)['\"]", html_content)
             if match:
-                raw_m3u8 = match.group(1)
-                print("      [SUKSES] Token M3U8 ditemukan!")
-                page.close()
-                
-                # LANGSUNG BERSIHKAN URL DISINI
-                clean_url = clean_stream_url(raw_m3u8)
-                return clean_url
+                wrapper_url = match.group(1)
+                print(f"      [INFO] Wrapper URL ditemukan: {wrapper_url[:40]}...")
             else:
                 print("      [GAGAL] Pattern m3u8 tidak ditemukan di source iframe.")
         else:
-            print(f"      [GAGAL] HTTP Status: {response.status}")
-        
-        page.close()
+            print(f"      [GAGAL] Iframe Status: {response.status}")
+
+        # --- LANGKAH 2: Fetch Isi Wrapper untuk dapat Final URL ---
+        if wrapper_url:
+            try:
+                # Request ke URL wrapper (cdn-rum...)
+                # Kita pakai referer dari player (xiaolin/wowhaha) agar tidak ditolak
+                m3u8_resp = page.request.get(
+                    wrapper_url,
+                    headers={
+                        "Referer": "https://xiaolin3.live/",
+                        "Origin": "https://xiaolin3.live"
+                    }
+                )
+
+                if m3u8_resp.status == 200:
+                    content = m3u8_resp.text()
+                    # Parsing isi file M3U8 baris per baris
+                    # Kita cari baris yang dimulai dengan http dan bukan komentar (#)
+                    lines = content.strip().split('\n')
+                    for line in lines:
+                        line = line.strip()
+                        if line.startswith("http"):
+                            final_url = line
+                            print("      [SUKSES] Final Stream URL didapatkan!")
+                            break
+                else:
+                    print(f"      [GAGAL] Gagal fetch wrapper. Status: {m3u8_resp.status}")
+
+            except Exception as e:
+                print(f"      [ERROR] Gagal request wrapper: {e}")
+
     except Exception as e:
-        print(f"      [ERROR] {e}")
+        print(f"      [ERROR] Global: {e}")
+    finally:
+        page.close()
     
-    return None
+    return final_url
 
 def main():
     all_matches = []
@@ -113,7 +103,6 @@ def main():
             soup = BeautifulSoup(html, 'html.parser')
             
             link_elements = soup.select('a.link-wrapper')
-            
             print(f"   -> Menemukan {len(link_elements)} potensi pertandingan.")
 
             for link in link_elements:
@@ -167,11 +156,10 @@ def main():
             print(f"Error parse halaman utama: {e}")
 
         # ==========================================
-        # BAGIAN AMBIL LINK STREAM (Deep Scrape)
+        # BAGIAN DEEP SCRAPE
         # ==========================================
         print(f"\nTotal Match Valid: {len(all_matches)}")
         
-        # Filter: Ambil Semua LIVE dan 15 UPCOMING Teratas
         targets = [m for m in all_matches if m['type'] == 'LIVE']
         upcoming = [m for m in all_matches if m['type'] == 'UPCOMING'][:15]
         targets.extend(upcoming)
@@ -204,10 +192,8 @@ def main():
                 detail_page.close()
 
             if iframe_src:
-                # Token URL sekarang sudah bersih berkat fungsi clean_stream_url di dalam get_stream_token
                 token_url = get_stream_token(context, iframe_src, match['url_page'])
                 match['stream_url'] = token_url
-                
                 if token_url:
                     match['referer'] = "https://xiaolin3.live/"
             else:
