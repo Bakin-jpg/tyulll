@@ -3,7 +3,7 @@ name: Scrape YeahScore V5 (Debug Mode)
 on:
   workflow_dispatch: # Bisa dijalankan manual
   schedule:
-    - cron: '*/15 * * * *' # Tiap 15 menit
+    - cron: '*/5 * * * *' # Tiap 15 menit
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
