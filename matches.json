@@ -1,71 +1,415 @@
 [
     {
+        "league": "Australia - Australian Open",
         "type": "LIVE",
-        "teams": "08:00 NS Rod Laver Arena Watch",
-        "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481929",
-        "stream_url": "https://livecdn.rumsport3.live/stream/43/chunks.m3u8?token=675be7cc6e1149bbe9c9a6302c0cf83acebe1f0f&is_vip=false&verify=1769586360-w6SH9HYgQo0%2Fh8CVJy1tHOvUoKk%2B0rUFtXyo9PBKCw4%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "teams": "00:00 Margaret Court Arena Watch Now",
+        "time": "00:00",
+        "teams": "Event Unknown",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481923",
-        "stream_url": "https://livecdn.rumsport3.live/stream/47/chunks.m3u8?token=675be7cc6e1149bbe9c9a6302c0cf83acebe1f0f&is_vip=false&verify=1769586360-fGWth0nqRg0325n618xmUAiaVf18ucMa1nI3xG2CIJ4%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/47/chunks.m3u8?token=cf8fd3a1d12df0b4df78c6b64d9402ea153820bb&is_vip=false&verify=1769586600-nEihB7kRNqVNqg8%2BnDhCzxy%2BNbQRYmDaTAo4uBKLp0w%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
+        "league": "International - ICC Under-19 Cricket World Cup",
         "type": "LIVE",
+        "time": "07:30",
         "teams": "Australia vs West Indies",
         "url_page": "https://yeahscore1.com/match/australia-vs-west-indies-1629480770",
-        "stream_url": "https://livecdn.rumsport3.live/stream/46/chunks.m3u8?token=675be7cc6e1149bbe9c9a6302c0cf83acebe1f0f&is_vip=false&verify=1769586360-LYiYdKgsQpWmgQJIryw5%2BPGkSTaz%2BlOFI8ZIs3ApRd4%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/46/chunks.m3u8?token=cf8fd3a1d12df0b4df78c6b64d9402ea153820bb&is_vip=false&verify=1769586600-N8TVDA9wCMgep0nSEPID35nAnIQko%2FUT3ufNpUbW8nY%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
-        "type": "LIVE",
+        "league": "Australia - Australian Open",
+        "type": "UPCOMING",
+        "time": "08:00",
+        "teams": "Event Unknown",
+        "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481929",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Today",
+        "type": "UPCOMING",
+        "time": "20:00",
         "teams": "Paris Saint Germain vs Newcastle",
         "url_page": "https://yeahscore1.com/match/paris-saint-germain-vs-newcastle-1451149",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
-        "type": "LIVE",
+        "league": "Today",
+        "type": "UPCOMING",
+        "time": "20:00",
         "teams": "Manchester City vs Galatasaray",
         "url_page": "https://yeahscore1.com/match/manchester-city-vs-galatasaray-1451153",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
-        "type": "LIVE",
+        "league": "Today",
+        "type": "UPCOMING",
+        "time": "20:00",
         "teams": "Barcelona vs FC Copenhagen",
         "url_page": "https://yeahscore1.com/match/barcelona-vs-fc-copenhagen-1451161",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
-        "type": "LIVE",
+        "league": "Today",
+        "type": "UPCOMING",
+        "time": "20:00",
         "teams": "Napoli vs Chelsea",
         "url_page": "https://yeahscore1.com/match/napoli-vs-chelsea-1451146",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
-        "type": "LIVE",
+        "league": "Today",
+        "type": "UPCOMING",
+        "time": "20:00",
         "teams": "Benfica vs Real Madrid",
         "url_page": "https://yeahscore1.com/match/benfica-vs-real-madrid-1451162",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
-        "type": "LIVE",
+        "league": "Today",
+        "type": "UPCOMING",
+        "time": "20:00",
         "teams": "Liverpool vs Qarabag",
         "url_page": "https://yeahscore1.com/match/liverpool-vs-qarabag-1451160",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
-        "type": "LIVE",
+        "league": "Today",
+        "type": "UPCOMING",
+        "time": "20:00",
         "teams": "Monaco vs Juventus",
         "url_page": "https://yeahscore1.com/match/monaco-vs-juventus-1451148",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Champions League",
+        "type": "UPCOMING",
+        "time": "Jan 28,20:00",
+        "teams": "Liverpool vs Qarabag",
+        "url_page": "https://yeahscore1.com/match/liverpool-vs-qarabag-1451160",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Champions League",
+        "type": "UPCOMING",
+        "time": "Jan 28,20:00",
+        "teams": "Arsenal vs Kairat Almaty",
+        "url_page": "https://yeahscore1.com/match/arsenal-vs-kairat-almaty-1451159",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Champions League",
+        "type": "UPCOMING",
+        "time": "Jan 28,20:00",
+        "teams": "Manchester City vs Galatasaray",
+        "url_page": "https://yeahscore1.com/match/manchester-city-vs-galatasaray-1451153",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Champions League",
+        "type": "UPCOMING",
+        "time": "Jan 28,20:00",
+        "teams": "Paris Saint Germain vs Newcastle",
+        "url_page": "https://yeahscore1.com/match/paris-saint-germain-vs-newcastle-1451149",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Champions League",
+        "type": "UPCOMING",
+        "time": "Jan 28,20:00",
+        "teams": "Monaco vs Juventus",
+        "url_page": "https://yeahscore1.com/match/monaco-vs-juventus-1451148",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Champions League",
+        "type": "UPCOMING",
+        "time": "Jan 28,20:00",
+        "teams": "Borussia Dortmund vs Inter",
+        "url_page": "https://yeahscore1.com/match/borussia-dortmund-vs-inter-1451147",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Champions League",
+        "type": "UPCOMING",
+        "time": "Jan 28,20:00",
+        "teams": "Bayer Leverkusen vs Villarreal",
+        "url_page": "https://yeahscore1.com/match/bayer-leverkusen-vs-villarreal-1451155",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Liga Profesional Argentina",
+        "type": "UPCOMING",
+        "time": "Jan 28,22:00",
+        "teams": "Racing Club vs Rosario Central",
+        "url_page": "https://yeahscore1.com/match/racing-club-vs-rosario-central-1491844",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Liga Profesional Argentina",
+        "type": "UPCOMING",
+        "time": "Jan 28,23:00",
+        "teams": "River Plate vs Gimnasia L.P.",
+        "url_page": "https://yeahscore1.com/match/river-plate-vs-gimnasia-lp-1491845",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "A-League Women",
+        "type": "UPCOMING",
+        "time": "Jan 28,11:00",
+        "teams": "Perth Glory FC W vs Sydney FC W",
+        "url_page": "https://yeahscore1.com/match/perth-glory-fc-w-vs-sydney-fc-w-1484541",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Pro League",
+        "type": "UPCOMING",
+        "time": "Jan 28,17:30",
+        "teams": "Al-Ahli Jeddah vs Al-Ettifaq",
+        "url_page": "https://yeahscore1.com/match/al-ahli-jeddah-vs-al-ettifaq-1436076",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "",
+        "type": "UPCOMING",
+        "time": "Jan 28,12:30",
+        "teams": "NJ/NY Gotham FC W vs Corinthians W",
+        "url_page": "https://yeahscore1.com/match/njny-gotham-fc-w-vs-corinthians-w-1629480773",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "",
+        "type": "UPCOMING",
+        "time": "Jan 28,17:00",
+        "teams": "Roma W vs Lazio W",
+        "url_page": "https://yeahscore1.com/match/roma-w-vs-lazio-w-1629480777",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "",
+        "type": "UPCOMING",
+        "time": "Jan 28,17:00",
+        "teams": "Inter Milano W vs Ternana W",
+        "url_page": "https://yeahscore1.com/match/inter-milano-w-vs-ternana-w-1629480776",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "",
+        "type": "UPCOMING",
+        "time": "Jan 28,18:00",
+        "teams": "Arsenal W vs AS FAR W",
+        "url_page": "https://yeahscore1.com/match/arsenal-w-vs-as-far-w-1629480780",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Australian Open",
+        "type": "UPCOMING",
+        "time": "Jan 28,00:00",
+        "teams": "Margaret Court Arena",
+        "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481923",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Australian Open",
+        "type": "UPCOMING",
+        "time": "Jan 28,08:00",
+        "teams": "Rod Laver Arena",
+        "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481929",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Australian Open",
+        "type": "UPCOMING",
+        "time": "Jan 29,00:00",
+        "teams": "Court TBC",
+        "url_page": "https://yeahscore1.com/match/court-tbc-1629480793",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Australian Open",
+        "type": "UPCOMING",
+        "time": "Jan 29,00:00",
+        "teams": "Court 7",
+        "url_page": "https://yeahscore1.com/match/court-7-1629480794",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Australian Open",
+        "type": "UPCOMING",
+        "time": "Jan 29,00:00",
+        "teams": "ANZ Arena",
+        "url_page": "https://yeahscore1.com/match/anz-arena-1629480791",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Australian Open",
+        "type": "UPCOMING",
+        "time": "Jan 29,00:00",
+        "teams": "Court 5",
+        "url_page": "https://yeahscore1.com/match/court-5-1629480797",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Basketball Champions League",
+        "type": "UPCOMING",
+        "time": "Jan 28,17:00",
+        "teams": "AEK Athens FC vs ALBA Berlin",
+        "url_page": "https://yeahscore1.com/match/aek-athens-fc-vs-alba-berlin-1629481716",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Basketball Champions League",
+        "type": "UPCOMING",
+        "time": "Jan 28,18:00",
+        "teams": "Joventut Badalona vs Baloncesto M\u00e1laga",
+        "url_page": "https://yeahscore1.com/match/joventut-badalona-vs-baloncesto-malaga-1629481717",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "EuroCup",
+        "type": "UPCOMING",
+        "time": "Jan 28,16:00",
+        "teams": "Bah\u00e7e\u015fehir Koleji SK vs Aris Thessaloniki Betsson",
+        "url_page": "https://yeahscore1.com/match/bahcesehir-koleji-sk-vs-aris-thessaloniki-betsson-1629480775",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "EuroCup",
+        "type": "UPCOMING",
+        "time": "Jan 28,17:00",
+        "teams": "Neptunas Klaipeda vs Hapoel Midtown Jerusalem",
+        "url_page": "https://yeahscore1.com/match/neptunas-klaipeda-vs-hapoel-midtown-jerusalem-1629480778",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "EuroCup",
+        "type": "UPCOMING",
+        "time": "Jan 28,17:30",
+        "teams": "Panionios Cosmorama Travel Athens vs London Lions",
+        "url_page": "https://yeahscore1.com/match/panionios-cosmorama-travel-athens-vs-london-lions-1629480779",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "EuroCup",
+        "type": "UPCOMING",
+        "time": "Jan 28,18:30",
+        "teams": "Cosea JL Bourg-en-Bresse vs ratiopharm Ulm",
+        "url_page": "https://yeahscore1.com/match/cosea-jl-bourg-en-bresse-vs-ratiopharm-ulm-1629480782",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "EuroCup",
+        "type": "UPCOMING",
+        "time": "Jan 28,18:30",
+        "teams": "Veolia Towers Hamburg vs Slask Wroclaw",
+        "url_page": "https://yeahscore1.com/match/veolia-towers-hamburg-vs-slask-wroclaw-1629480783",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "EuroCup",
+        "type": "UPCOMING",
+        "time": "Jan 28,19:00",
+        "teams": "Umana Reyer Venice vs Cedevita Olimpija Ljubljana",
+        "url_page": "https://yeahscore1.com/match/umana-reyer-venice-vs-cedevita-olimpija-ljubljana-1629480784",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "EuroCup",
+        "type": "UPCOMING",
+        "time": "Jan 28,19:45",
+        "teams": "BAXI Manresa vs U-BT Cluj-Napoca",
+        "url_page": "https://yeahscore1.com/match/baxi-manresa-vs-u-bt-cluj-napoca-1629480785",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "ICE Hockey League",
+        "type": "UPCOMING",
+        "time": "Jan 28,18:15",
+        "teams": "Steinbach Black Wings Linz vs HC Bolzano",
+        "url_page": "https://yeahscore1.com/match/steinbach-black-wings-linz-vs-hc-bolzano-1629480781",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "",
+        "type": "UPCOMING",
+        "time": "Jan 28,14:30",
+        "teams": "Season 5: Tigers of Mumbai Dangals vs Haryana Thunders",
+        "url_page": "https://yeahscore1.com/match/season-5-tigers-of-mumbai-dangals-vs-haryana-thunders-1629481719",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UCI Pro Series",
+        "type": "UPCOMING",
+        "time": "Jan 28,11:30",
+        "teams": "ES2, Alula Tour, Stage 2",
+        "url_page": "https://yeahscore1.com/match/es2-alula-tour-stage-2-1629480771",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UCI Pro Series",
+        "type": "UPCOMING",
+        "time": "Jan 28,13:30",
+        "teams": "ES2, Challenge Mallorca, Trofeo Calvia",
+        "url_page": "https://yeahscore1.com/match/es2-challenge-mallorca-trofeo-calvia-1629480774",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "",
+        "type": "UPCOMING",
+        "time": "Jan 28,12:00",
+        "teams": "Board 1",
+        "url_page": "https://yeahscore1.com/match/board-1-1629480772",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "ICC Under-19 Cricket World Cup",
+        "type": "UPCOMING",
+        "time": "Jan 28,07:30",
+        "teams": "Australia vs West Indies",
+        "url_page": "https://yeahscore1.com/match/australia-vs-west-indies-1629480770",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     }
