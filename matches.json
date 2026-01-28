@@ -1,23 +1,5 @@
 [
     {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "28 January 2026 17:00",
-        "teams": "Inter Milano W vs Ternana W",
-        "url_page": "https://yeahscore1.com/match/inter-milano-w-vs-ternana-w-1629480776",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "28 January 2026 17:00",
-        "teams": "Roma W vs Lazio W",
-        "url_page": "https://yeahscore1.com/match/roma-w-vs-lazio-w-1629480777",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "Basketball Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 17:00",
@@ -243,15 +225,6 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "NHL",
-        "type": "UPCOMING",
-        "time": "29 January 2026 00:00",
-        "teams": "Philadelphia Flyers vs Columbus Blue Jackets",
-        "url_page": "https://yeahscore1.com/match/philadelphia-flyers-vs-columbus-blue-jackets-1629480788",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "NBA G League",
         "type": "UPCOMING",
         "time": "29 January 2026 00:00",
@@ -275,6 +248,15 @@
         "time": "29 January 2026 00:00",
         "teams": "Los Angeles Lakers vs Cleveland Cavaliers",
         "url_page": "https://yeahscore1.com/match/los-angeles-lakers-vs-cleveland-cavaliers-1629480787",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "NHL",
+        "type": "UPCOMING",
+        "time": "29 January 2026 00:00",
+        "teams": "Philadelphia Flyers vs Columbus Blue Jackets",
+        "url_page": "https://yeahscore1.com/match/philadelphia-flyers-vs-columbus-blue-jackets-1629480788",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -342,6 +324,33 @@
         "referer": "https://xiaolin3.live/"
     },
     {
+        "league": "NBA",
+        "type": "UPCOMING",
+        "time": "29 January 2026 00:30",
+        "teams": "New York Knicks vs Toronto Raptors",
+        "url_page": "https://yeahscore1.com/match/new-york-knicks-vs-toronto-raptors-1629480802",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "NBA",
+        "type": "UPCOMING",
+        "time": "29 January 2026 00:30",
+        "teams": "Atlanta Hawks vs Boston Celtics",
+        "url_page": "https://yeahscore1.com/match/atlanta-hawks-vs-boston-celtics-1629480800",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "NBA",
+        "type": "UPCOMING",
+        "time": "29 January 2026 00:30",
+        "teams": "Orlando Magic vs Miami Heat",
+        "url_page": "https://yeahscore1.com/match/orlando-magic-vs-miami-heat-1629480801",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
         "league": "NHL",
         "type": "UPCOMING",
         "time": "29 January 2026 00:30",
@@ -362,18 +371,9 @@
     {
         "league": "NBA",
         "type": "UPCOMING",
-        "time": "29 January 2026 00:30",
-        "teams": "New York Knicks vs Toronto Raptors",
-        "url_page": "https://yeahscore1.com/match/new-york-knicks-vs-toronto-raptors-1629480802",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "NBA",
-        "type": "UPCOMING",
-        "time": "29 January 2026 00:30",
-        "teams": "Atlanta Hawks vs Boston Celtics",
-        "url_page": "https://yeahscore1.com/match/atlanta-hawks-vs-boston-celtics-1629480800",
+        "time": "29 January 2026 01:00",
+        "teams": "Charlotte Hornets vs Memphis Grizzlies",
+        "url_page": "https://yeahscore1.com/match/charlotte-hornets-vs-memphis-grizzlies-1629480803",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     }
