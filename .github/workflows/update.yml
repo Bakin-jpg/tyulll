@@ -15,7 +15,7 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 20 # Wajib agak lama
+    timeout-minutes: 20
 
     steps:
       - name: Checkout
@@ -28,7 +28,8 @@ jobs:
 
       - name: Install Libraries
         run: |
-          pip install playwright beautifulsoup4
+          # Tambahkan 'requests' di sini
+          pip install playwright beautifulsoup4 requests
           playwright install chromium
           playwright install-deps
 
