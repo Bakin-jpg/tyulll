@@ -9,15 +9,6 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "EuroCup",
-        "type": "UPCOMING",
-        "time": "28 January 2026 17:30",
-        "teams": "Panionios Cosmorama Travel Athens vs London Lions",
-        "url_page": "https://yeahscore1.com/match/panionios-cosmorama-travel-athens-vs-london-lions-1629480779",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "28 January 2026 18:00",
@@ -72,61 +63,52 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "UEFA Champions League",
-        "type": "UPCOMING",
-        "time": "28 January 2026 20:00",
-        "teams": "Paris Saint Germain vs Newcastle",
-        "url_page": "https://yeahscore1.com/match/paris-saint-germain-vs-newcastle-1451149",
-        "stream_url": "https://livecdn.rumsport3.live/stream/25/chunks.m3u8?token=d1a461d4d4339b3086fa1dcc165419f55d8bffde&is_vip=false&verify=1769629500-yKorJYeL%2BdO0Dbih%2FE9GmR4qcK8%2B3dE6gcfL5XtbSJ4%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "UEFA Champions League",
+        "league": "- UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
         "teams": "Monaco vs Juventus",
         "url_page": "https://yeahscore1.com/match/monaco-vs-juventus-1451148",
-        "stream_url": "https://livecdn.rumsport3.live/stream/24/chunks.m3u8?token=d1a461d4d4339b3086fa1dcc165419f55d8bffde&is_vip=false&verify=1769629500-cs5ezXNUHlwotyskwSfyttRcO85rhZW%2B1zqpzF85PUE%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/24/chunks.m3u8?token=1eaa5e0d1a70b188a5aeb379434999edaf7b5b87&is_vip=false&verify=1769629620-ZRAnUQMaozie6wr%2B%2FqL2Vb3ZW%2BzM%2BBsW0Alem1XpYlU%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Others / International",
+        "league": "- UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
-        "teams": "Barcelona vs FC Copenhagen",
-        "url_page": "https://yeahscore1.com/match/barcelona-vs-fc-copenhagen-1451161",
-        "stream_url": "https://livecdn.rumsport3.live/stream/2/chunks.m3u8?token=d1a461d4d4339b3086fa1dcc165419f55d8bffde&is_vip=false&verify=1769629500-dflIt2r41CdiezSk9G%2FvCvMmx7ET75eX%2Bw2c9Rs7jWA%3D",
+        "teams": "Club Brugge KV vs Marseille",
+        "url_page": "https://yeahscore1.com/match/club-brugge-kv-vs-marseille-1451163",
+        "stream_url": "https://livecdn.rumsport3.live/stream/48/chunks.m3u8?token=1eaa5e0d1a70b188a5aeb379434999edaf7b5b87&is_vip=false&verify=1769629620-ofUcxAtyNLzWWnglW1fr474zXCz7%2FLNIyHsAZXfccrE%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Others / International",
+        "league": "- UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
-        "teams": "Manchester City vs Galatasaray",
-        "url_page": "https://yeahscore1.com/match/manchester-city-vs-galatasaray-1451153",
-        "stream_url": "https://livecdn.rumsport3.live/stream/15/chunks.m3u8?token=d1a461d4d4339b3086fa1dcc165419f55d8bffde&is_vip=false&verify=1769629500-5HRBPk31W4ND9t83tvU9VocgXyjQ4JLKyaY5YIQkT7E%3D",
+        "teams": "Paris Saint Germain vs Newcastle",
+        "url_page": "https://yeahscore1.com/match/paris-saint-germain-vs-newcastle-1451149",
+        "stream_url": "https://livecdn.rumsport3.live/stream/25/chunks.m3u8?token=1eaa5e0d1a70b188a5aeb379434999edaf7b5b87&is_vip=false&verify=1769629620-1tvfKKs50zdg5ZKv%2F3w4iSJrTijmovQ0VMsW11JU0Hs%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Others / International",
+        "league": "- UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
-        "teams": "Liverpool vs Qarabag",
-        "url_page": "https://yeahscore1.com/match/liverpool-vs-qarabag-1451160",
-        "stream_url": "https://livecdn.rumsport3.live/stream/1/chunks.m3u8?token=d1a461d4d4339b3086fa1dcc165419f55d8bffde&is_vip=false&verify=1769629500-wIbryra61t%2FoRw2qjCHCjNx1dgA2DiVL4psIBIA04Mw%3D",
+        "teams": "Ajax vs Olympiakos Piraeus",
+        "url_page": "https://yeahscore1.com/match/ajax-vs-olympiakos-piraeus-1451157",
+        "stream_url": "https://livecdn.rumsport3.live/stream/5/chunks.m3u8?token=1eaa5e0d1a70b188a5aeb379434999edaf7b5b87&is_vip=false&verify=1769629620-yMBUw%2FI3hclfpqiQhUsG%2FCaTChNv1oiAk%2F4pNXlenao%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "UEFA Champions League",
+        "league": "- UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
-        "teams": "Benfica vs Real Madrid",
-        "url_page": "https://yeahscore1.com/match/benfica-vs-real-madrid-1451162",
-        "stream_url": null,
+        "teams": "Napoli vs Chelsea",
+        "url_page": "https://yeahscore1.com/match/napoli-vs-chelsea-1451146",
+        "stream_url": "https://livecdn.rumsport3.live/stream/3/chunks.m3u8?token=1eaa5e0d1a70b188a5aeb379434999edaf7b5b87&is_vip=false&verify=1769629620-MsF%2FGqH6j%2BfiNpeyPt005sfHRQWzsql0R9ac7m5jTfc%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "UEFA Champions League",
+        "league": "- UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
         "teams": "Arsenal vs Kairat Almaty",
@@ -135,29 +117,74 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "UEFA Champions League",
+        "league": "- UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
-        "teams": "Club Brugge KV vs Marseille",
-        "url_page": "https://yeahscore1.com/match/club-brugge-kv-vs-marseille-1451163",
+        "teams": "Benfica vs Real Madrid",
+        "url_page": "https://yeahscore1.com/match/benfica-vs-real-madrid-1451162",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "UEFA Champions League",
+        "league": "- UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
-        "teams": "Ajax vs Olympiakos Piraeus",
-        "url_page": "https://yeahscore1.com/match/ajax-vs-olympiakos-piraeus-1451157",
+        "teams": "Liverpool vs Qarabag",
+        "url_page": "https://yeahscore1.com/match/liverpool-vs-qarabag-1451160",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "UEFA Champions League",
+        "league": "- UEFA Champions League",
         "type": "UPCOMING",
         "time": "28 January 2026 20:00",
-        "teams": "Napoli vs Chelsea",
-        "url_page": "https://yeahscore1.com/match/napoli-vs-chelsea-1451146",
+        "teams": "Bayer Leverkusen vs Villarreal",
+        "url_page": "https://yeahscore1.com/match/bayer-leverkusen-vs-villarreal-1451155",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "- UEFA Champions League",
+        "type": "UPCOMING",
+        "time": "28 January 2026 20:00",
+        "teams": "Eintracht Frankfurt vs Tottenham",
+        "url_page": "https://yeahscore1.com/match/eintracht-frankfurt-vs-tottenham-1451150",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "- UEFA Champions League",
+        "type": "UPCOMING",
+        "time": "28 January 2026 20:00",
+        "teams": "Athletic Club vs Sporting CP",
+        "url_page": "https://yeahscore1.com/match/athletic-club-vs-sporting-cp-1451156",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "- UEFA Champions League",
+        "type": "UPCOMING",
+        "time": "28 January 2026 20:00",
+        "teams": "Pafos vs Slavia Praha",
+        "url_page": "https://yeahscore1.com/match/pafos-vs-slavia-praha-1451151",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "28 January 2026 20:00",
+        "teams": "Barcelona vs FC Copenhagen",
+        "url_page": "https://yeahscore1.com/match/barcelona-vs-fc-copenhagen-1451161",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "28 January 2026 20:00",
+        "teams": "Manchester City vs Galatasaray",
+        "url_page": "https://yeahscore1.com/match/manchester-city-vs-galatasaray-1451153",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -347,6 +374,15 @@
         "time": "29 January 2026 01:15",
         "teams": "Estudiantes L.P. vs Boca Juniors",
         "url_page": "https://yeahscore1.com/match/estudiantes-lp-vs-boca-juniors-1491837",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "NBA",
+        "type": "UPCOMING",
+        "time": "29 January 2026 01:30",
+        "teams": "Minnesota Timberwolves vs Dallas Mavericks",
+        "url_page": "https://yeahscore1.com/match/minnesota-timberwolves-vs-dallas-mavericks-1629480805",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     }
