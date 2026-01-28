@@ -1,92 +1,77 @@
 import json
 import re
-import time
+import requests # Kita butuh requests buat nembak PHP
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
-def get_stream_token(context, iframe_url, referer):
+# ==========================================
+# CONFIG: GANTI DENGAN URL PHP DI HOSTING INDO KAMU
+# ==========================================
+PHP_BRIDGE_URL = "https://forfreetech.biz.id/status.php" 
+
+def get_stream_via_proxy(iframe_url, referer_origin):
     """
-    1. Buka Iframe -> Ambil URL Wrapper (cdn-rum...).
-    2. Request Wrapper -> Ambil URL Final.
-    3. DEBUG: Request URL Final -> Print isinya (list .ts) ke terminal.
+    Menggunakan Hosting Indo untuk bypass geoblock dan mengambil Final URL.
+    Flow:
+    1. Python -> PHP (Request Iframe Source)
+    2. PHP (IP Indo) -> Server Video
+    3. Python (Regex) -> Dapat Master M3U8
+    4. Python -> PHP (Request Master M3U8 Content)
+    5. Python -> Dapat Final URL (Chunks)
     """
-    page = context.new_page()
     final_url = None
-
+    
     try:
-        print(f"      -> Bedah Iframe: {iframe_url[:60]}...")
+        print(f"      -> [PROXY] Request Source Iframe...")
         
-        # --- LANGKAH 1: Request Source Iframe ---
-        response = page.request.get(
-            iframe_url, 
-            headers={"Referer": referer}
-        )
+        # 1. Minta PHP ambilkan Source Code Iframe
+        payload = {"url": iframe_url, "referer": referer_origin}
+        resp = requests.get(PHP_BRIDGE_URL, params=payload, timeout=20)
+        data = resp.json()
         
-        wrapper_url = None
-        if response.status == 200:
-            html_content = response.text()
+        if data.get('status') == 'success':
+            html_content = data['content']
+            
+            # 2. Regex cari variabel m3u8
             match = re.search(r"var\s+m3u8\s*=\s*['\"]([^'\"]+)['\"]", html_content)
+            
             if match:
-                wrapper_url = match.group(1)
-            else:
-                print("      [GAGAL] Pattern m3u8 tidak ditemukan di source iframe.")
-        else:
-            print(f"      [GAGAL] Iframe Status: {response.status}")
-
-        # --- LANGKAH 2: Fetch Wrapper ---
-        if wrapper_url:
-            try:
-                # Header wajib buat player ini
-                headers_stream = {
-                    "Referer": "https://xiaolin3.live/",
-                    "Origin": "https://xiaolin3.live",
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-                }
-
-                m3u8_resp = page.request.get(wrapper_url, headers=headers_stream)
-
-                if m3u8_resp.status == 200:
-                    content = m3u8_resp.text()
-                    lines = content.strip().split('\n')
+                master_url = match.group(1)
+                print(f"      -> [PROXY] Master URL didapat. Mencari Final URL...")
+                
+                # 3. Minta PHP ambilkan isi dari Master M3U8 (Resolve Chunks)
+                # Referer diganti jadi xiaolin/domain player agar valid
+                payload_m3u8 = {"url": master_url, "referer": "https://xiaolin3.live/"}
+                resp_m3u8 = requests.get(PHP_BRIDGE_URL, params=payload_m3u8, timeout=20)
+                data_m3u8 = resp_m3u8.json()
+                
+                if data_m3u8.get('status') == 'success':
+                    playlist_content = data_m3u8['content']
+                    
+                    # 4. Parsing isi playlist untuk cari URL http yang asli
+                    lines = playlist_content.split('\n')
                     for line in lines:
-                        line = line.strip()
-                        if line.startswith("http"):
-                            final_url = line
+                        clean_line = line.strip()
+                        # Biasanya URL chunks diawali http/https dan tidak diawali #
+                        if clean_line.startswith("http"):
+                            final_url = clean_line
+                            print("      -> [SUKSES] Final Stream URL ditemukan!")
                             break
                     
-                    # --- LANGKAH 3: DEBUG ISI FINAL M3U8 (REQUEST KE CHUNKS.M3U8) ---
-                    if final_url:
-                        print(f"      [SUKSES] Link Final didapatkan.")
-                        print(f"      [DEBUG] Mencoba membaca isi M3U8 untuk analisis...")
-                        
-                        try:
-                            # Kita request URL finalnya cuma buat di-print isinya
-                            debug_resp = page.request.get(final_url, headers=headers_stream)
-                            if debug_resp.status == 200:
-                                debug_content = debug_resp.text()
-                                print("\n" + "="*20 + " ISI FILE M3U8 " + "="*20)
-                                # Print maksimal 500 karakter atau 10 baris pertama biar gak nyampah full layar
-                                # Tapi kalau mau full, hapus slicing-nya. Ini saya kasih 15 baris pertama.
-                                preview_lines = debug_content.split('\n')[:15] 
-                                print('\n'.join(preview_lines))
-                                print("... (dan seterusnya)")
-                                print("="*55 + "\n")
-                            else:
-                                print(f"      [DEBUG ERROR] Gagal baca isi final m3u8. Status: {debug_resp.status}")
-                        except Exception as d:
-                            print(f"      [DEBUG ERROR] {d}")
-
+                    # Fallback: Kalau isi playlist cuma relatif path atau master doang
+                    if not final_url:
+                        # Logika tambahan jika redirect atau format beda
+                        final_url = master_url 
                 else:
-                    print(f"      [GAGAL] Gagal fetch wrapper. Status: {m3u8_resp.status}")
-
-            except Exception as e:
-                print(f"      [ERROR] Gagal request wrapper: {e}")
-
+                    print(f"      -> [GAGAL] Gagal baca Master Playlist.")
+            else:
+                print("      -> [GAGAL] Token m3u8 tidak ditemukan di source iframe.")
+        else:
+            print(f"      -> [ERROR] PHP Bridge Error: {data.get('message')}")
+            
     except Exception as e:
-        print(f"      [ERROR] Global: {e}")
-    finally:
-        page.close()
-    
+        print(f"      -> [ERROR] Exception: {e}")
+
     return final_url
 
 def main():
@@ -94,27 +79,23 @@ def main():
     base_url = "https://yeahscore1.com"
 
     with sync_playwright() as p:
+        # Browser biasa (IP GitHub Action / US) untuk buka web utama
+        # Web utamanya (Yeahscore) biasanya tidak butuh IP Indo
         browser = p.chromium.launch(
             headless=True,
-            args=[
-                '--disable-blink-features=AutomationControlled',
-                '--no-sandbox',
-                '--disable-setuid-sandbox',
-                '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-            ]
+            args=['--no-sandbox', '--disable-setuid-sandbox']
         )
         context = browser.new_context()
         page = context.new_page()
 
-        print("1. Membuka Halaman Utama...")
+        print("1. Membuka Halaman Utama Yeahscore...")
         try:
             page.goto(base_url + "/", timeout=60000, wait_until="domcontentloaded")
-            try:
-                page.wait_for_selector("a.link-wrapper", timeout=15000)
-            except: pass
-
+            
+            # Parsing HTML Dasar
             html = page.content()
             soup = BeautifulSoup(html, 'html.parser')
+            
             link_elements = soup.select('a.link-wrapper')
             print(f"   -> Menemukan {len(link_elements)} potensi pertandingan.")
 
@@ -124,92 +105,78 @@ def main():
                     container = link.find_parent(class_=['collapse-match', 'item'])
                     if not container: continue
 
+                    # Ambil data Tim, Waktu, Liga (Sama seperti script sebelumnya)
                     home_el = container.select_one('.left-column .name-club')
                     away_el = container.select_one('.right-column .name-club')
-                    
-                    if home_el and away_el:
-                        home = home_el.get_text(strip=True)
-                        away = away_el.get_text(strip=True)
-                        teams = f"{home} vs {away}"
-                    else:
-                        title_el = container.select_one('.item-title') or container.select_one('.name-club')
-                        teams = title_el.get_text(strip=True) if title_el else "Unknown Match"
+                    teams = f"{home_el.get_text(strip=True)} vs {away_el.get_text(strip=True)}" if home_el and away_el else "Unknown"
 
-                    time_el = container.select_one('.inplay') or container.select_one('.time')
-                    time_raw = time_el.get_text(" ", strip=True) if time_el else ""
-                    
-                    is_live = False
-                    if container.find_parent(class_='b-live-matches'):
-                        is_live = True
-                    
+                    # Deteksi Live
+                    is_live = bool(container.find_parent(class_='b-live-matches'))
                     match_type = "LIVE" if is_live else "UPCOMING"
-                    display_time = "LIVE NOW" if is_live else time_raw
                     
+                    # Simpan data dasar
                     all_matches.append({
                         "type": match_type,
                         "teams": teams,
-                        "time_display": display_time,
                         "url_page": match_url,
                         "stream_url": None,
-                        "referer": base_url
+                        "referer": "https://xiaolin3.live/" # Default referer player
                     })
                 except: continue
 
         except Exception as e:
-            print(f"Error parse halaman utama: {e}")
+            print(f"Error halaman utama: {e}")
 
-        # ==========================================
-        # BAGIAN DEEP SCRAPE
-        # ==========================================
-        print(f"\nTotal Match Valid: {len(all_matches)}")
-        
-        # Ambil LIVE dan sedikit UPCOMING
+        # Filter Target
         targets = [m for m in all_matches if m['type'] == 'LIVE']
-        upcoming = [m for m in all_matches if m['type'] == 'UPCOMING'][:5] 
+        upcoming = [m for m in all_matches if m['type'] == 'UPCOMING'][:10]
         targets.extend(upcoming)
         
         final_data = []
 
+        print(f"\n2. Deep Scraping ({len(targets)} Match)...")
+        
         for i, match in enumerate(targets):
-            print(f"[{i+1}/{len(targets)}] {match['teams']} ({match['type']})")
+            print(f"[{i+1}/{len(targets)}] {match['teams']}")
             
-            detail_page = context.new_page()
-            iframe_src = None
-            
+            # Langkah 1: Buka Page Match pake Playwright (IP US gak masalah buat buka page ini)
             try:
-                detail_page.goto(match['url_page'], timeout=15000, wait_until="domcontentloaded")
+                page_match = context.new_page()
+                page_match.goto(match['url_page'], timeout=15000, wait_until="domcontentloaded")
                 
-                # Coba tunggu iframe
+                iframe_src = None
                 try:
-                    detail_page.wait_for_selector('iframe[src*="wowhaha"], iframe[src*="xiaolin"]', timeout=3000)
+                    # Cari iframe player
+                    page_match.wait_for_selector('iframe', timeout=5000)
+                    iframes = page_match.query_selector_all("iframe")
+                    for frame in iframes:
+                        src = frame.get_attribute("src")
+                        if src and ("wowhaha" in src or "xiaolin" in src or "embed" in src):
+                            iframe_src = "https:" + src if src.startswith("//") else src
+                            break
                 except: pass
                 
-                iframes = detail_page.query_selector_all("iframe")
-                for frame in iframes:
-                    src = frame.get_attribute("src")
-                    if src and ("wowhaha" in src or "xiaolin" in src or "embed" in src):
-                        iframe_src = src
-                        if src.startswith("//"): iframe_src = "https:" + src
-                        break
-            except: pass
-            finally:
-                detail_page.close()
+                page_match.close()
 
-            if iframe_src:
-                token_url = get_stream_token(context, iframe_src, match['url_page'])
-                match['stream_url'] = token_url
-                if token_url:
-                    match['referer'] = "https://xiaolin3.live/"
-            else:
-                print("      [INFO] Tidak ada player/iframe.")
+                # Langkah 2: Jika iframe ketemu, Gunakan Proxy PHP Indo buat ambil token
+                if iframe_src:
+                    # Ini bagian kuncinya. Kita oper ke fungsi proxy
+                    final_stream_url = get_stream_via_proxy(iframe_src, match['url_page'])
+                    match['stream_url'] = final_stream_url
+                else:
+                    print("      -> Tidak ada iframe player.")
 
+            except Exception as e:
+                print(f"      -> Error: {e}")
+                
             final_data.append(match)
 
         browser.close()
 
+    # Simpan JSON
     with open("matches.json", "w", encoding="utf-8") as f:
         json.dump(final_data, f, indent=4)
-        print("\nSelesai. Data tersimpan di matches.json")
+        print("\nSelesai.")
 
 if __name__ == "__main__":
     main()
