@@ -358,5 +358,14 @@
         "url_page": "https://yeahscore1.com/match/los-angeles-lakers-vs-cleveland-cavaliers-1629480787",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "NHL",
+        "type": "UPCOMING",
+        "time": "29 January 2026 00:00",
+        "teams": "Philadelphia Flyers vs Columbus Blue Jackets",
+        "url_page": "https://yeahscore1.com/match/philadelphia-flyers-vs-columbus-blue-jackets-1629480788",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
     }
 ]
