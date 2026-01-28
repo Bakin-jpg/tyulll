@@ -5,7 +5,7 @@
         "teams": "USA W vs Chile W",
         "time_display": "LIVE NOW",
         "url_page": "https://yeahscore1.com/match/usa-w-vs-chile-w-1503002",
-        "stream_url": "https://livecdn.rumsport3.live/stream/17/index.m3u8?token=2ba92a402e6db7ff17e846422724e2940b3ec132&is_vip=false&verify=1769569200-TrtRi5bLEZWlTybiPHkx0YFj1dsGxUsLMDLoChCKiHI%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/17/chunks.m3u8?token=432b4e916d4030ef10f13b43e09a88a8d3b4f0ce&verify=1769569200-75gmzNtHI%2F8sgSMv57brYKVgfCTfBQcKpfF1ibHWMSM%3D&is_vip=false",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,7 +14,7 @@
         "teams": "San Jose Sharks vs Vancouver Canucks",
         "time_display": "LIVE NOW",
         "url_page": "https://yeahscore1.com/match/san-jose-sharks-vs-vancouver-canucks-1629480768",
-        "stream_url": "https://livecdn.rumsport3.live/stream/15/index.m3u8?token=2ba92a402e6db7ff17e846422724e2940b3ec132&is_vip=false&verify=1769569200-TrtRi5bLEZWlTybiPHkx0YFj1dsGxUsLMDLoChCKiHI%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/15/chunks.m3u8?token=432b4e916d4030ef10f13b43e09a88a8d3b4f0ce&verify=1769569200-75gmzNtHI%2F8sgSMv57brYKVgfCTfBQcKpfF1ibHWMSM%3D&is_vip=false",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -23,25 +23,7 @@
         "teams": "Washington Capitals vs Seattle Kraken",
         "time_display": "LIVE NOW",
         "url_page": "https://yeahscore1.com/match/washington-capitals-vs-seattle-kraken-1629480767",
-        "stream_url": "https://livecdn.rumsport3.live/stream/9/index.m3u8?token=2ba92a402e6db7ff17e846422724e2940b3ec132&is_vip=false&verify=1769569200-TrtRi5bLEZWlTybiPHkx0YFj1dsGxUsLMDLoChCKiHI%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "International - NHL",
-        "teams": "Chicago Blackhawks vs Minnesota Wild",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/chicago-blackhawks-vs-minnesota-wild-1629480760",
-        "stream_url": "https://livecdn.rumsport3.live/stream/20/index.m3u8?token=2ba92a402e6db7ff17e846422724e2940b3ec132&is_vip=false&verify=1769569200-TrtRi5bLEZWlTybiPHkx0YFj1dsGxUsLMDLoChCKiHI%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "International - NHL",
-        "teams": "Dallas Stars vs St. Louis Blues",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/dallas-stars-vs-st-louis-blues-1629480759",
-        "stream_url": "https://livecdn.rumsport3.live/stream/25/index.m3u8?token=2ba92a402e6db7ff17e846422724e2940b3ec132&is_vip=false&verify=1769569200-TrtRi5bLEZWlTybiPHkx0YFj1dsGxUsLMDLoChCKiHI%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=432b4e916d4030ef10f13b43e09a88a8d3b4f0ce&verify=1769569200-75gmzNtHI%2F8sgSMv57brYKVgfCTfBQcKpfF1ibHWMSM%3D&is_vip=false",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -50,7 +32,7 @@
         "teams": "Los Angeles Clippers vs Utah Jazz",
         "time_display": "LIVE NOW",
         "url_page": "https://yeahscore1.com/match/los-angeles-clippers-vs-utah-jazz-1629480766",
-        "stream_url": "https://livecdn.rumsport3.live/stream/32/index.m3u8?token=2ba92a402e6db7ff17e846422724e2940b3ec132&is_vip=false&verify=1769569200-TrtRi5bLEZWlTybiPHkx0YFj1dsGxUsLMDLoChCKiHI%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/32/chunks.m3u8?token=432b4e916d4030ef10f13b43e09a88a8d3b4f0ce&verify=1769569200-75gmzNtHI%2F8sgSMv57brYKVgfCTfBQcKpfF1ibHWMSM%3D&is_vip=false",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -59,34 +41,7 @@
         "teams": "Brooklyn Nets vs Phoenix Suns",
         "time_display": "LIVE NOW",
         "url_page": "https://yeahscore1.com/match/brooklyn-nets-vs-phoenix-suns-1629480764",
-        "stream_url": "https://livecdn.rumsport3.live/stream/38/index.m3u8?token=2ba92a402e6db7ff17e846422724e2940b3ec132&is_vip=false&verify=1769569200-TrtRi5bLEZWlTybiPHkx0YFj1dsGxUsLMDLoChCKiHI%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "International - NBA",
-        "teams": "Detroit Pistons vs Denver Nuggets",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/detroit-pistons-vs-denver-nuggets-1629480763",
-        "stream_url": "https://livecdn.rumsport3.live/stream/35/index.m3u8?token=2ba92a402e6db7ff17e846422724e2940b3ec132&is_vip=false&verify=1769569200-TrtRi5bLEZWlTybiPHkx0YFj1dsGxUsLMDLoChCKiHI%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "International - NBA",
-        "teams": "New Orleans Pelicans vs Oklahoma City Thunder",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/new-orleans-pelicans-vs-oklahoma-city-thunder-1629480761",
-        "stream_url": "https://livecdn.rumsport3.live/stream/39/index.m3u8?token=2ba92a402e6db7ff17e846422724e2940b3ec132&is_vip=false&verify=1769569200-TrtRi5bLEZWlTybiPHkx0YFj1dsGxUsLMDLoChCKiHI%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "type": "LIVE",
-        "league": "International - NBA",
-        "teams": "Milwaukee Bucks vs Philadelphia 76ers",
-        "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/milwaukee-bucks-vs-philadelphia-76ers-1629480762",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/index.m3u8?token=2ba92a402e6db7ff17e846422724e2940b3ec132&is_vip=false&verify=1769569200-TrtRi5bLEZWlTybiPHkx0YFj1dsGxUsLMDLoChCKiHI%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/38/chunks.m3u8?token=432b4e916d4030ef10f13b43e09a88a8d3b4f0ce&verify=1769569200-75gmzNtHI%2F8sgSMv57brYKVgfCTfBQcKpfF1ibHWMSM%3D&is_vip=false",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -95,16 +50,34 @@
         "teams": "College Park Skyhawks vs South Bay Lakers",
         "time_display": "LIVE NOW",
         "url_page": "https://yeahscore1.com/match/college-park-skyhawks-vs-south-bay-lakers-1629480769",
-        "stream_url": "https://livecdn.rumsport3.live/stream/44/index.m3u8?token=2ba92a402e6db7ff17e846422724e2940b3ec132&is_vip=false&verify=1769569200-TrtRi5bLEZWlTybiPHkx0YFj1dsGxUsLMDLoChCKiHI%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/44/chunks.m3u8?token=432b4e916d4030ef10f13b43e09a88a8d3b4f0ce&verify=1769569200-75gmzNtHI%2F8sgSMv57brYKVgfCTfBQcKpfF1ibHWMSM%3D&is_vip=false",
         "referer": "https://xiaolin3.live/"
     },
     {
         "type": "LIVE",
-        "league": "United States of America - NBA G League",
-        "teams": "Austin Spurs vs Valley Suns",
+        "league": "Australia - Australian Open",
+        "teams": "Unknown Match",
         "time_display": "LIVE NOW",
-        "url_page": "https://yeahscore1.com/match/austin-spurs-vs-valley-suns-1629480765",
-        "stream_url": "https://livecdn.rumsport3.live/stream/23/index.m3u8?token=2ba92a402e6db7ff17e846422724e2940b3ec132&is_vip=false&verify=1769569200-TrtRi5bLEZWlTybiPHkx0YFj1dsGxUsLMDLoChCKiHI%3D",
+        "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481922",
+        "stream_url": "https://livecdn.rumsport3.live/stream/43/chunks.m3u8?token=432b4e916d4030ef10f13b43e09a88a8d3b4f0ce&verify=1769569200-75gmzNtHI%2F8sgSMv57brYKVgfCTfBQcKpfF1ibHWMSM%3D&is_vip=false",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "type": "LIVE",
+        "league": "Australia - Australian Open",
+        "teams": "Unknown Match",
+        "time_display": "LIVE NOW",
+        "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481923",
+        "stream_url": "https://livecdn.rumsport3.live/stream/47/chunks.m3u8?token=432b4e916d4030ef10f13b43e09a88a8d3b4f0ce&verify=1769569200-75gmzNtHI%2F8sgSMv57brYKVgfCTfBQcKpfF1ibHWMSM%3D&is_vip=false",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "type": "LIVE",
+        "league": "Australia - Australian Open",
+        "teams": "Unknown Match",
+        "time_display": "LIVE NOW",
+        "url_page": "https://yeahscore1.com/match/anz-arena-1629480747",
+        "stream_url": "https://livecdn.rumsport3.live/stream/45/chunks.m3u8?token=432b4e916d4030ef10f13b43e09a88a8d3b4f0ce&verify=1769569200-75gmzNtHI%2F8sgSMv57brYKVgfCTfBQcKpfF1ibHWMSM%3D&is_vip=false",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -217,29 +190,29 @@
     },
     {
         "type": "UPCOMING",
+        "league": "UEFA Champions League",
+        "teams": "Borussia Dortmund vs Inter",
+        "time_display": "Jan 28, 20:00",
+        "url_page": "https://yeahscore1.com/match/borussia-dortmund-vs-inter-1451147",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
+        "league": "UEFA Champions League",
+        "teams": "Bayer Leverkusen vs Villarreal",
+        "time_display": "Jan 28, 20:00",
+        "url_page": "https://yeahscore1.com/match/bayer-leverkusen-vs-villarreal-1451155",
+        "stream_url": null,
+        "referer": "https://yeahscore1.com"
+    },
+    {
+        "type": "UPCOMING",
         "league": "A-League Women",
         "teams": "Perth Glory FC W vs Sydney FC W",
         "time_display": "Jan 28, 11:00",
         "url_page": "https://yeahscore1.com/match/perth-glory-fc-w-vs-sydney-fc-w-1484541",
         "stream_url": null,
         "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "league": "Pro League",
-        "teams": "Al-Ahli Jeddah vs Al-Ettifaq",
-        "time_display": "Jan 28, 17:30",
-        "url_page": "https://yeahscore1.com/match/al-ahli-jeddah-vs-al-ettifaq-1436076",
-        "stream_url": null,
-        "referer": "https://yeahscore1.com"
-    },
-    {
-        "type": "UPCOMING",
-        "league": "Friendlies Women",
-        "teams": "USA W vs Chile W",
-        "time_display": "Jan 28, 03:00",
-        "url_page": "https://yeahscore1.com/match/usa-w-vs-chile-w-1503002",
-        "stream_url": "https://livecdn.rumsport3.live/stream/17/index.m3u8?token=2ba92a402e6db7ff17e846422724e2940b3ec132&is_vip=false&verify=1769569200-TrtRi5bLEZWlTybiPHkx0YFj1dsGxUsLMDLoChCKiHI%3D",
-        "referer": "https://xiaolin3.live/"
     }
 ]
