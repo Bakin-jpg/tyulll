@@ -53,7 +53,8 @@ def format_full_date(raw_time_str):
     try:
         now = datetime.now()
         current_year = now.year
-        clean_time = raw_time_str.strip().replace(",", "")
+        # Bersihkan string dari enter/spasi berlebih
+        clean_time = " ".join(raw_time_str.split()).replace(",", "")
         
         # Regex: (Jan) (28) (20:00)
         match_full = re.search(r"([A-Za-z]+)\s+(\d+)\s+(\d{2}:\d{2})", clean_time)
@@ -65,6 +66,7 @@ def format_full_date(raw_time_str):
             dt_obj = datetime.strptime(f"{day_str} {month_str} {current_year} {time_str}", "%d %b %Y %H:%M")
             return dt_obj.strftime("%d %B %Y %H:%M")
 
+        # Regex: Cuma Jam (20:00) -> Hari Ini
         match_time_only = re.search(r"(\d{2}:\d{2})", clean_time)
         if match_time_only:
             time_str = match_time_only.group(1)
@@ -85,12 +87,13 @@ def parse_main_page(html):
     print(f"   -> Scanning {len(league_groups)} grup section...")
 
     for group in league_groups:
+        # Ambil Nama Liga
         league_el = group.select_one('.collapse-nav-title-name, .collapse-nav-title h3')
         raw_league = league_el.get_text(strip=True) if league_el else ""
         
         is_generic_league = False
-        # Filter nama liga sampah
-        if not raw_league or raw_league in ["Today", "Hot Matches", "Schedule", "Upcoming schedule today"] or "Matches" in raw_league:
+        # Filter nama liga "sampah"
+        if not raw_league or raw_league in ["Today", "Hot Matches", "Tomorrow", "Schedule", "Upcoming schedule today"] or "Matches" in raw_league:
             league_name = "Others / International"
             is_generic_league = True
         else:
@@ -104,42 +107,72 @@ def parse_main_page(html):
                 if not link: continue
                 match_url = "https://yeahscore1.com" + link['href']
 
-                # LOGIC DEDUPLIKASI
+                # --- LOGIC DEDUPLIKASI ---
                 if match_url in unique_matches:
                     existing_league = unique_matches[match_url]['league']
-                    # Jika data yang sudah ada BUKAN Generic, pertahankan yang lama
                     if existing_league != "Others / International":
                         continue 
-                    # Jika data baru Generic juga, skip
                     if is_generic_league:
                         continue 
 
-                # Waktu
+                # --- PARSE WAKTU ---
                 time_el = item.select_one('.time')
-                raw_time = time_el.get_text(" ", strip=True) if time_el else ""
+                if time_el:
+                    # Ambil text, gabungkan jika ada span lain (misal tanggal dan jam terpisah)
+                    raw_time = time_el.get_text(" ", strip=True) 
+                    # Kadang tanggal ada di sibling element sebelumnya (item-status)
+                    parent_status = item.select_one('.item-status')
+                    if parent_status:
+                        raw_time = parent_status.get_text(" ", strip=True)
+                else:
+                    raw_time = ""
+                
                 formatted_time = format_full_date(raw_time)
                 
-                # Type
+                # --- PARSE TYPE ---
                 status_el = item.select_one('span[title="Not Started"]')
+                # Jika ada "NS" atau teks tanggal panjang -> UPCOMING
                 match_type = "UPCOMING" if (status_el or len(raw_time) > 6) else "LIVE"
 
-                # Teams Parsing yang diperbaiki Unicode-nya secara otomatis oleh Python String
+                # --- PARSE TEAMS (LOGIC PERBAIKAN) ---
                 teams_str = "Unknown"
+                
+                # 1. Cek Layout Desktop (Kiri vs Kanan)
                 left_col = item.select_one('.left-column .name-club')
                 right_col = item.select_one('.right-column .name-club')
 
-                if left_col and right_col:
-                    teams_str = f"{left_col.get_text(strip=True)} vs {right_col.get_text(strip=True)}"
-                else:
-                    center_text = item.select_one('.text-center span, .middle-column')
-                    if center_text and "vs" not in center_text.get_text().lower():
-                        teams_str = center_text.get_text(strip=True)
-                    else:
-                        title_fallback = item.select_one('.collapse-nav-title-name')
-                        if title_fallback: teams_str = title_fallback.get_text(strip=True)
+                # 2. Cek Layout Mobile/Stacked (Dua tim di dalam .right-column)
+                # Ini yang memperbaiki kasus "Unknown" di JSON kamu sebelumnya
+                right_col_wrapper = item.select_one('.right-column')
+                stacked_teams = right_col_wrapper.select('.name-club') if right_col_wrapper else []
 
+                if left_col and right_col:
+                    # Layout Standar
+                    teams_str = f"{left_col.get_text(strip=True)} vs {right_col.get_text(strip=True)}"
+                
+                elif len(stacked_teams) >= 2:
+                    # Layout Mobile (Tim menumpuk)
+                    teams_str = f"{stacked_teams[0].get_text(strip=True)} vs {stacked_teams[1].get_text(strip=True)}"
+                
+                else:
+                    # 3. Cek Single Title (Tennis / Event Lain)
+                    # Cari sembarang class .name-club yang ada
+                    single_name = item.select_one('.name-club')
+                    if single_name:
+                        teams_str = single_name.get_text(strip=True)
+                    else:
+                        # Fallback Judul Group/Match
+                        center_text = item.select_one('.text-center span, .middle-column')
+                        if center_text and "vs" not in center_text.get_text().lower():
+                            teams_str = center_text.get_text(strip=True)
+                        else:
+                            title_fallback = item.select_one('.collapse-nav-title-name')
+                            if title_fallback: teams_str = title_fallback.get_text(strip=True)
+
+                # Bersihkan string
                 teams_str = teams_str.replace("Watch Now", "").strip()
 
+                # Simpan Data
                 unique_matches[match_url] = {
                     "league": league_name,
                     "type": match_type,
@@ -210,9 +243,8 @@ def main():
     # Sorting
     all_matches.sort(key=lambda x: (x['type'] == 'UPCOMING', x['time'])) 
     
-    # SIMPAN JSON (DENGAN FIX UNICODE)
     with open("matches.json", "w", encoding="utf-8") as f:
-        # ensure_ascii=False membuat huruf spesial (Turki, Arab, Jepang) tetap terbaca
+        # PENTING: ensure_ascii=False agar nama tim terbaca normal (bukan kode unicode)
         json.dump(all_matches, f, indent=4, ensure_ascii=False)
         print("\nSelesai. Data disimpan ke matches.json")
 
