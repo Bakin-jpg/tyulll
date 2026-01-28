@@ -7,7 +7,8 @@ from bs4 import BeautifulSoup
 def get_stream_token(context, iframe_url, referer):
     """
     1. Buka Iframe -> Ambil URL Wrapper (cdn-rum...).
-    2. Request URL Wrapper -> Ambil URL Final (livecdn...) dari dalam isinya.
+    2. Request Wrapper -> Ambil URL Final.
+    3. DEBUG: Request URL Final -> Print isinya (list .ts) ke terminal.
     """
     page = context.new_page()
     final_url = None
@@ -24,40 +25,57 @@ def get_stream_token(context, iframe_url, referer):
         wrapper_url = None
         if response.status == 200:
             html_content = response.text()
-            # Regex menangkap: var m3u8 = 'https://...';
             match = re.search(r"var\s+m3u8\s*=\s*['\"]([^'\"]+)['\"]", html_content)
             if match:
                 wrapper_url = match.group(1)
-                print(f"      [INFO] Wrapper URL ditemukan: {wrapper_url[:40]}...")
             else:
                 print("      [GAGAL] Pattern m3u8 tidak ditemukan di source iframe.")
         else:
             print(f"      [GAGAL] Iframe Status: {response.status}")
 
-        # --- LANGKAH 2: Fetch Isi Wrapper untuk dapat Final URL ---
+        # --- LANGKAH 2: Fetch Wrapper ---
         if wrapper_url:
             try:
-                # Request ke URL wrapper (cdn-rum...)
-                # Kita pakai referer dari player (xiaolin/wowhaha) agar tidak ditolak
-                m3u8_resp = page.request.get(
-                    wrapper_url,
-                    headers={
-                        "Referer": "https://xiaolin3.live/",
-                        "Origin": "https://xiaolin3.live"
-                    }
-                )
+                # Header wajib buat player ini
+                headers_stream = {
+                    "Referer": "https://xiaolin3.live/",
+                    "Origin": "https://xiaolin3.live",
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                }
+
+                m3u8_resp = page.request.get(wrapper_url, headers=headers_stream)
 
                 if m3u8_resp.status == 200:
                     content = m3u8_resp.text()
-                    # Parsing isi file M3U8 baris per baris
-                    # Kita cari baris yang dimulai dengan http dan bukan komentar (#)
                     lines = content.strip().split('\n')
                     for line in lines:
                         line = line.strip()
                         if line.startswith("http"):
                             final_url = line
-                            print("      [SUKSES] Final Stream URL didapatkan!")
                             break
+                    
+                    # --- LANGKAH 3: DEBUG ISI FINAL M3U8 (REQUEST KE CHUNKS.M3U8) ---
+                    if final_url:
+                        print(f"      [SUKSES] Link Final didapatkan.")
+                        print(f"      [DEBUG] Mencoba membaca isi M3U8 untuk analisis...")
+                        
+                        try:
+                            # Kita request URL finalnya cuma buat di-print isinya
+                            debug_resp = page.request.get(final_url, headers=headers_stream)
+                            if debug_resp.status == 200:
+                                debug_content = debug_resp.text()
+                                print("\n" + "="*20 + " ISI FILE M3U8 " + "="*20)
+                                # Print maksimal 500 karakter atau 10 baris pertama biar gak nyampah full layar
+                                # Tapi kalau mau full, hapus slicing-nya. Ini saya kasih 15 baris pertama.
+                                preview_lines = debug_content.split('\n')[:15] 
+                                print('\n'.join(preview_lines))
+                                print("... (dan seterusnya)")
+                                print("="*55 + "\n")
+                            else:
+                                print(f"      [DEBUG ERROR] Gagal baca isi final m3u8. Status: {debug_resp.status}")
+                        except Exception as d:
+                            print(f"      [DEBUG ERROR] {d}")
+
                 else:
                     print(f"      [GAGAL] Gagal fetch wrapper. Status: {m3u8_resp.status}")
 
@@ -76,7 +94,6 @@ def main():
     base_url = "https://yeahscore1.com"
 
     with sync_playwright() as p:
-        # Browser Setup Anti-Bot
         browser = p.chromium.launch(
             headless=True,
             args=[
@@ -92,16 +109,12 @@ def main():
         print("1. Membuka Halaman Utama...")
         try:
             page.goto(base_url + "/", timeout=60000, wait_until="domcontentloaded")
-            
             try:
                 page.wait_for_selector("a.link-wrapper", timeout=15000)
-                print("   -> Data website berhasil dimuat.")
-            except:
-                print("   -> Waktu tunggu habis, mencoba parsing apa adanya...")
+            except: pass
 
             html = page.content()
             soup = BeautifulSoup(html, 'html.parser')
-            
             link_elements = soup.select('a.link-wrapper')
             print(f"   -> Menemukan {len(link_elements)} potensi pertandingan.")
 
@@ -126,31 +139,21 @@ def main():
                     time_raw = time_el.get_text(" ", strip=True) if time_el else ""
                     
                     is_live = False
-                    parent_section = container.find_parent(class_='b-live-matches')
-                    if parent_section:
+                    if container.find_parent(class_='b-live-matches'):
                         is_live = True
                     
                     match_type = "LIVE" if is_live else "UPCOMING"
                     display_time = "LIVE NOW" if is_live else time_raw
                     
-                    league = "International"
-                    group_header = container.find_parent(class_='collapse-group')
-                    if group_header:
-                        league_el = group_header.select_one('.collapse-nav-title-name') or group_header.select_one('h3')
-                        if league_el:
-                            league = league_el.get_text(strip=True)
-
                     all_matches.append({
                         "type": match_type,
-                        "league": league,
                         "teams": teams,
                         "time_display": display_time,
                         "url_page": match_url,
                         "stream_url": None,
                         "referer": base_url
                     })
-                except Exception as e:
-                    continue
+                except: continue
 
         except Exception as e:
             print(f"Error parse halaman utama: {e}")
@@ -160,8 +163,9 @@ def main():
         # ==========================================
         print(f"\nTotal Match Valid: {len(all_matches)}")
         
+        # Ambil LIVE dan sedikit UPCOMING
         targets = [m for m in all_matches if m['type'] == 'LIVE']
-        upcoming = [m for m in all_matches if m['type'] == 'UPCOMING'][:15]
+        upcoming = [m for m in all_matches if m['type'] == 'UPCOMING'][:5] 
         targets.extend(upcoming)
         
         final_data = []
@@ -175,8 +179,9 @@ def main():
             try:
                 detail_page.goto(match['url_page'], timeout=15000, wait_until="domcontentloaded")
                 
+                # Coba tunggu iframe
                 try:
-                    detail_page.wait_for_selector('iframe[src*="wowhaha"], iframe[src*="xiaolin"], iframe[src*="embed"]', timeout=5000)
+                    detail_page.wait_for_selector('iframe[src*="wowhaha"], iframe[src*="xiaolin"]', timeout=3000)
                 except: pass
                 
                 iframes = detail_page.query_selector_all("iframe")
@@ -186,8 +191,7 @@ def main():
                         iframe_src = src
                         if src.startswith("//"): iframe_src = "https:" + src
                         break
-            except:
-                print("      [SKIP] Gagal load detail page.")
+            except: pass
             finally:
                 detail_page.close()
 
