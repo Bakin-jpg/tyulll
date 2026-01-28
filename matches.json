@@ -83,6 +83,24 @@
     {
         "league": "EuroCup",
         "type": "UPCOMING",
+        "time": "28 January 2026 18:30",
+        "teams": "Cosea JL Bourg-en-Bresse vs ratiopharm Ulm",
+        "url_page": "https://yeahscore1.com/match/cosea-jl-bourg-en-bresse-vs-ratiopharm-ulm-1629480782",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "EuroCup",
+        "type": "UPCOMING",
+        "time": "28 January 2026 18:30",
+        "teams": "Veolia Towers Hamburg vs Slask Wroclaw",
+        "url_page": "https://yeahscore1.com/match/veolia-towers-hamburg-vs-slask-wroclaw-1629480783",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "EuroCup",
+        "type": "UPCOMING",
         "time": "28 January 2026 19:00",
         "teams": "Umana Reyer Venice vs Cedevita Olimpija Ljubljana",
         "url_page": "https://yeahscore1.com/match/umana-reyer-venice-vs-cedevita-olimpija-ljubljana-1629480784",
