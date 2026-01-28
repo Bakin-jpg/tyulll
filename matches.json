@@ -1,20 +1,11 @@
 [
     {
-        "league": "Australia - Australian Open",
-        "type": "LIVE",
-        "time": "28 January 2026 00:00",
-        "teams": "Margaret Court Arena",
-        "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481923",
-        "stream_url": "https://livecdn.rumsport3.live/stream/47/chunks.m3u8?token=d1870ab148057cfe633ba538b550c8f7eab3725e&is_vip=false&verify=1769592480-EJnNf7iYDNAhETJkZIC3LwGmKBG3wUwhv23zTVSx5kc%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "International - ICC Under-19 Cricket World Cup",
         "type": "LIVE",
         "time": "28 January 2026 07:30",
         "teams": "Australia vs West Indies",
         "url_page": "https://yeahscore1.com/match/australia-vs-west-indies-1629480770",
-        "stream_url": "https://livecdn.rumsport3.live/stream/46/chunks.m3u8?token=d1870ab148057cfe633ba538b550c8f7eab3725e&is_vip=false&verify=1769592540-%2FWd6ktNbq6rIceNQGJMrwLcHdqhYpAlRLHoW3FSFApA%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/46/chunks.m3u8?token=faaddb3fd7508af864f2aa058fd10ad9d472d7ea&is_vip=false&verify=1769594100-QHoSti78q6Po9pS%2FamZ5A0tVbju43qNhp2atyETzDAU%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -23,7 +14,7 @@
         "time": "28 January 2026 08:00",
         "teams": "Rod Laver Arena",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481929",
-        "stream_url": "https://livecdn.rumsport3.live/stream/43/chunks.m3u8?token=d1870ab148057cfe633ba538b550c8f7eab3725e&is_vip=false&verify=1769592480-k9eq%2BUcDO2femH3AueCreotcy%2Fh2guPbIE%2BEXYjy4ns%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/43/chunks.m3u8?token=faaddb3fd7508af864f2aa058fd10ad9d472d7ea&is_vip=false&verify=1769594100-6mlEL0aQqswzOGheIbUmM2QF9cnYC6MPGHcIm27RKgU%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -365,6 +356,15 @@
         "time": "29 January 2026 00:00",
         "teams": "Court 5",
         "url_page": "https://yeahscore1.com/match/court-5-1629480797",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "NBA G League",
+        "type": "UPCOMING",
+        "time": "29 January 2026 00:00",
+        "teams": "Motor City Cruise vs Long Island Nets",
+        "url_page": "https://yeahscore1.com/match/motor-city-cruise-vs-long-island-nets-1629480789",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
