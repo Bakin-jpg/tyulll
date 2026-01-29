@@ -5,7 +5,7 @@
         "time": "29 January 2026 02:15",
         "teams": "Rod Laver Arena",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481982",
-        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=2d0d421f079d95e7151c6fb8793fa5c76f5caece&is_vip=false&verify=1769666700-WI37CdSI2Ix5wFYYdee0K5L3aDlBev3d9GDr56QOhoI%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=87c8342c1c0ce9ff19b8194ffc9290651d9f566c&is_vip=false&verify=1769666820-NJfU%2FTNmfFcJTnMdFPa%2BGMzzgxkDgsipuze%2FFiA%2FCi8%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,7 +14,7 @@
         "time": "29 January 2026 03:00",
         "teams": "INKA MMA 53",
         "url_page": "https://yeahscore1.com/match/inka-mma-53-1629480808",
-        "stream_url": "https://livecdn.rumsport3.live/stream/35/chunks.m3u8?token=2d0d421f079d95e7151c6fb8793fa5c76f5caece&is_vip=false&verify=1769666700-XOHnSUxX3lNZj8BU8IuVrZfbAhJAy9cKro04cDeoYhY%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/35/chunks.m3u8?token=87c8342c1c0ce9ff19b8194ffc9290651d9f566c&is_vip=false&verify=1769666820-tThaPkqkUsksYYVKFMbyAEvMSwc4UtgoHYGI3FBEvSk%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -23,16 +23,7 @@
         "time": "29 January 2026 03:30",
         "teams": "Margaret Court Arena",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481983",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=2d0d421f079d95e7151c6fb8793fa5c76f5caece&is_vip=false&verify=1769666640-REZbyZlntq8xZN%2B1is8VVhYeaHAgYmj94S1mSMgr%2Bgg%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "29 January 2026 07:30",
-        "teams": "New Zealand vs England",
-        "url_page": "https://yeahscore1.com/match/new-zealand-vs-england-1629480884",
-        "stream_url": null,
+        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=87c8342c1c0ce9ff19b8194ffc9290651d9f566c&is_vip=false&verify=1769666820-UrY4VCKSrU%2Bv44xuqUkEpAUVnbgUf0szSHnCYCHASQs%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -54,15 +45,6 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Saturday (31/01)",
-        "type": "UPCOMING",
-        "time": "29 January 2026 12:30",
-        "teams": "Stoke City vs Southampton",
-        "url_page": "https://yeahscore1.com/match/stoke-city-vs-southampton-1386908",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "29 January 2026 13:00",
@@ -77,15 +59,6 @@
         "time": "29 January 2026 13:00",
         "teams": "Riyadh Racing Season Race Night 16",
         "url_page": "https://yeahscore1.com/match/riyadh-racing-season-race-night-16-1629480813",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "29 January 2026 13:30",
-        "teams": "Sri Lanka vs England",
-        "url_page": "https://yeahscore1.com/match/sri-lanka-vs-england-1629480887",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -171,15 +144,6 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "29 January 2026 17:30",
-        "teams": "Al Kholood vs Al-Nassr",
-        "url_page": "https://yeahscore1.com/match/al-kholood-vs-al-nassr-1436083",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "Pro League",
         "type": "UPCOMING",
         "time": "29 January 2026 17:30",
@@ -252,7 +216,7 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Others / International",
+        "league": "UEFA Europa League",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
         "teams": "Nottingham Forest vs Ferencvarosi TC",
@@ -273,8 +237,8 @@
         "league": "UEFA Europa League",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "FC Porto vs Rangers",
-        "url_page": "https://yeahscore1.com/match/fc-porto-vs-rangers-1451285",
+        "teams": "Ludogorets vs Nice",
+        "url_page": "https://yeahscore1.com/match/ludogorets-vs-nice-1451300",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -282,8 +246,8 @@
         "league": "UEFA Europa League",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "VfB Stuttgart vs BSC Young Boys",
-        "url_page": "https://yeahscore1.com/match/vfb-stuttgart-vs-bsc-young-boys-1451286",
+        "teams": "FC Midtjylland vs Dinamo Zagreb",
+        "url_page": "https://yeahscore1.com/match/fc-midtjylland-vs-dinamo-zagreb-1451301",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -291,8 +255,8 @@
         "league": "UEFA Europa League",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "Sturm Graz vs Brann",
-        "url_page": "https://yeahscore1.com/match/sturm-graz-vs-brann-1451287",
+        "teams": "Celtic vs Utrecht",
+        "url_page": "https://yeahscore1.com/match/celtic-vs-utrecht-1451302",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -300,35 +264,44 @@
         "league": "UEFA Europa League",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "GO Ahead Eagles vs SC Braga",
-        "url_page": "https://yeahscore1.com/match/go-ahead-eagles-vs-sc-braga-1451288",
+        "teams": "Genk vs Malmo FF",
+        "url_page": "https://yeahscore1.com/match/genk-vs-malmo-ff-1451298",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "UEFA Europa League",
+        "league": "PGA Tour",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "Lille vs SC Freiburg",
-        "url_page": "https://yeahscore1.com/match/lille-vs-sc-freiburg-1451289",
+        "teams": "Farmers Insurance Open: Featured Hole #8 (First Round)",
+        "url_page": "https://yeahscore1.com/match/farmers-insurance-open-featured-hole-8-first-round-1629480846",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "UEFA Europa League",
+        "league": "PGA Tour",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "Panathinaikos vs AS Roma",
-        "url_page": "https://yeahscore1.com/match/panathinaikos-vs-as-roma-1451290",
+        "teams": "Farmers Insurance Open: Featured Group 1 (First Round)",
+        "url_page": "https://yeahscore1.com/match/farmers-insurance-open-featured-group-1-first-round-1629480847",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "UEFA Europa League",
+        "league": "PGA Tour",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "FK Crvena Zvezda vs Celta Vigo",
-        "url_page": "https://yeahscore1.com/match/fk-crvena-zvezda-vs-celta-vigo-1451291",
+        "teams": "Farmers Insurance Open: Featured Hole #16 (First Round)",
+        "url_page": "https://yeahscore1.com/match/farmers-insurance-open-featured-hole-16-first-round-1629480844",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "PGA Tour",
+        "type": "UPCOMING",
+        "time": "29 January 2026 20:00",
+        "teams": "Farmers Insurance Open: Featured Group 2 (First Round)",
+        "url_page": "https://yeahscore1.com/match/farmers-insurance-open-featured-group-2-first-round-1629480845",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     }
