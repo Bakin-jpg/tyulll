@@ -5,16 +5,7 @@
         "time": "29 January 2026 02:15",
         "teams": "Rod Laver Arena",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481982",
-        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=90e622e88b81a7cae9d14925fbf3fce670bca46c&is_vip=false&verify=1769668260-7hDaK45KCABcZz0gare4wyFz9oFNuFr38VJa6lHzuZM%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "International - MMA",
-        "type": "LIVE",
-        "time": "29 January 2026 03:00",
-        "teams": "INKA MMA 53",
-        "url_page": "https://yeahscore1.com/match/inka-mma-53-1629480808",
-        "stream_url": null,
+        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=f6ec085bd609233f6648a5015cf149698e8540a7&is_vip=false&verify=1769668380-%2BWYjdJ0sQn%2BQRrL7wzT7EwbqFyvt7hKjr92t2BLvU1o%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -23,7 +14,7 @@
         "time": "29 January 2026 03:30",
         "teams": "Margaret Court Arena",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481983",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=90e622e88b81a7cae9d14925fbf3fce670bca46c&is_vip=false&verify=1769668260-EPtYR6yjsNHn6fA1EZkDPllnvjGdizFK%2F6iqqKeHgkM%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=f6ec085bd609233f6648a5015cf149698e8540a7&is_vip=false&verify=1769668380-BWaTXdMQzLJ%2BIIuhifE8pzFpC4Ri%2BPL2VgegSunPYG4%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -207,7 +198,7 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Others / International",
+        "league": "UEFA Europa League",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
         "teams": "Aston Villa vs Red Bull Salzburg",
