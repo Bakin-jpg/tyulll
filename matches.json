@@ -5,7 +5,7 @@
         "time": "29 January 2026 02:15",
         "teams": "Rod Laver Arena",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481982",
-        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=fea5c545eb6d0ab31063090206466ade983a00b4&is_vip=false&verify=1769670300-SfUNF79ohAeIxmD%2Bye%2Be2k5EifnC6pMq%2FWWrAXYDtXo%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=e88be1f4dac98906cf96dc34e0fbac24c00e575a&is_vip=false&verify=1769670420-eEIQgMzYk1%2Fv2q66UszKk5vKxIJLMOhGRboGJ%2FNVCTM%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,16 +14,7 @@
         "time": "29 January 2026 03:30",
         "teams": "Margaret Court Arena",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481983",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=fea5c545eb6d0ab31063090206466ade983a00b4&is_vip=false&verify=1769670300-Dsgvgfa1qEdzu59UWKldvVn1LBbW3msAw2CSUJ7rijM%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "29 January 2026 07:30",
-        "teams": "New Zealand vs England",
-        "url_page": "https://yeahscore1.com/match/new-zealand-vs-england-1629480884",
-        "stream_url": null,
+        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=e88be1f4dac98906cf96dc34e0fbac24c00e575a&is_vip=false&verify=1769670420-gv4A%2FPYyFnJAdnktmQ847BzyjFcKrdL5E4hLSu5mdig%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -45,15 +36,6 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Saturday (31/01)",
-        "type": "UPCOMING",
-        "time": "29 January 2026 12:30",
-        "teams": "Stoke City vs Southampton",
-        "url_page": "https://yeahscore1.com/match/stoke-city-vs-southampton-1386908",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "29 January 2026 13:00",
@@ -68,15 +50,6 @@
         "time": "29 January 2026 13:00",
         "teams": "Riyadh Racing Season Race Night 16",
         "url_page": "https://yeahscore1.com/match/riyadh-racing-season-race-night-16-1629480813",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "29 January 2026 13:30",
-        "teams": "Sri Lanka vs England",
-        "url_page": "https://yeahscore1.com/match/sri-lanka-vs-england-1629480887",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -162,15 +135,6 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "29 January 2026 17:30",
-        "teams": "Al Kholood vs Al-Nassr",
-        "url_page": "https://yeahscore1.com/match/al-kholood-vs-al-nassr-1436083",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "Pro League",
         "type": "UPCOMING",
         "time": "29 January 2026 17:30",
@@ -234,7 +198,7 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "UEFA Europa League",
+        "league": "Others / International",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
         "teams": "Aston Villa vs Red Bull Salzburg",
@@ -243,7 +207,7 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "UEFA Europa League",
+        "league": "Others / International",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
         "teams": "Nottingham Forest vs Ferencvarosi TC",
@@ -264,8 +228,8 @@
         "league": "UEFA Europa League",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "Ludogorets vs Nice",
-        "url_page": "https://yeahscore1.com/match/ludogorets-vs-nice-1451300",
+        "teams": "FC Porto vs Rangers",
+        "url_page": "https://yeahscore1.com/match/fc-porto-vs-rangers-1451285",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -273,8 +237,8 @@
         "league": "UEFA Europa League",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "FC Midtjylland vs Dinamo Zagreb",
-        "url_page": "https://yeahscore1.com/match/fc-midtjylland-vs-dinamo-zagreb-1451301",
+        "teams": "VfB Stuttgart vs BSC Young Boys",
+        "url_page": "https://yeahscore1.com/match/vfb-stuttgart-vs-bsc-young-boys-1451286",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -282,8 +246,8 @@
         "league": "UEFA Europa League",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "Celtic vs Utrecht",
-        "url_page": "https://yeahscore1.com/match/celtic-vs-utrecht-1451302",
+        "teams": "Sturm Graz vs Brann",
+        "url_page": "https://yeahscore1.com/match/sturm-graz-vs-brann-1451287",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -291,8 +255,26 @@
         "league": "UEFA Europa League",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "Genk vs Malmo FF",
-        "url_page": "https://yeahscore1.com/match/genk-vs-malmo-ff-1451298",
+        "teams": "GO Ahead Eagles vs SC Braga",
+        "url_page": "https://yeahscore1.com/match/go-ahead-eagles-vs-sc-braga-1451288",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Europa League",
+        "type": "UPCOMING",
+        "time": "29 January 2026 20:00",
+        "teams": "Lille vs SC Freiburg",
+        "url_page": "https://yeahscore1.com/match/lille-vs-sc-freiburg-1451289",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Europa League",
+        "type": "UPCOMING",
+        "time": "29 January 2026 20:00",
+        "teams": "Panathinaikos vs AS Roma",
+        "url_page": "https://yeahscore1.com/match/panathinaikos-vs-as-roma-1451290",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
