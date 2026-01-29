@@ -5,7 +5,7 @@
         "time": "29 January 2026 03:30",
         "teams": "Margaret Court Arena",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481983",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=abc0ab9c724f677177cce4c28e05d67c8ee670b1&is_vip=false&verify=1769675580-v9NSyixJl40PQcySaDSrt0Avx1%2FSc9PJva2OBq1PHCM%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=43a6e9737e15f04c32556050635b68add597efdb&is_vip=false&verify=1769675700-msBDav0tmEzDp1W7VeUDsseoi1qsBpZOJKD%2F7kQAz7Y%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,7 +14,16 @@
         "time": "29 January 2026 07:30",
         "teams": "South Africa vs Sri Lanka",
         "url_page": "https://yeahscore1.com/match/south-africa-vs-sri-lanka-1629480810",
-        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=abc0ab9c724f677177cce4c28e05d67c8ee670b1&is_vip=false&verify=1769675580-Z%2FcQzB%2BU8SHUkTRZ%2BhWHp1ODzGkD0jjJxH6PvLlhZu0%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=43a6e9737e15f04c32556050635b68add597efdb&is_vip=false&verify=1769675700-vjyYiH3S3RRP9iS71Q%2BazggScYsrhmQu8uPuA7miyIY%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Australia - Australian Open",
+        "type": "LIVE",
+        "time": "29 January 2026 08:30",
+        "teams": "Rod Laver Arena",
+        "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481982",
+        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=43a6e9737e15f04c32556050635b68add597efdb&is_vip=false&verify=1769675700-pErNUTU4uglULWTifYd4nJFHPs6VZmvXB98C6hi%2Brkw%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
