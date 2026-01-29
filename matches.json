@@ -5,7 +5,7 @@
         "time": "29 January 2026 07:30",
         "teams": "South Africa vs Sri Lanka",
         "url_page": "https://yeahscore1.com/match/south-africa-vs-sri-lanka-1629480810",
-        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=f16c2c2c6da5d7c6b7bc35ba6e23907511bdb0c2&is_vip=false&verify=1769684820-QR0s2%2Bme%2FbS3mzs1SfNSC3wb6IC480%2Bf42wnAAtO4CI%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=844f3b365ebef6862076573f10ee963bffc4219c&is_vip=false&verify=1769684940-p2zpJzBjL%2BosvZy8lWqg6nkXjXaqvmWs6OWMTDHsHNY%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,7 +14,7 @@
         "time": "29 January 2026 08:30",
         "teams": "Rod Laver Arena",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481982",
-        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=f16c2c2c6da5d7c6b7bc35ba6e23907511bdb0c2&is_vip=false&verify=1769684820-Uzr1FZHLWHGTdf4mby0k3RFQC7QTrQeYJh%2FQeUI0ttU%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=844f3b365ebef6862076573f10ee963bffc4219c&is_vip=false&verify=1769684940-kWlbIBVNe5kzy88%2BNEEGUEdgnbggXImHDn6UD3n%2FfZs%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -68,15 +68,6 @@
         "time": "29 January 2026 14:00",
         "teams": "United Arab Emirates vs Ireland",
         "url_page": "https://yeahscore1.com/match/united-arab-emirates-vs-ireland-1629480815",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "29 January 2026 14:30",
-        "teams": "Season 5: Maharashtra Kesari vs Punjab Royals",
-        "url_page": "https://yeahscore1.com/match/season-5-maharashtra-kesari-vs-punjab-royals-1629481718",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -201,8 +192,8 @@
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "Lyon vs PAOK",
-        "url_page": "https://yeahscore1.com/match/lyon-vs-paok-1451294",
+        "teams": "Nottingham Forest vs Ferencvarosi TC",
+        "url_page": "https://yeahscore1.com/match/nottingham-forest-vs-ferencvarosi-tc-1451299",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -210,8 +201,8 @@
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "Nottingham Forest vs Ferencvarosi TC",
-        "url_page": "https://yeahscore1.com/match/nottingham-forest-vs-ferencvarosi-tc-1451299",
+        "teams": "Lyon vs PAOK",
+        "url_page": "https://yeahscore1.com/match/lyon-vs-paok-1451294",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -365,6 +356,15 @@
         "time": "30 January 2026 00:00",
         "teams": "New York Islanders vs New York Rangers",
         "url_page": "https://yeahscore1.com/match/new-york-islanders-vs-new-york-rangers-1629480855",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "NHL",
+        "type": "UPCOMING",
+        "time": "30 January 2026 00:00",
+        "teams": "Winnipeg Jets vs Tampa Bay Lightning",
+        "url_page": "https://yeahscore1.com/match/winnipeg-jets-vs-tampa-bay-lightning-1629480850",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
