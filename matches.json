@@ -5,7 +5,7 @@
         "time": "29 January 2026 07:30",
         "teams": "South Africa vs Sri Lanka",
         "url_page": "https://yeahscore1.com/match/south-africa-vs-sri-lanka-1629480810",
-        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=dc172b30cdbccd5cac47f7742988a62156c20eca&is_vip=false&verify=1769686260-vIn1NVMxf3QdT3OY7jaqdSWSMxGGOaMCWIQhU4tb6ng%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=63c5d693f7629d28b8c45b22b42aab1e6c91ec45&is_vip=false&verify=1769686380-iEtpzn1XFluJFzuh2xiZ4oIjwmLrIpGMUmQGEgFfZUU%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,7 +14,16 @@
         "time": "29 January 2026 08:30",
         "teams": "Rod Laver Arena",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481982",
-        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=dc172b30cdbccd5cac47f7742988a62156c20eca&is_vip=false&verify=1769686260-fqgYNIhZQm9AMSg2j8gr4G%2BfMyf%2BEmChTuwXjAPrtIs%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=63c5d693f7629d28b8c45b22b42aab1e6c91ec45&is_vip=false&verify=1769686380-TDglZdQDM8f30OJ02acnjYqg0aGCfhOTTOe8H7PuzSg%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "International - UCI Europe Tour",
+        "type": "LIVE",
+        "time": "29 January 2026 11:30",
+        "teams": "ES2, Alula Tour, Stage 3",
+        "url_page": "https://yeahscore1.com/match/es2-alula-tour-stage-3-1629480811",
+        "stream_url": "https://livecdn.rumsport3.live/stream/48/chunks.m3u8?token=63c5d693f7629d28b8c45b22b42aab1e6c91ec45&is_vip=false&verify=1769686380-tlYpykDP8f2W%2B%2FNSZ7bUPLlhRhWoGtTey9lEJI2GQpI%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
