@@ -5,7 +5,7 @@
         "time": "29 January 2026 03:30",
         "teams": "Margaret Court Arena",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481983",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=14c3aa5f01027d23ddff1db9bbafc007534bab4d&is_vip=false&verify=1769677620-FDNYkLa0scSWln8lKKy6fFXMFsgGwx2VFAHaC7qNJio%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=e46b3307ecb137401cd433aa4d8fc227c8c06203&is_vip=false&verify=1769677740-BqFn6MRPyTeDPqCqUsqK1kU%2B%2BKvAaBi4aAQmFKwcCnA%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,7 +14,7 @@
         "time": "29 January 2026 07:30",
         "teams": "South Africa vs Sri Lanka",
         "url_page": "https://yeahscore1.com/match/south-africa-vs-sri-lanka-1629480810",
-        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=14c3aa5f01027d23ddff1db9bbafc007534bab4d&is_vip=false&verify=1769677620-B%2BMFKRFkUlGGdm2ooTE13XNKhoLTdbnUKwUrLAmMncI%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=e46b3307ecb137401cd433aa4d8fc227c8c06203&is_vip=false&verify=1769677740-gXk3xPHTUYdkuZvUKxH8JWPIK7n4vJaZlpbpdLBbuzU%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -23,7 +23,7 @@
         "time": "29 January 2026 08:30",
         "teams": "Rod Laver Arena",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481982",
-        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=14c3aa5f01027d23ddff1db9bbafc007534bab4d&is_vip=false&verify=1769677620-9zYJH610w1rcglzyK5VYJRL1rEhU%2F1S3mayzHclEG28%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=e46b3307ecb137401cd433aa4d8fc227c8c06203&is_vip=false&verify=1769677740-SeCRZkfrIUIMCNngYxC8gWgOBn785hhn8aP%2B2maTzzw%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -264,8 +264,8 @@
         "league": "UEFA Europa League",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "FC Porto vs Rangers",
-        "url_page": "https://yeahscore1.com/match/fc-porto-vs-rangers-1451285",
+        "teams": "FK Crvena Zvezda vs Celta Vigo",
+        "url_page": "https://yeahscore1.com/match/fk-crvena-zvezda-vs-celta-vigo-1451291",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -273,35 +273,8 @@
         "league": "UEFA Europa League",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "VfB Stuttgart vs BSC Young Boys",
-        "url_page": "https://yeahscore1.com/match/vfb-stuttgart-vs-bsc-young-boys-1451286",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "UEFA Europa League",
-        "type": "UPCOMING",
-        "time": "29 January 2026 20:00",
-        "teams": "Sturm Graz vs Brann",
-        "url_page": "https://yeahscore1.com/match/sturm-graz-vs-brann-1451287",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "UEFA Europa League",
-        "type": "UPCOMING",
-        "time": "29 January 2026 20:00",
-        "teams": "GO Ahead Eagles vs SC Braga",
-        "url_page": "https://yeahscore1.com/match/go-ahead-eagles-vs-sc-braga-1451288",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "UEFA Europa League",
-        "type": "UPCOMING",
-        "time": "29 January 2026 20:00",
-        "teams": "Lille vs SC Freiburg",
-        "url_page": "https://yeahscore1.com/match/lille-vs-sc-freiburg-1451289",
+        "teams": "FC Basel 1893 vs Plzen",
+        "url_page": "https://yeahscore1.com/match/fc-basel-1893-vs-plzen-1451293",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -318,8 +291,35 @@
         "league": "UEFA Europa League",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "FK Crvena Zvezda vs Celta Vigo",
-        "url_page": "https://yeahscore1.com/match/fk-crvena-zvezda-vs-celta-vigo-1451291",
+        "teams": "Real Betis vs Feyenoord",
+        "url_page": "https://yeahscore1.com/match/real-betis-vs-feyenoord-1451292",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Europa League",
+        "type": "UPCOMING",
+        "time": "29 January 2026 20:00",
+        "teams": "Lille vs SC Freiburg",
+        "url_page": "https://yeahscore1.com/match/lille-vs-sc-freiburg-1451289",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Europa League",
+        "type": "UPCOMING",
+        "time": "29 January 2026 20:00",
+        "teams": "FC Midtjylland vs Dinamo Zagreb",
+        "url_page": "https://yeahscore1.com/match/fc-midtjylland-vs-dinamo-zagreb-1451301",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Europa League",
+        "type": "UPCOMING",
+        "time": "29 January 2026 20:00",
+        "teams": "Sturm Graz vs Brann",
+        "url_page": "https://yeahscore1.com/match/sturm-graz-vs-brann-1451287",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
