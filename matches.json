@@ -2,10 +2,37 @@
     {
         "league": "International - NBA",
         "type": "LIVE",
+        "time": "29 January 2026 00:00",
+        "teams": "Los Angeles Lakers vs Cleveland Cavaliers",
+        "url_page": "https://yeahscore1.com/match/los-angeles-lakers-vs-cleveland-cavaliers-1629480787",
+        "stream_url": "https://livecdn.rumsport3.live/stream/33/chunks.m3u8?token=c772889f9259dc486d3e067ec808d6c3b6ac58f1&is_vip=false&verify=1769651460-j%2FFHbHEpU0nUHZVcpiFol1SVALsQtrf0G%2B3Np2HM12Q%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "International - NBA",
+        "type": "LIVE",
+        "time": "29 January 2026 00:00",
+        "teams": "Chicago Bulls vs Indiana Pacers",
+        "url_page": "https://yeahscore1.com/match/chicago-bulls-vs-indiana-pacers-1629480786",
+        "stream_url": "https://livecdn.rumsport3.live/stream/39/chunks.m3u8?token=c772889f9259dc486d3e067ec808d6c3b6ac58f1&is_vip=false&verify=1769651460-scmVPJpgYuvV%2BaLFnOsK6VoSCnc%2BgiP1sgCdOjNP9bM%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "United States of America - NBA G League",
+        "type": "LIVE",
+        "time": "29 January 2026 00:00",
+        "teams": "Motor City Cruise vs Long Island Nets",
+        "url_page": "https://yeahscore1.com/match/motor-city-cruise-vs-long-island-nets-1629480789",
+        "stream_url": "https://livecdn.rumsport3.live/stream/1/chunks.m3u8?token=c772889f9259dc486d3e067ec808d6c3b6ac58f1&is_vip=false&verify=1769651460-FKGep5oTthT06nio1vZo0%2FRRdsD3aMVozwmHc%2BPDo2A%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "International - NBA",
+        "type": "LIVE",
         "time": "29 January 2026 00:30",
         "teams": "New York Knicks vs Toronto Raptors",
         "url_page": "https://yeahscore1.com/match/new-york-knicks-vs-toronto-raptors-1629480802",
-        "stream_url": "https://livecdn.rumsport3.live/stream/46/chunks.m3u8?token=52ca6e3a5bb6402c39e51eee05919e880244ab0b&is_vip=false&verify=1769651340-dFdjS%2F%2BGwfPyR7Aio42FNAebmGXPJicPahCKLHB9v0w%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/46/chunks.m3u8?token=c772889f9259dc486d3e067ec808d6c3b6ac58f1&is_vip=false&verify=1769651460-srooh1FqDueQilDHjfuN38TOM557d4%2BHEH3JAjUSDRg%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,7 +41,16 @@
         "time": "29 January 2026 00:30",
         "teams": "Atlanta Hawks vs Boston Celtics",
         "url_page": "https://yeahscore1.com/match/atlanta-hawks-vs-boston-celtics-1629480800",
-        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=52ca6e3a5bb6402c39e51eee05919e880244ab0b&is_vip=false&verify=1769651340-u4CV8xKtmXKy52amThmlDJ%2B9pLphoaYcyyFbIOO591A%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=c772889f9259dc486d3e067ec808d6c3b6ac58f1&is_vip=false&verify=1769651460-T%2BmE%2FosxsH1uJ5zKri6WybY9grSDVoilhHXEReiyI7E%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "International - NBA",
+        "type": "LIVE",
+        "time": "29 January 2026 00:30",
+        "teams": "Orlando Magic vs Miami Heat",
+        "url_page": "https://yeahscore1.com/match/orlando-magic-vs-miami-heat-1629480801",
+        "stream_url": "https://livecdn.rumsport3.live/stream/32/chunks.m3u8?token=c772889f9259dc486d3e067ec808d6c3b6ac58f1&is_vip=false&verify=1769651460-76Jcz2COIe9vEqt8wncquh0HgJ3Eo5AfKT88z5GpuQk%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -23,7 +59,7 @@
         "time": "29 January 2026 00:30",
         "teams": "Philadelphia Flyers vs Columbus Blue Jackets",
         "url_page": "https://yeahscore1.com/match/philadelphia-flyers-vs-columbus-blue-jackets-1629480788",
-        "stream_url": "https://livecdn.rumsport3.live/stream/45/chunks.m3u8?token=52ca6e3a5bb6402c39e51eee05919e880244ab0b&is_vip=false&verify=1769651340-LlDwzkwkNsts%2FzqxLK3eU7PCqy1o49O3u8eKzb1dUoM%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/45/chunks.m3u8?token=c772889f9259dc486d3e067ec808d6c3b6ac58f1&is_vip=false&verify=1769651460-E5oY3B4M3DMaurSALrc8jyd3t8gi0kNTYjKUInSzaB0%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -32,7 +68,7 @@
         "time": "29 January 2026 00:30",
         "teams": "Colorado Avalanche vs Ottawa Senators",
         "url_page": "https://yeahscore1.com/match/colorado-avalanche-vs-ottawa-senators-1629480798",
-        "stream_url": "https://livecdn.rumsport3.live/stream/18/chunks.m3u8?token=52ca6e3a5bb6402c39e51eee05919e880244ab0b&is_vip=false&verify=1769651340-uCtXVgNy3iFPkfKgWpnVipXzJ%2FHKUr5DRMErqD9o2oQ%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/18/chunks.m3u8?token=c772889f9259dc486d3e067ec808d6c3b6ac58f1&is_vip=false&verify=1769651460-P2KgWK%2B4wJl55sM1BMTj7U0tF7Oxjzo8p2ir0XuawRs%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -41,7 +77,7 @@
         "time": "29 January 2026 00:30",
         "teams": "New York Rangers vs New York Islanders",
         "url_page": "https://yeahscore1.com/match/new-york-rangers-vs-new-york-islanders-1629480799",
-        "stream_url": "https://livecdn.rumsport3.live/stream/34/chunks.m3u8?token=52ca6e3a5bb6402c39e51eee05919e880244ab0b&is_vip=false&verify=1769651340-XjvCpp6r3%2F3pFNfzQvxsU0SPYrJkPKFhZOa0uW8VwDU%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/34/chunks.m3u8?token=c772889f9259dc486d3e067ec808d6c3b6ac58f1&is_vip=false&verify=1769651460-I9n8hj9bmbIDxMA%2BZR%2BqbRcO6ND%2ByR6OhdyST49%2FRNg%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -50,7 +86,7 @@
         "time": "29 January 2026 01:00",
         "teams": "Charlotte Hornets vs Memphis Grizzlies",
         "url_page": "https://yeahscore1.com/match/charlotte-hornets-vs-memphis-grizzlies-1629480803",
-        "stream_url": "https://livecdn.rumsport3.live/stream/42/chunks.m3u8?token=52ca6e3a5bb6402c39e51eee05919e880244ab0b&is_vip=false&verify=1769651340-XJz00OpiHFX6T%2BAyAf3Ez3ZqZs3tlGgzhNfFxbWQpqI%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/42/chunks.m3u8?token=c772889f9259dc486d3e067ec808d6c3b6ac58f1&is_vip=false&verify=1769651460-UzD1o2rgdtGD%2B%2FVxXreNKswfs6g0RXYMPORstva%2FAqs%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -59,7 +95,7 @@
         "time": "29 January 2026 01:00",
         "teams": "Sioux Falls Skyforce vs Birmingham Squadron",
         "url_page": "https://yeahscore1.com/match/sioux-falls-skyforce-vs-birmingham-squadron-1629480804",
-        "stream_url": "https://livecdn.rumsport3.live/stream/48/chunks.m3u8?token=52ca6e3a5bb6402c39e51eee05919e880244ab0b&is_vip=false&verify=1769651340-jjqfRURCSWk1ncrGRKUlUk3bPGKRJbnwrM4whx4NWtI%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/48/chunks.m3u8?token=c772889f9259dc486d3e067ec808d6c3b6ac58f1&is_vip=false&verify=1769651460-x90%2Fh094W7%2BHwU4HA2xqgcICfwSgtVyRA0ZOoeksszc%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -68,61 +104,7 @@
         "time": "29 January 2026 01:30",
         "teams": "Minnesota Timberwolves vs Dallas Mavericks",
         "url_page": "https://yeahscore1.com/match/minnesota-timberwolves-vs-dallas-mavericks-1629480805",
-        "stream_url": "https://livecdn.rumsport3.live/stream/47/chunks.m3u8?token=52ca6e3a5bb6402c39e51eee05919e880244ab0b&is_vip=false&verify=1769651340-WGx7ngiF5EKIyrOqSDBQdFjML9yKbpkoc803zLFf1XA%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "NBA G League",
-        "type": "UPCOMING",
-        "time": "29 January 2026 00:00",
-        "teams": "Motor City Cruise vs Long Island Nets",
-        "url_page": "https://yeahscore1.com/match/motor-city-cruise-vs-long-island-nets-1629480789",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "NBA",
-        "type": "UPCOMING",
-        "time": "29 January 2026 00:30",
-        "teams": "Orlando Magic vs Miami Heat",
-        "url_page": "https://yeahscore1.com/match/orlando-magic-vs-miami-heat-1629480801",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "International - NBA",
-        "type": "UPCOMING",
-        "time": "29 January 2026 02:00",
-        "teams": "Golden State Warriors vs Utah Jazz",
-        "url_page": "https://yeahscore1.com/match/golden-state-warriors-vs-utah-jazz-1629480806",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "International - MMA",
-        "type": "UPCOMING",
-        "time": "29 January 2026 02:00",
-        "teams": "INKA MMA 53",
-        "url_page": "https://yeahscore1.com/match/inka-mma-53-1629480808",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "United States of America - NBA G League",
-        "type": "UPCOMING",
-        "time": "29 January 2026 02:00",
-        "teams": "Texas Legends vs Rip City Remix",
-        "url_page": "https://yeahscore1.com/match/texas-legends-vs-rip-city-remix-1629480807",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Australia - Australian Open",
-        "type": "UPCOMING",
-        "time": "29 January 2026 02:00",
-        "teams": "Rod Laver Arena",
-        "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481982",
-        "stream_url": null,
+        "stream_url": "https://livecdn.rumsport3.live/stream/47/chunks.m3u8?token=c772889f9259dc486d3e067ec808d6c3b6ac58f1&is_vip=false&verify=1769651460-ln%2FHxfvApBKhMrKknwWQY%2B371x6QGMZatF%2BLaGH0M0A%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
