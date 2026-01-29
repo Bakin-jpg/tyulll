@@ -1,20 +1,11 @@
 [
     {
-        "league": "International - NBA",
-        "type": "LIVE",
-        "time": "29 January 2026 02:00",
-        "teams": "Golden State Warriors vs Utah Jazz",
-        "url_page": "https://yeahscore1.com/match/golden-state-warriors-vs-utah-jazz-1629480806",
-        "stream_url": "https://livecdn.rumsport3.live/stream/43/chunks.m3u8?token=f550762014d36e50a1fca1ecdf6e5b9a11ef55e3&is_vip=false&verify=1769662020-rTnF5mb8nV7fPG%2Fv1YCr6XdlgG9E1rn9WIuSLfYenBQ%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "Australia - Australian Open",
         "type": "LIVE",
         "time": "29 January 2026 02:15",
         "teams": "Rod Laver Arena",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481982",
-        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=f550762014d36e50a1fca1ecdf6e5b9a11ef55e3&is_vip=false&verify=1769662020-lU%2BUGPl6uuhI%2FqYk1V%2Fsq%2Fpoee7FxkGLCKU28QHqT0k%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=713ff9206b935fd93c7cecb23352fead2077e4fe&is_vip=false&verify=1769662140-f9S3qYSDoLVM5TkTiAjeABp7K4y%2FnElF8bBa1xMdw%2Bs%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -23,7 +14,7 @@
         "time": "29 January 2026 02:30",
         "teams": "San Antonio Spurs vs Houston Rockets",
         "url_page": "https://yeahscore1.com/match/san-antonio-spurs-vs-houston-rockets-1629480809",
-        "stream_url": "https://livecdn.rumsport3.live/stream/33/chunks.m3u8?token=f550762014d36e50a1fca1ecdf6e5b9a11ef55e3&is_vip=false&verify=1769662020-k7G2OGqlzMs5dnmt%2FmOfKyf0Mw3B5egA%2Bw59elU1H78%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/33/chunks.m3u8?token=713ff9206b935fd93c7cecb23352fead2077e4fe&is_vip=false&verify=1769662140-a2UwXpBuYExSZGQrWynk0zEzGJsQcM0togPlAFiQ5n8%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -32,7 +23,7 @@
         "time": "29 January 2026 03:00",
         "teams": "INKA MMA 53",
         "url_page": "https://yeahscore1.com/match/inka-mma-53-1629480808",
-        "stream_url": "https://livecdn.rumsport3.live/stream/35/chunks.m3u8?token=f550762014d36e50a1fca1ecdf6e5b9a11ef55e3&is_vip=false&verify=1769662020-4l0vd2JC5RtfI0r%2F1d26mbdt4tQq%2F4oTPMVvt53H30U%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/35/chunks.m3u8?token=713ff9206b935fd93c7cecb23352fead2077e4fe&is_vip=false&verify=1769662140-BYH%2FaASRroMOrHdfnuOwJjqkKjTqIcxpWK0i2WV9r2k%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -41,7 +32,16 @@
         "time": "29 January 2026 03:30",
         "teams": "Margaret Court Arena",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481983",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=f550762014d36e50a1fca1ecdf6e5b9a11ef55e3&is_vip=false&verify=1769662020-jFoQBoWdhWm84GfPQ0Xtq3ydR3zXpWqNmYuvHyQuzCQ%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=713ff9206b935fd93c7cecb23352fead2077e4fe&is_vip=false&verify=1769662140-CMevz4zQuLNhb%2FtO29V0zZWs3zThuaJNbgZAQUj%2FaLU%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "29 January 2026 07:30",
+        "teams": "New Zealand vs England",
+        "url_page": "https://yeahscore1.com/match/new-zealand-vs-england-1629480884",
+        "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -63,6 +63,15 @@
         "referer": "https://xiaolin3.live/"
     },
     {
+        "league": "Saturday (31/01)",
+        "type": "UPCOMING",
+        "time": "29 January 2026 12:30",
+        "teams": "Leicester vs Charlton",
+        "url_page": "https://yeahscore1.com/match/leicester-vs-charlton-1386901",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "29 January 2026 13:00",
@@ -77,6 +86,15 @@
         "time": "29 January 2026 13:00",
         "teams": "Riyadh Racing Season Race Night 16",
         "url_page": "https://yeahscore1.com/match/riyadh-racing-season-race-night-16-1629480813",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "29 January 2026 13:30",
+        "teams": "Sri Lanka vs England",
+        "url_page": "https://yeahscore1.com/match/sri-lanka-vs-england-1629480887",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -158,6 +176,15 @@
         "time": "29 January 2026 17:15",
         "teams": "Farmers Insurance Open: Marquee Group (First Round)",
         "url_page": "https://yeahscore1.com/match/farmers-insurance-open-marquee-group-first-round-1629480835",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "29 January 2026 17:30",
+        "teams": "Al Kholood vs Al-Nassr",
+        "url_page": "https://yeahscore1.com/match/al-kholood-vs-al-nassr-1436083",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -266,6 +293,15 @@
         "time": "29 January 2026 20:00",
         "teams": "VfB Stuttgart vs BSC Young Boys",
         "url_page": "https://yeahscore1.com/match/vfb-stuttgart-vs-bsc-young-boys-1451286",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Europa League",
+        "type": "UPCOMING",
+        "time": "29 January 2026 20:00",
+        "teams": "Sturm Graz vs Brann",
+        "url_page": "https://yeahscore1.com/match/sturm-graz-vs-brann-1451287",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
