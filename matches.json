@@ -5,7 +5,7 @@
         "time": "29 January 2026 03:30",
         "teams": "Margaret Court Arena",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481983",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=2835751da99e8d293a0bcaff43db84bfd01b3e23&is_vip=false&verify=1769678820-0br4tBAfCXJrT8%2BtIu2U19HeN7zlI6irzg3a1McHAHA%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=6f7af4dc0a4cc9721edaa1fab1dcc84d22f64a34&is_vip=false&verify=1769678940-u2RRmWLesEN9yQVhDZeoIfG8kFIyCGfXfCd5Rj4Tvyw%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,7 +14,7 @@
         "time": "29 January 2026 07:30",
         "teams": "South Africa vs Sri Lanka",
         "url_page": "https://yeahscore1.com/match/south-africa-vs-sri-lanka-1629480810",
-        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=2835751da99e8d293a0bcaff43db84bfd01b3e23&is_vip=false&verify=1769678820-zA490xNvwRHdO5qos4fhJ9V4551AEBSZKQdFf%2FPkLAE%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=6f7af4dc0a4cc9721edaa1fab1dcc84d22f64a34&is_vip=false&verify=1769678940-Mv5gDl2UV1m15WyarWY60bDJnLWF6KGIP12m%2Fe0pk%2F8%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -23,7 +23,16 @@
         "time": "29 January 2026 08:30",
         "teams": "Rod Laver Arena",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481982",
-        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=2835751da99e8d293a0bcaff43db84bfd01b3e23&is_vip=false&verify=1769678820-9t9zSy%2Baul7WjEyP7AXL%2F0Erre1y%2FxxfvPy3kUKvDWM%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=6f7af4dc0a4cc9721edaa1fab1dcc84d22f64a34&is_vip=false&verify=1769678940-fP5fs7vYGq1KaFGLjSIJGRR6IgZvtUwsbZJbfrzkHKk%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "29 January 2026 07:30",
+        "teams": "New Zealand vs England",
+        "url_page": "https://yeahscore1.com/match/new-zealand-vs-england-1629480884",
+        "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -32,6 +41,15 @@
         "time": "29 January 2026 11:30",
         "teams": "ES2, Alula Tour, Stage 3",
         "url_page": "https://yeahscore1.com/match/es2-alula-tour-stage-3-1629480811",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Saturday (31/01)",
+        "type": "UPCOMING",
+        "time": "29 January 2026 12:30",
+        "teams": "Leicester vs Charlton",
+        "url_page": "https://yeahscore1.com/match/leicester-vs-charlton-1386901",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -50,6 +68,15 @@
         "time": "29 January 2026 13:00",
         "teams": "Riyadh Racing Season Race Night 16",
         "url_page": "https://yeahscore1.com/match/riyadh-racing-season-race-night-16-1629480813",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "29 January 2026 13:30",
+        "teams": "Sri Lanka vs England",
+        "url_page": "https://yeahscore1.com/match/sri-lanka-vs-england-1629480887",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -131,6 +158,15 @@
         "time": "29 January 2026 17:15",
         "teams": "Farmers Insurance Open: Marquee Group (First Round)",
         "url_page": "https://yeahscore1.com/match/farmers-insurance-open-marquee-group-first-round-1629480835",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "29 January 2026 17:30",
+        "teams": "Al Kholood vs Al-Nassr",
+        "url_page": "https://yeahscore1.com/match/al-kholood-vs-al-nassr-1436083",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
