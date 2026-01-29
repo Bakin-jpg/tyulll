@@ -2,19 +2,10 @@
     {
         "league": "International - NBA",
         "type": "LIVE",
-        "time": "29 January 2026 01:30",
-        "teams": "Minnesota Timberwolves vs Dallas Mavericks",
-        "url_page": "https://yeahscore1.com/match/minnesota-timberwolves-vs-dallas-mavericks-1629480805",
-        "stream_url": "https://livecdn-bp-livestream.rumsport.com/stream/47/chunks.m3u8?x-sign=15416730a590aa5b71df16dfa71bc9bd&x-time=1769661900&is_vip=false&token=19126ea46790428c8353698c0eeca91ab6f776e6",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "International - NBA",
-        "type": "LIVE",
         "time": "29 January 2026 02:00",
         "teams": "Golden State Warriors vs Utah Jazz",
         "url_page": "https://yeahscore1.com/match/golden-state-warriors-vs-utah-jazz-1629480806",
-        "stream_url": "https://livecdn.rumsport3.live/stream/43/chunks.m3u8?token=19126ea46790428c8353698c0eeca91ab6f776e6&is_vip=false&verify=1769661900-aWhSK2iVfPmitc58%2FT%2F0TKePWRDF1cUhmV%2BPMyz5izs%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/43/chunks.m3u8?token=f550762014d36e50a1fca1ecdf6e5b9a11ef55e3&is_vip=false&verify=1769662020-rTnF5mb8nV7fPG%2Fv1YCr6XdlgG9E1rn9WIuSLfYenBQ%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -23,7 +14,7 @@
         "time": "29 January 2026 02:15",
         "teams": "Rod Laver Arena",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481982",
-        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=19126ea46790428c8353698c0eeca91ab6f776e6&is_vip=false&verify=1769661900-rbrPgTrcu6Tvl8mGCbcHZJG4QwjouJDxh06Tn3yT884%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=f550762014d36e50a1fca1ecdf6e5b9a11ef55e3&is_vip=false&verify=1769662020-lU%2BUGPl6uuhI%2FqYk1V%2Fsq%2Fpoee7FxkGLCKU28QHqT0k%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -32,7 +23,7 @@
         "time": "29 January 2026 02:30",
         "teams": "San Antonio Spurs vs Houston Rockets",
         "url_page": "https://yeahscore1.com/match/san-antonio-spurs-vs-houston-rockets-1629480809",
-        "stream_url": "https://livecdn.rumsport3.live/stream/33/chunks.m3u8?token=19126ea46790428c8353698c0eeca91ab6f776e6&is_vip=false&verify=1769661900-0IKdzM2xx7%2FSer3s8jDLiRuUpI5nonAtkdHxsNnewAw%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/33/chunks.m3u8?token=f550762014d36e50a1fca1ecdf6e5b9a11ef55e3&is_vip=false&verify=1769662020-k7G2OGqlzMs5dnmt%2FmOfKyf0Mw3B5egA%2Bw59elU1H78%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -41,7 +32,7 @@
         "time": "29 January 2026 03:00",
         "teams": "INKA MMA 53",
         "url_page": "https://yeahscore1.com/match/inka-mma-53-1629480808",
-        "stream_url": "https://livecdn.rumsport3.live/stream/35/chunks.m3u8?token=19126ea46790428c8353698c0eeca91ab6f776e6&is_vip=false&verify=1769661900-Yi0Oue9JbVL9qatKlZthlD8ohlK8TCyGx8oAdH4RYmA%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/35/chunks.m3u8?token=f550762014d36e50a1fca1ecdf6e5b9a11ef55e3&is_vip=false&verify=1769662020-4l0vd2JC5RtfI0r%2F1d26mbdt4tQq%2F4oTPMVvt53H30U%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -50,7 +41,7 @@
         "time": "29 January 2026 03:30",
         "teams": "Margaret Court Arena",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481983",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=19126ea46790428c8353698c0eeca91ab6f776e6&is_vip=false&verify=1769661900-f4YivYwb1B1KByojSCkHYc6Eu7q3uzYPNOxIEgybVS0%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=f550762014d36e50a1fca1ecdf6e5b9a11ef55e3&is_vip=false&verify=1769662020-jFoQBoWdhWm84GfPQ0Xtq3ydR3zXpWqNmYuvHyQuzCQ%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -266,6 +257,15 @@
         "time": "29 January 2026 20:00",
         "teams": "FC Porto vs Rangers",
         "url_page": "https://yeahscore1.com/match/fc-porto-vs-rangers-1451285",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "UEFA Europa League",
+        "type": "UPCOMING",
+        "time": "29 January 2026 20:00",
+        "teams": "VfB Stuttgart vs BSC Young Boys",
+        "url_page": "https://yeahscore1.com/match/vfb-stuttgart-vs-bsc-young-boys-1451286",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
