@@ -5,7 +5,7 @@
         "time": "29 January 2026 02:15",
         "teams": "Rod Laver Arena",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481982",
-        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=4c7cfe33b8c5e36e653d0413db169c797660d007&is_vip=false&verify=1769663940-GjhY891dHfwdxQ2nopSsv%2BNUFJEYQrI%2Fk6adY79dhWU%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=5103b915b3a63c0d1cc5eb332afe8752e0315088&is_vip=false&verify=1769664060-4wqpiEV0DGtZHV3e9cdYzHKiDiEkywYEolhd4NqNJjc%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,7 +14,7 @@
         "time": "29 January 2026 02:30",
         "teams": "San Antonio Spurs vs Houston Rockets",
         "url_page": "https://yeahscore1.com/match/san-antonio-spurs-vs-houston-rockets-1629480809",
-        "stream_url": "https://livecdn.rumsport3.live/stream/33/chunks.m3u8?token=4c7cfe33b8c5e36e653d0413db169c797660d007&is_vip=false&verify=1769663940-RNJDKi%2FzgwGK0ajsZDsZ%2BHDPsDRawh4Nf%2BvJA7xs4wg%3D",
+        "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -23,7 +23,7 @@
         "time": "29 January 2026 03:00",
         "teams": "INKA MMA 53",
         "url_page": "https://yeahscore1.com/match/inka-mma-53-1629480808",
-        "stream_url": "https://livecdn.rumsport3.live/stream/35/chunks.m3u8?token=4c7cfe33b8c5e36e653d0413db169c797660d007&is_vip=false&verify=1769663940-wGcPMzZ3YxwrY5owWggseR9e0GIN6z%2BDxZ4Hg5ZAxTg%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/35/chunks.m3u8?token=5103b915b3a63c0d1cc5eb332afe8752e0315088&is_vip=false&verify=1769664060-YLZIm2Wf0jFFtEOAHaa9mzBI63EOq0A7lpSQB5j%2BBkg%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -32,16 +32,7 @@
         "time": "29 January 2026 03:30",
         "teams": "Margaret Court Arena",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481983",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=4c7cfe33b8c5e36e653d0413db169c797660d007&is_vip=false&verify=1769663940-SigypFtRV7sAJXW3dhckZo9PUBypw2jlBqJ8Dmi62u4%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "29 January 2026 07:30",
-        "teams": "New Zealand vs England",
-        "url_page": "https://yeahscore1.com/match/new-zealand-vs-england-1629480884",
-        "stream_url": null,
+        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=5103b915b3a63c0d1cc5eb332afe8752e0315088&is_vip=false&verify=1769664060-VcOciU8dxP6DTZzPMpvjpTyLwa1Nl4Fr47H1qd9SBas%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -63,15 +54,6 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Saturday (31/01)",
-        "type": "UPCOMING",
-        "time": "29 January 2026 12:30",
-        "teams": "Stoke City vs Southampton",
-        "url_page": "https://yeahscore1.com/match/stoke-city-vs-southampton-1386908",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "29 January 2026 13:00",
@@ -86,15 +68,6 @@
         "time": "29 January 2026 13:00",
         "teams": "Riyadh Racing Season Race Night 16",
         "url_page": "https://yeahscore1.com/match/riyadh-racing-season-race-night-16-1629480813",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "29 January 2026 13:30",
-        "teams": "Sri Lanka vs England",
-        "url_page": "https://yeahscore1.com/match/sri-lanka-vs-england-1629480887",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -176,15 +149,6 @@
         "time": "29 January 2026 17:15",
         "teams": "Farmers Insurance Open: Marquee Group (First Round)",
         "url_page": "https://yeahscore1.com/match/farmers-insurance-open-marquee-group-first-round-1629480835",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "29 January 2026 17:30",
-        "teams": "Al Kholood vs Al-Nassr",
-        "url_page": "https://yeahscore1.com/match/al-kholood-vs-al-nassr-1436083",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
