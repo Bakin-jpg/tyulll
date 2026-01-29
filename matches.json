@@ -5,7 +5,7 @@
         "time": "29 January 2026 01:30",
         "teams": "Minnesota Timberwolves vs Dallas Mavericks",
         "url_page": "https://yeahscore1.com/match/minnesota-timberwolves-vs-dallas-mavericks-1629480805",
-        "stream_url": "https://livecdn-bp-livestream.rumsport.com/stream/47/chunks.m3u8?x-sign=0e3d6f9f766ceb62db151ff723c877fc&x-time=1769660940&is_vip=false&token=168490d89dbd1d5df1505658c5ed3a71080f1f2f",
+        "stream_url": "https://livecdn-bp-livestream.rumsport.com/stream/47/chunks.m3u8?x-sign=d940a88df8e3aacfe69080feb034e9c6&x-time=1769661060&is_vip=false&token=b98164adb31e941d2ebf9c4387a95ed8415fd757",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,7 +14,7 @@
         "time": "29 January 2026 02:00",
         "teams": "Golden State Warriors vs Utah Jazz",
         "url_page": "https://yeahscore1.com/match/golden-state-warriors-vs-utah-jazz-1629480806",
-        "stream_url": "https://livecdn.rumsport3.live/stream/43/chunks.m3u8?token=168490d89dbd1d5df1505658c5ed3a71080f1f2f&is_vip=false&verify=1769660940-ptKF%2BRAUmqI98sB%2BugXCcTteyCRWNhDbVlV3r7FExJ8%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/43/chunks.m3u8?token=b98164adb31e941d2ebf9c4387a95ed8415fd757&is_vip=false&verify=1769661060-VCnk9u2HLUamT2Q%2FabuksxAfbhMzuv7odg8d9XfxVO4%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -23,7 +23,7 @@
         "time": "29 January 2026 02:15",
         "teams": "Rod Laver Arena",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481982",
-        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=168490d89dbd1d5df1505658c5ed3a71080f1f2f&is_vip=false&verify=1769660940-hLkSlvROzqO7onaZG%2FicEBu770kZXzoWEd4y7Exsaoo%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=b98164adb31e941d2ebf9c4387a95ed8415fd757&is_vip=false&verify=1769661060-YNqcvhLCRCwDlTXP3hSsOLZA4KOk6rFETlAxmMXrC6Y%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -32,7 +32,7 @@
         "time": "29 January 2026 02:30",
         "teams": "San Antonio Spurs vs Houston Rockets",
         "url_page": "https://yeahscore1.com/match/san-antonio-spurs-vs-houston-rockets-1629480809",
-        "stream_url": "https://livecdn.rumsport3.live/stream/33/chunks.m3u8?token=168490d89dbd1d5df1505658c5ed3a71080f1f2f&is_vip=false&verify=1769660940-v5XihUBREFi3boO49HLXZVd%2FEqGD27rZQPNBCCsUYDY%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/33/chunks.m3u8?token=b98164adb31e941d2ebf9c4387a95ed8415fd757&is_vip=false&verify=1769661060-nvk%2F%2Fzdv6ZMAAI0Qc5zLAVK3xswi1Oz2YmaZW1ShdpE%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -41,7 +41,7 @@
         "time": "29 January 2026 03:00",
         "teams": "INKA MMA 53",
         "url_page": "https://yeahscore1.com/match/inka-mma-53-1629480808",
-        "stream_url": "https://livecdn.rumsport3.live/stream/35/chunks.m3u8?token=168490d89dbd1d5df1505658c5ed3a71080f1f2f&is_vip=false&verify=1769660940-tkU3EQyfeiBu6r83QVNGP4jfm2dsoy1kCUpKNRGzRCo%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/35/chunks.m3u8?token=b98164adb31e941d2ebf9c4387a95ed8415fd757&is_vip=false&verify=1769661060-IyBXTGYBXdH2L0Fn72Fl2lU1c%2BFFQbN%2FKj61cKEumqc%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -50,7 +50,16 @@
         "time": "29 January 2026 03:30",
         "teams": "Margaret Court Arena",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481983",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=168490d89dbd1d5df1505658c5ed3a71080f1f2f&is_vip=false&verify=1769660880-gohnlxKYzHkqGgV0s4SRvF10dkHbmf5liFL88pvyavI%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=b98164adb31e941d2ebf9c4387a95ed8415fd757&is_vip=false&verify=1769661060-OKArpchXLE8FQYWWIafpc1l78hnPSVGk9nCSG2FkWz0%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "29 January 2026 07:30",
+        "teams": "New Zealand vs England",
+        "url_page": "https://yeahscore1.com/match/new-zealand-vs-england-1629480884",
+        "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -72,6 +81,15 @@
         "referer": "https://xiaolin3.live/"
     },
     {
+        "league": "Saturday (31/01)",
+        "type": "UPCOMING",
+        "time": "29 January 2026 12:30",
+        "teams": "Leicester vs Charlton",
+        "url_page": "https://yeahscore1.com/match/leicester-vs-charlton-1386901",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "29 January 2026 13:00",
@@ -86,6 +104,15 @@
         "time": "29 January 2026 13:00",
         "teams": "Riyadh Racing Season Race Night 16",
         "url_page": "https://yeahscore1.com/match/riyadh-racing-season-race-night-16-1629480813",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "29 January 2026 13:30",
+        "teams": "Sri Lanka vs England",
+        "url_page": "https://yeahscore1.com/match/sri-lanka-vs-england-1629480887",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -167,6 +194,15 @@
         "time": "29 January 2026 17:15",
         "teams": "Farmers Insurance Open: Marquee Group (First Round)",
         "url_page": "https://yeahscore1.com/match/farmers-insurance-open-marquee-group-first-round-1629480835",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "29 January 2026 17:30",
+        "teams": "Al Kholood vs Al-Nassr",
+        "url_page": "https://yeahscore1.com/match/al-kholood-vs-al-nassr-1436083",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
