@@ -5,7 +5,7 @@
         "time": "29 January 2026 03:30",
         "teams": "Margaret Court Arena",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481983",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=e493adcd68bf5d8f152851cb1be323d932d6dfa7&is_vip=false&verify=1769673540-mo%2BvwZfJ13NOqaUTWqwZ7z9v6G%2FXfS1KtnLPEKLDajQ%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=d2e6ca2dd476d91af48f1c2d18f7e496dc15b19b&is_vip=false&verify=1769673660-NQnT2JFmQZcmqarXMFGnsi4EoHoQeV840eYmp%2FRhq7Y%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,7 +14,7 @@
         "time": "29 January 2026 07:30",
         "teams": "South Africa vs Sri Lanka",
         "url_page": "https://yeahscore1.com/match/south-africa-vs-sri-lanka-1629480810",
-        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=e493adcd68bf5d8f152851cb1be323d932d6dfa7&is_vip=false&verify=1769673540-s3wvlLhXygLsR%2FVmKO6N0ihyV9rdzAnalFATZEh8av0%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=d2e6ca2dd476d91af48f1c2d18f7e496dc15b19b&is_vip=false&verify=1769673660-zZIfl1Yl%2FsI1NYPkFBkCsEmKBRwjJaKsDh2lptacBVg%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -279,6 +279,15 @@
         "referer": "https://xiaolin3.live/"
     },
     {
+        "league": "UEFA Europa League",
+        "type": "UPCOMING",
+        "time": "29 January 2026 20:00",
+        "teams": "FK Crvena Zvezda vs Celta Vigo",
+        "url_page": "https://yeahscore1.com/match/fk-crvena-zvezda-vs-celta-vigo-1451291",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
         "league": "PGA Tour",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
@@ -311,6 +320,60 @@
         "time": "29 January 2026 20:00",
         "teams": "Farmers Insurance Open: Featured Group 2 (First Round)",
         "url_page": "https://yeahscore1.com/match/farmers-insurance-open-featured-group-2-first-round-1629480845",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Australian Open",
+        "type": "UPCOMING",
+        "time": "30 January 2026 00:00",
+        "teams": "Court 6",
+        "url_page": "https://yeahscore1.com/match/court-6-1629480861",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Australian Open",
+        "type": "UPCOMING",
+        "time": "30 January 2026 00:00",
+        "teams": "Court TBC",
+        "url_page": "https://yeahscore1.com/match/court-tbc-1629480862",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Australian Open",
+        "type": "UPCOMING",
+        "time": "30 January 2026 00:00",
+        "teams": "Court 7",
+        "url_page": "https://yeahscore1.com/match/court-7-1629480863",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Australian Open",
+        "type": "UPCOMING",
+        "time": "30 January 2026 00:00",
+        "teams": "1573 Arena",
+        "url_page": "https://yeahscore1.com/match/1573-arena-1629480864",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "NHL",
+        "type": "UPCOMING",
+        "time": "30 January 2026 00:00",
+        "teams": "Los Angeles Kings vs Buffalo Sabres",
+        "url_page": "https://yeahscore1.com/match/los-angeles-kings-vs-buffalo-sabres-1629480852",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "NBA",
+        "type": "UPCOMING",
+        "time": "30 January 2026 00:00",
+        "teams": "Milwaukee Bucks vs Washington Wizards",
+        "url_page": "https://yeahscore1.com/match/milwaukee-bucks-vs-washington-wizards-1629480849",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     }
