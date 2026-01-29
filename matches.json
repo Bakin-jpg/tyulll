@@ -5,7 +5,7 @@
         "time": "29 January 2026 03:30",
         "teams": "Margaret Court Arena",
         "url_page": "https://yeahscore1.com/match/margaret-court-arena-1629481983",
-        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=5a14b967cdec9fef69c70632248724665c1f9705&is_vip=false&verify=1769673900-bkuQBIPLtaTxd9N1vCibHk%2BNHXh9RApgs%2B%2F5TW4gXOA%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/22/chunks.m3u8?token=e8e4f2fe1b4b3d616068794e23b1321edd3e7b07&is_vip=false&verify=1769674020-FKcFiLup9lstwp3BodAO%2BdiWY4Y7Jfl13Z15JburgVI%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,16 +14,7 @@
         "time": "29 January 2026 07:30",
         "teams": "South Africa vs Sri Lanka",
         "url_page": "https://yeahscore1.com/match/south-africa-vs-sri-lanka-1629480810",
-        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=5a14b967cdec9fef69c70632248724665c1f9705&is_vip=false&verify=1769673900-tWc8OjLK9AZhxy%2Bhu18zAGR2APJM3jGoWTkfkRcEwEs%3D",
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "29 January 2026 07:30",
-        "teams": "New Zealand vs England",
-        "url_page": "https://yeahscore1.com/match/new-zealand-vs-england-1629480884",
-        "stream_url": null,
+        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=e8e4f2fe1b4b3d616068794e23b1321edd3e7b07&is_vip=false&verify=1769674020-%2BrGatDfqo9vuoT9VZEiJCIrIs9JXadYIM1tlufFqr%2Bc%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -45,15 +36,6 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Saturday (31/01)",
-        "type": "UPCOMING",
-        "time": "29 January 2026 12:30",
-        "teams": "Leicester vs Charlton",
-        "url_page": "https://yeahscore1.com/match/leicester-vs-charlton-1386901",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "29 January 2026 13:00",
@@ -68,15 +50,6 @@
         "time": "29 January 2026 13:00",
         "teams": "Riyadh Racing Season Race Night 16",
         "url_page": "https://yeahscore1.com/match/riyadh-racing-season-race-night-16-1629480813",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "29 January 2026 13:30",
-        "teams": "Sri Lanka vs England",
-        "url_page": "https://yeahscore1.com/match/sri-lanka-vs-england-1629480887",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -162,15 +135,6 @@
         "referer": "https://xiaolin3.live/"
     },
     {
-        "league": "Others / International",
-        "type": "UPCOMING",
-        "time": "29 January 2026 17:30",
-        "teams": "Al Kholood vs Al-Nassr",
-        "url_page": "https://yeahscore1.com/match/al-kholood-vs-al-nassr-1436083",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
         "league": "Pro League",
         "type": "UPCOMING",
         "time": "29 January 2026 17:30",
@@ -246,8 +210,8 @@
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "Lyon vs PAOK",
-        "url_page": "https://yeahscore1.com/match/lyon-vs-paok-1451294",
+        "teams": "Nottingham Forest vs Ferencvarosi TC",
+        "url_page": "https://yeahscore1.com/match/nottingham-forest-vs-ferencvarosi-tc-1451299",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -255,8 +219,8 @@
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "29 January 2026 20:00",
-        "teams": "Nottingham Forest vs Ferencvarosi TC",
-        "url_page": "https://yeahscore1.com/match/nottingham-forest-vs-ferencvarosi-tc-1451299",
+        "teams": "Lyon vs PAOK",
+        "url_page": "https://yeahscore1.com/match/lyon-vs-paok-1451294",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
