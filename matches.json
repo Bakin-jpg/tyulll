@@ -5,7 +5,7 @@
         "time": "29 January 2026 00:00",
         "teams": "Philadelphia Flyers vs Columbus Blue Jackets",
         "url_page": "https://yeahscore1.com/match/philadelphia-flyers-vs-columbus-blue-jackets-1629480788",
-        "stream_url": "https://livecdn.rumsport3.live/stream/34/chunks.m3u8?token=6b914389e7538ab24017164fa4057cd7467952ad&is_vip=false&verify=1769645100-Dw%2B3X11LSanNm1iK4PLlQCLHZZCmw%2BTBqaPGnrns72U%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/45/chunks.m3u8?token=516c9c14a69752d8657e8c0d98604670507c3cd7&is_vip=false&verify=1769645220-eb8bjxa29f%2B7hGjsjUeruIRo6EnYqb8qMkchYygHzFg%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,7 +14,7 @@
         "time": "29 January 2026 00:00",
         "teams": "Los Angeles Lakers vs Cleveland Cavaliers",
         "url_page": "https://yeahscore1.com/match/los-angeles-lakers-vs-cleveland-cavaliers-1629480787",
-        "stream_url": "https://livecdn.rumsport3.live/stream/33/chunks.m3u8?token=6b914389e7538ab24017164fa4057cd7467952ad&is_vip=false&verify=1769645100-m0vT5NN6s1zJ90LuVBajehmOq7DCTCFivQaQCFFlEfM%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/33/chunks.m3u8?token=516c9c14a69752d8657e8c0d98604670507c3cd7&is_vip=false&verify=1769645220-ctaPkFc88%2Bqx21CSXCd8HOssa9PrzjEfSMRvm%2BWzg20%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -23,7 +23,7 @@
         "time": "29 January 2026 00:00",
         "teams": "Chicago Bulls vs Indiana Pacers",
         "url_page": "https://yeahscore1.com/match/chicago-bulls-vs-indiana-pacers-1629480786",
-        "stream_url": "https://livecdn.rumsport3.live/stream/39/chunks.m3u8?token=6b914389e7538ab24017164fa4057cd7467952ad&is_vip=false&verify=1769645100-myJ52aStpVBxYZA7QneShA5U62xvQfhi%2BmW6AKcLjgw%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/39/chunks.m3u8?token=516c9c14a69752d8657e8c0d98604670507c3cd7&is_vip=false&verify=1769645220-zqKTrfLoSTwYFWr3qd13yJFgNo3AHnFLva3MuOvRXj4%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -32,7 +32,7 @@
         "time": "29 January 2026 00:00",
         "teams": "Motor City Cruise vs Long Island Nets",
         "url_page": "https://yeahscore1.com/match/motor-city-cruise-vs-long-island-nets-1629480789",
-        "stream_url": "https://livecdn.rumsport3.live/stream/1/chunks.m3u8?token=6b914389e7538ab24017164fa4057cd7467952ad&is_vip=false&verify=1769645100-RmizOIaIzMBAmgIQTJ1oMn%2FYTtnjrZOySiQIxpsNaI0%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/1/chunks.m3u8?token=516c9c14a69752d8657e8c0d98604670507c3cd7&is_vip=false&verify=1769645220-AdUMYKUsIfHz7%2BTKGQillY0sWXj%2BcfbQ5pa9%2B2SM%2B%2FQ%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -171,6 +171,15 @@
         "referer": "https://xiaolin3.live/"
     },
     {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "29 January 2026 07:30",
+        "teams": "New Zealand vs England",
+        "url_page": "https://yeahscore1.com/match/new-zealand-vs-england-1629480884",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
         "league": "ICC Under-19 Cricket World Cup",
         "type": "UPCOMING",
         "time": "29 January 2026 07:30",
@@ -189,6 +198,15 @@
         "referer": "https://xiaolin3.live/"
     },
     {
+        "league": "Saturday (31/01)",
+        "type": "UPCOMING",
+        "time": "29 January 2026 12:30",
+        "teams": "Stoke City vs Southampton",
+        "url_page": "https://yeahscore1.com/match/stoke-city-vs-southampton-1386908",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
         "league": "Others / International",
         "type": "UPCOMING",
         "time": "29 January 2026 13:00",
@@ -203,6 +221,15 @@
         "time": "29 January 2026 13:00",
         "teams": "Riyadh Racing Season Race Night 16",
         "url_page": "https://yeahscore1.com/match/riyadh-racing-season-race-night-16-1629480813",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "29 January 2026 13:30",
+        "teams": "Sri Lanka vs England",
+        "url_page": "https://yeahscore1.com/match/sri-lanka-vs-england-1629480887",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
@@ -275,6 +302,15 @@
         "time": "29 January 2026 17:00",
         "teams": "Farmers Insurance Open: Featured Holes #3, #8, #11 & #16 (First Round)",
         "url_page": "https://yeahscore1.com/match/farmers-insurance-open-featured-holes-3-8-11-and-16-first-round-1629480833",
+        "stream_url": null,
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "Others / International",
+        "type": "UPCOMING",
+        "time": "29 January 2026 17:30",
+        "teams": "Al Kholood vs Al-Nassr",
+        "url_page": "https://yeahscore1.com/match/al-kholood-vs-al-nassr-1436083",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
