@@ -5,7 +5,7 @@
         "time": "29 January 2026 07:30",
         "teams": "South Africa vs Sri Lanka",
         "url_page": "https://yeahscore1.com/match/south-africa-vs-sri-lanka-1629480810",
-        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=5c8216f6ce87fdd3eb1a83680e5cb2bfa668308a&is_vip=false&verify=1769688780-jrwMT540y3xOMhSYCUbezZrjgbKUMsj1eCZDwJHruBw%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/40/chunks.m3u8?token=808e5089c6667cf90494b20b366c8c5f4b59fd67&is_vip=false&verify=1769688900-fl3ZzUuSXRf1bOpWxCdL9n6se5JJJqGSJqtxfvqhQBQ%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -14,7 +14,7 @@
         "time": "29 January 2026 08:30",
         "teams": "Rod Laver Arena",
         "url_page": "https://yeahscore1.com/match/rod-laver-arena-1629481982",
-        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=5c8216f6ce87fdd3eb1a83680e5cb2bfa668308a&is_vip=false&verify=1769688780-Yy8aIdGzdikEOUdpIz0x5lpj53MJ24P%2FCjiOxU9VLDE%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/9/chunks.m3u8?token=808e5089c6667cf90494b20b366c8c5f4b59fd67&is_vip=false&verify=1769688900-QcrBvS46i0dKclRWhCwXzgFGRkBytXTuLLqt0d%2BmAl4%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -23,7 +23,16 @@
         "time": "29 January 2026 11:30",
         "teams": "ES2, Alula Tour, Stage 3",
         "url_page": "https://yeahscore1.com/match/es2-alula-tour-stage-3-1629480811",
-        "stream_url": "https://livecdn.rumsport3.live/stream/48/chunks.m3u8?token=5c8216f6ce87fdd3eb1a83680e5cb2bfa668308a&is_vip=false&verify=1769688780-iPH%2FzM3hg5tfm0wJe%2FpKIddBAOUMnAaKrhkmw9%2FWM%2Fg%3D",
+        "stream_url": "https://livecdn.rumsport3.live/stream/48/chunks.m3u8?token=808e5089c6667cf90494b20b366c8c5f4b59fd67&is_vip=false&verify=1769688900-kPSRuQvI8hRlxYt3JD7aMcKf%2F5d%2FWOubLjmPzsP%2FyhI%3D",
+        "referer": "https://xiaolin3.live/"
+    },
+    {
+        "league": "International - Riyadh Season Horse Racing",
+        "type": "LIVE",
+        "time": "29 January 2026 12:10",
+        "teams": "Riyadh Racing Season Race Night 16",
+        "url_page": "https://yeahscore1.com/match/riyadh-racing-season-race-night-16-1629480813",
+        "stream_url": "https://livecdn.rumsport3.live/stream/45/chunks.m3u8?token=808e5089c6667cf90494b20b366c8c5f4b59fd67&is_vip=false&verify=1769688900-7dDzKFT9nvcTsQZ83HTJdIBbmRLs1WA9Sz%2FIcinskvk%3D",
         "referer": "https://xiaolin3.live/"
     },
     {
@@ -50,15 +59,6 @@
         "time": "29 January 2026 13:00",
         "teams": "Pakistan vs Australia",
         "url_page": "https://yeahscore1.com/match/pakistan-vs-australia-1629480812",
-        "stream_url": null,
-        "referer": "https://xiaolin3.live/"
-    },
-    {
-        "league": "Riyadh Season Horse Racing",
-        "type": "UPCOMING",
-        "time": "29 January 2026 13:00",
-        "teams": "Riyadh Racing Season Race Night 16",
-        "url_page": "https://yeahscore1.com/match/riyadh-racing-season-race-night-16-1629480813",
         "stream_url": null,
         "referer": "https://xiaolin3.live/"
     },
